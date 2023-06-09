@@ -1,0 +1,61 @@
+alias a"give func_capturezone;
+alias b"ent_create item_teamflag;
+alias c"give game_text;
+alias d"give math_counter;
+alias e"give logic_case;
+alias f"give info_player_teamspawn;
+alias h"ent_create point_servercommand;
+alias i"ent_create point_clientcommand;
+test_wait .1;
+ent_keyvalue 418237 targetname kill;ent_keyvalue 2551360 targetname kill;ent_keyvalue 442550 targetname kill;ent_keyvalue 2551396 targetname kill;ent_keyvalue 8816 targetname kill;ent_keyvalue 234143 targetname kill;ent_keyvalue 2535244 targetname kill;ent_keyvalue 2535138 targetname kill;ent_keyvalue 462479 targetname kill;
+test_wait .1;
+ent_fire team_round_timer kill;ent_fire kill kill
+ent_fire beam kill;ent_fire spot* kill;ent_fire env_sprite kill;ent_fire func_brush kill;ent_fire round* kill;ent_fire cp* hidemodel;ent_fire trigger_capture* kill;ent_fire spawn* kill;ent_fire sign_Dresupply kill;ent_fire prop_resupply_blue_2 kill;ent_fire prop_resupply_blue_3 kill;ent_fire door_d* kill;
+test_wait .1;
+noclip;test_wait .5;setpos -4149.686523 -426.953339 830.809570;setang 87.943970 -92.172562 0.000000;tf_flag_caps_per_round 0;
+a;ent_fire func_capturezone addoutput"hammerid 2";test_wait .1;ent_keyvalue 2 classname fc1 targetname fc1 origin"4736 1792 0.3"mins"-100 -100 -30"maxs"100 100 100"solid"2";ent_fire fc1 setteam 2;
+a;ent_fire func_capturezone addoutput"hammerid 3";test_wait .1;ent_keyvalue 3 classname fc2 origin"-4544 -1024 -40"mins"-100 -100 -30"maxs"100 100 100"solid"2";ent_fire fc2 setteam 3;
+b;ent_fire item_teamflag addoutput"hammerid 4";test_wait .1;ent_keyvalue 4 classname rf origin"4736 1792 30"oncapture"rf,addoutput,origin 4736 1792 30"OnReturn"rf,addoutput,origin 4736 1792 30"oncapture"mc1,add,1";ent_fire rf setteam 2;
+b;ent_fire item_teamflag addoutput"hammerid 5";test_wait .1;ent_keyvalue 5 classname bf origin"-4544 -1024 10"oncapture"bf,addoutput,origin -4544 -1024 10"OnReturn"bf,addoutput,origin -4544 -1024 10"oncapture"mc2,add,1";ent_fire bf setteam 3;
+c;ent_fire game_text addoutput"hammerid 13";test_wait .1;ent_keyvalue 13 classname msg1 message"Capture The Flag"channel"3"origin"0"x"-1"y".04"holdtime"4"color"255 255 255"spawnflags"1;
+ent_keyvalue 19 oncase06"redcap,CountPlayersInZone,8
+f;ent_fire info_player_teamspawn addoutput"hammerid 20";test_wait .1;ent_keyvalue 20 classname SP1 origin"6320 2192 -80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 21";test_wait .1;ent_keyvalue 21 classname SP1 origin"6320 2128 -80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 22";test_wait .1;ent_keyvalue 22 classname SP1 origin"6320 2048 -80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 23";test_wait .1;ent_keyvalue 23 classname SP1 origin"6320 1968 -80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 24";test_wait .1;ent_keyvalue 24 classname SP1 origin"6320 1904 -80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 25";test_wait .1;ent_keyvalue 25 classname SP1 origin"6320 1824 -80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 26";test_wait .1;ent_keyvalue 26 classname SP1 origin"6416 2128 -80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 27";test_wait .1;ent_keyvalue 27 classname SP1 origin"6416 2048 -80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 28";test_wait .1;ent_keyvalue 28 classname SP1 origin"6416 1968 -80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 29";test_wait .1;ent_keyvalue 29 classname SP1 origin"6416 1904 -80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 30";test_wait .1;ent_keyvalue 30 classname SP1 origin"6512 2048 -80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 31";test_wait .1;ent_keyvalue 31 classname SP1 origin"6512 1968 -80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 32";test_wait .1;ent_keyvalue 32 classname SP2 origin"-5440 -1280 80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 33";test_wait .1;ent_keyvalue 33 classname SP2 origin"-5440 -1792 80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 34";test_wait .1;ent_keyvalue 34 classname SP2 origin"-5440 -1888 80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 35";test_wait .1;ent_keyvalue 35 classname SP2 origin"-5536 -1792 80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 36";test_wait .1;ent_keyvalue 36 classname SP2 origin"-5536 -1888 80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 37";test_wait .1;ent_keyvalue 37 classname SP2 origin"-5632 -1792 80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 38";test_wait .1;ent_keyvalue 38 classname SP2 origin"-5632 -1888 80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 39";test_wait .1;ent_keyvalue 39 classname SP2 origin"-5728 -1792 80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 40";test_wait .1;ent_keyvalue 40 classname SP2 origin"-5728 -1888 80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 41";test_wait .1;ent_keyvalue 41 classname SP2 origin"-5728 -1280 80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 42";test_wait .1;ent_keyvalue 42 classname SP2 origin"-5632 -1280 80;
+f;ent_fire info_player_teamspawn addoutput"hammerid 43";test_wait .1;ent_keyvalue 43 classname SP2 origin"-5536 -1280 80;
+ent_fire SP1 setteam 2;ent_fire SP2 setteam 3;
+ent_fire w* addoutput"force_map_reset 0;
+give team_round_timer;ent_fire team_round_timer addoutput"hammerid 46";test_wait .1;ent_keyvalue 46 targetname"rest"classname"player"OnRoundStart"rf,addoutput,origin 4736 1792 30"OnRoundStart"bf,addoutput,origin -4544 -1024 10"OnRoundStart"cred,display,,15;
+ent_keyvalue 46 OnRoundStart"msg2,addoutput,message 0"OnRoundStart"msg3,addoutput,message 0"OnRoundStart"mc*,setvalue,0"OnRoundStart"tf_gamerules,setblueteamrespawnwavetime,1"OnRoundStart"tf_gamerules,setredteamrespawnwavetime,1;
+ent_keyvalue 46 OnRoundStart"team_round_timer,kill"
+give logic_timer;ent_fire logic_timer addoutput"hammerid 47";test_wait .1;ent_keyvalue 47 classname LT1 ontimer"msg*,display";ent_fire LT1 RefireTime 1;
+give game_text_tf;ent_fire game_text_tf addoutput"hammerid 48";test_wait .1;ent_keyvalue 48 classname cred message"CTF Hydro script by Fangthe1st"icon"voice_player;
+ent_fire SP* addoutput"classname info_player_teamspawn;
+Test_Wait .1;
+ent_fire tf_gamerules setblueteamrespawnwavetime 0;
+ent_fire tf_gamerules setredteamrespawnwavetime 0;
+ent_fire team_control_point addoutput"spawnflags 1"
+ent_fire master_control_point roundspawn
+mp_winlimit 0
+mp_restartround 1;
+///

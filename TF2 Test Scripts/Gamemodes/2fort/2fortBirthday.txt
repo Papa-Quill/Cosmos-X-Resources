@@ -1,0 +1,26 @@
+ent_fire beam color 1+255+1;
+ent_fire prop_resupply_blue_1 color 1+255+1;
+ent_fire prop_resupply_blue_4 color 1+31+255;
+ent_fire prop_resupply_blue_2 color 1+255+1;
+ent_fire prop_resupply_blue_3 color 1+255+1;
+ent_fire prop_resupply_red_1 color 255 0 0;test_wait .1;
+ent_fire prop_resupply_red_3 color 1+255+1;
+ent_fire prop_resupply_red_2 color 1+255+1;
+ent_fire prop_resupply_red_4 color 255 0 0;
+ent_fire door_red1_1_right color 255+255+1;
+ent_fire door_red1_1_left color 255 0 0;
+ent_fire door_red2_1_right color 255+255+1;test_wait .1;
+ent_fire door_red2_1_left color 255 0 0;
+ent_fire door_blue1_1_right color 255+255+1;
+ent_fire door_blue1_1_left color 255 0 0;
+ent_fire door_blue2_1_right color 255+255+1;
+ent_fire door_blue2_1_right color 255 0 0;
+ent_fire func_brush color 1+255+1;test_wait .1;
+ent_fire point_spotlight color 1+255+1;
+give trigger_brush;test_wait .1;
+ent_fire trigger_brush addoutput"targetname game_playerdie;
+ent_fire trigger_brush addoutput"classname game_playerdie;test_wait .1;
+ent_create point_clientcommand;test_wait .1;
+ent_fire point_clientcommand addoutput "targetname brt";test_wait .1;
+ent_fire game_playerdie addoutput"OnUse brt,command,play misc/happy_birthday
+ 

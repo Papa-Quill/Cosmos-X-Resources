@@ -1,0 +1,309 @@
+sv_cheats 1;noclip;picker;cl_showpos 1
+alias l2 "prop_dynamic_create props_2fort\ladder001"
+
+// Quill's Fixes (Revised by Fangthe1st)
+// Blue spawn entrance gap
+ent_keyvalue 4433902 origin"-924 -1440 316"
+// Blue spawn open trigger position
+ent_keyvalue 3828473 origin"-1570 -1440 320"
+// Blue spawn func_door position fix
+ent_keyvalue 3828413 OnFullyClosed"door_blue1_1_right,addoutput,origin -1534.5 -1465 320"
+ent_keyvalue 3828429 OnFullyClosed"door_blue1_1_left,addoutput,origin -1534.5 -1415 320"
+
+// Ladders
+setpos -2406.8 -3703.2 680;setang 90 90;test_wait 0.1
+l2;test_wait 0.1;ent_setname redladder1;ent_fire redladder1 addoutput "origin -480 436 -266";ent_fire redladder1 addoutput"angles -2 -90";test_wait 0.1
+l2;test_wait 0.1;ent_setname redladder2;ent_fire redladder2 addoutput "origin -480 440.47 -138.1";ent_fire redladder2 addoutput"angles -2 -90";test_wait 0.1
+
+l2;test_wait 0.1;ent_setname blueladder1;ent_fire blueladder1 addoutput "origin 480 -436 -266";ent_fire blueladder1 addoutput"angles -2 90";test_wait 0.1
+l2;test_wait 0.1;ent_setname blueladder2;ent_fire blueladder2 addoutput "origin 480 -440.47 -138.1";ent_fire blueladder2 addoutput"angles -2 90";test_wait 0.1
+
+// Dr.'s Anti Out of Bounds
+alias trg give trigger_multiple;
+alias wall prop_dynamic_create props_trainyard\crane_platform001;
+alias rspwnblk ent_create func_respawnroomvisualizer;
+ent_fire trigger_multiple addoutput"classname no"
+setpos -2406.8 -3703.2 680;
+setang 90 90;
+//
+test_wait .3
+//
+give point_clientcommand;
+ent_fire point_clientcommand addoutput"classname pcc";
+//
+test_wait .1
+//
+trg;
+ent_fire trigger_multiple addoutput"hammerid 1";
+test_wait .1;
+ent_keyvalue 1 targetname"trg"classname"trg"solid"2"spawnflags"1"origin"-1264 -3082 355"maxs"396 70 97"mins"-396 -70 -97"onstarttouch"filter_blue_team,testactivator;
+//
+test_wait .1;
+//
+ent_fire filter_blue_team addoutput"hammerid 47;
+test_wait .1;
+ent_keyvalue 47 OnPass"pcc,command,setpos -1719.519653 -1440.383911 257"OnPass"pcc,command,setang 0 0 0"Onpass"pcc,command,play misc/talk.wav"OnPass"pcc,command,say ERROR: Out of Bounds Exception"OnFail"pcc,command,setpos 1751 1440 257"OnFail"pcc,command,setang 0.000000 180.000000"OnFail"pcc,command,play misc/talk.wav"OnFail"pcc,command,say ERROR: Out of Bounds Exception";
+test_wait .1;
+//
+test_wait .1
+give env_screenoverlay;
+ent_fire env_screenoverlay addoutput"hammerid 2";
+test_wait .1
+ent_keyvalue 2 targetname"overly"classname"overly"OverlayName1"effects/breenscreen_static01_";
+//
+//Jumpscare
+trg;
+ent_fire trigger_multiple addoutput"hammerid 3";
+test_wait .1;
+ent_keyvalue 3 targetname"trg1"classname"trg1"solid"2"spawnflags"1"origin"-552 -1872 336"maxs"88 192 80"mins"-88 -192 -80"onstarttouch"pcc,command,setpos 2068.103516 -2771.716553 -450"onstarttouch"pcc,command,fadeout 0,.002"onstarttouch"pcc,command,fadein,1"onstarttouch"pcc,command,stopsound,.001"onstarttouch"pcc,command,setang 0 -90"onstarttouch"pcc,command,play ambient\levels\citadel\citadel_ambient_scream_loop1.wav,.01"onstarttouch"overly,startoverlays"onendtouch"overly,stopoverlays,,.18;
+ent_keyvalue 3 onstarttouch"pcc,command,cl_drawhud 0"onstarttouch"pcc,command,r_drawviewmodel 0"onstarttouch"pcc,command,cl_drawhud 0"onstarttouch"pcc,command,r_drawviewmodel 0"onstarttouch"pcc,command,fog_enable 0"onstarttouch"pcc,command,fog_override 1;
+//Jumpscare
+//
+test_wait .1
+trg;
+ent_fire trigger_multiple addoutput"hammerid 4";
+test_wait .1;
+ent_keyvalue 4 targetname"trg2"classname"trg2"solid"2"spawnflags"1"origin"1059.5 3062.5 384.5"maxs"295.5 49.5 128.5"mins"-295.5 -49.5 -128.5"onstarttouch"filter_blue_team,testactivator;
+//
+//Jumpscare
+trg;
+ent_fire trigger_multiple addoutput"hammerid 5";
+test_wait .1;
+ent_keyvalue 5 targetname"trg3"classname"trg3"solid"2"spawnflags"1"origin"552 1872 336"maxs"88 192 80"mins"-88 -192 -80"onstarttouch"pcc,command,stopsound,.001"onstarttouch"pcc,command,setpos 613.654602 1983.466797 85"onstarttouch"pcc,command,setang 0 -1"onstarttouch"pcc,command,play plats\platform_citadel_ring.wav,.01"onstarttouch"overly,startoverlays"onendtouch"overly,stopoverlays,,.18;
+//Jumpscare
+//
+test_wait .1
+trg;
+ent_fire trigger_multiple addoutput"hammerid 6";
+test_wait .1;
+ent_keyvalue 6 targetname"trg4"classname"trg4"solid"2"spawnflags"1"origin"-510 1536 252"maxs"62 128 12"mins"-62 -128 -12"onstarttouch"filter_blue_team,testactivator;
+//
+trg
+ent_fire trigger_multiple addoutput"hammerid 7"
+test_wait .1;
+ent_keyvalue 7 targetname"trg5"classname"trg5"solid"2"spawnflags"1"origin"-486 -1216 463.5"maxs"364 48 48.5"mins"-364 -48 -48.5"onstarttouch"filter_blue_team,testactivator;
+//
+trg
+ent_fire trigger_multiple addoutput"hammerid 8"
+test_wait .1;
+ent_keyvalue 8 targetname"trg6"classname"trg6"solid"2"spawnflags"1"origin"1355.5 2754.5 384"maxs"72.5 357.5 128"mins"-72.5 -357.5 -128"onstarttouch"filter_blue_team,testactivator;
+//
+//
+trg;
+ent_fire trigger_multiple addoutput"hammerid 9";
+test_wait .1;
+ent_keyvalue 9 targetname"trg7"classname"trg7"solid"2"spawnflags"1"origin"-1343 -2707 337"maxs"61 301 97"mins"-61 -301 -97"onstarttouch"filter_blue_team,testactivator;
+//
+trg;
+ent_fire trigger_multiple addoutput"hammerid 10";
+test_wait .1;
+ent_keyvalue 10 targetname"trg8"classname"trg8"solid"2"spawnflags"1"origin"175.5 -2871.5 24"maxs"272.5 56.5 56"mins"-272.5 -56.5 -56"onstarttouch"filter_blue_team,testactivator;
+//
+trg;
+ent_fire trigger_multiple addoutput"hammerid 11";
+test_wait .1;
+ent_keyvalue 11 targetname"trg9"classname"trg9"solid"2"spawnflags"1"origin"-192 2872 24"maxs"256 56 56"mins"-256 -56 -56"onstarttouch"filter_blue_team,testactivator;
+//
+trg;
+ent_fire trigger_multiple addoutput"hammerid 42";
+test_wait .1;
+ent_keyvalue 42 targetname"trg11"classname"trg11"solid"2"spawnflags"1"origin"492.75 1416 562"maxs"336.75 232 50"mins"-336.75 -232 -50"onstarttouch"filter_blue_team,testactivator;
+//
+trg;
+ent_fire trigger_multiple addoutput"hammerid 43";
+test_wait .1;
+ent_keyvalue 43 targetname"trg12"classname"trg12"solid"2"spawnflags"1"origin"352 -1536 251"maxs"212 128 8"mins"-212 -128 -8"onstarttouch"filter_blue_team,testactivator;
+//respawn room fixes
+//
+ent_fire func_respawnroomvisualizer addoutput"maxs 8 76 52";
+ent_fire func_respawnroomvisualizer addoutput"mins -8 -76 -52";
+ent_fire func_respawnroomvisualizer addoutput"classname nop";
+//
+test_wait .1;
+//
+rspwnblk;
+ent_fire func_respawnroomvisualizer addoutput"hammerid 12";
+test_wait .1;
+ent_keyvalue 12 targetname"rd_blck"classname"rd_blck"origin"-248 1984 247.5"maxs"72 80 9.5"mins"-72 -80 -9.5";
+test_wait .1:
+//
+rspwnblk;
+ent_fire func_respawnroomvisualizer addoutput"hammerid 13";
+test_wait .1;
+ent_keyvalue 13 targetname"blu_blck"classname"blu_blck"origin"264 -1992 241.5"maxs"72 72 9.5"mins"-72 -72 -16.5"setteam"3";
+test_wait .1;
+//
+//Extra
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 14";
+test_wait .1;
+ent_keyvalue 14 targetname"wall1"classname"wall1"origin"2259 -3102 -296"angles"90 0 0";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 15";
+test_wait .1;
+ent_keyvalue 15 targetname"wall2"classname"wall2"origin"2259 -3443 -296"angles"90 0 0";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 16";
+test_wait .1;
+ent_keyvalue 16 targetname"wall3"classname"wall3"origin"1880 -3102 -296"angles"-90 0 0";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 17";
+test_wait .1;
+ent_keyvalue 17 targetname"wall4"classname"wall4"origin"1880 -3443 -296"angles"-90 0 0";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 18";
+test_wait .1;
+ent_keyvalue 18 targetname"wall5"classname"wall5"origin"1880 -3584 -296"angles"-90 0 0";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 19";
+test_wait .1;
+ent_keyvalue 19 targetname"wallend"classname"wallend"origin"2088 -3616 -296"angles"90 270 0";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 20";
+test_wait .1;
+ent_keyvalue 20 targetname"wallend1"classname"wallend1"origin"2040 -3616 -296"angles"90 270 0";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 21";
+test_wait .1;
+ent_keyvalue 21 targetname"wallend2"classname"wallend"origin"2088 -2600 -296"angles"90 270 0";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 22";
+test_wait .1;
+ent_keyvalue 22 targetname"wallend3"classname"wallend1"origin"2040 -2600 -296"angles"90 270 0";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 23";
+test_wait .1;
+ent_keyvalue 23 targetname"wall6"classname"wall6"origin"2259 -2800 -296"angles"90 0 0";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 24";
+test_wait .1;
+ent_keyvalue 24 targetname"wall7"classname"wall7"origin"1880 -2770 -296"angles"-90 0 0";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 25";
+test_wait .1;
+ent_keyvalue 25 targetname"cel"classname"cel"origin"2050 -3102 -256";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 26";
+test_wait .1;
+ent_keyvalue 26 targetname"cel1"classname"cel1"origin"2250 -3102 -256";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 27";
+test_wait .1;
+ent_keyvalue 27 targetname"cel2"classname"cel2"origin"2250 -2800 -256";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 28";
+test_wait .1;
+ent_keyvalue 28 targetname"cel3"classname"cel3"origin"2050 -2800 -256";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 29";
+test_wait .1;
+ent_keyvalue 29 targetname"cel4"classname"cel4"origin"2250 -2500 -256";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 30";
+test_wait .1;
+ent_keyvalue 30 targetname"cel5"classname"cel5"origin"2050 -2800 -256";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 31";
+test_wait .1;
+ent_keyvalue 31 targetname"cel6"classname"cel6"origin"2050 -2500 -256";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 32";
+test_wait .1;
+ent_keyvalue 32 targetname"cel7"classname"cel7"origin"2050 -3300 -256";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 33";
+test_wait .1;
+ent_keyvalue 33 targetname"cel8"classname"cel8"origin"2250 -3300 -256";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 34";
+test_wait .1;
+ent_keyvalue 34 targetname"cel9"classname"cel9"origin"2050 -3600 -256";
+//
+wall
+ent_fire !picker color 0+0+0
+ent_fire !picker addoutput"hammerid 35";
+test_wait .1;
+ent_keyvalue 35 targetname"cel10"classname"cel10"origin"2250 -3600 -256";
+//
+ent_create light_dynamic;
+ent_fire light_dynamic addoutput"hammerid 36";
+test_wait .1;
+ent_keyvalue 36 targetname"light"classname"light"distance"240"brightness"6"style"0"_light"255 0 0 200"origin"2070 -3505 -270";
+//
+prop_dynamic_create gman_high;
+ent_fire !picker addoutput"hammerid 37";
+test_wait .1;
+ent_rotate -90;
+test_wait .1;
+ent_keyvalue 37 targetname"the_informer"classname"the_informer"origin"2059 -3473 -420";
+test_wait .1;
+ent_fire the_informer addoutput"origin 2059 -3473 -457";
+//
+trg;
+ent_fire trigger_multiple addoutput"hammerid 38";
+test_wait .1;
+ent_keyvalue 38 targetname"eyes_only"classname"eyes_only"origin"2060 -3340 -325.84"solid"2"spawnflags"1"maxs"196 4 134"mins"-196 -4 -134"onstarttouch"pcc,command,stopsound,.001"onstarttouch"pcc,command,play plats\platform_citadel_ring.wav,.01"onstarttouch"overly,startoverlays,,.001"onstarttouch"overly,stopoverlays,,.2"onstarttouch"filter_blue_team,testactivator;
+test_wait .1;
+ent_keyvalue 38 onstarttouch"pcc,command,fog_override 0"onstarttouch"pcc,command,fog_enable 1"onstarttouch"pcc,command,cl_drawhud 1,.25"onstarttouch"pcc,command,r_drawviewmodel 1,.25;
+//
+
+// Finalize
+noclip;picker;cl_showpos 0;setpos -1264 -3082 355;say 
+
+give game_text_tf
+ent_fire game_text_tf addoutput "targetname 2FFM"
+ent_fire 2FFM addoutput "classname 2FFM"
+ent_fire 2FFM addoutput "message 2Fort Patches Enabled! By Dr., Papa Quill, Fangthe1st."
+ent_fire 2FFM addoutput "background 0"
+ent_fire 2FFM addoutput "display_to_team 0"
+ent_fire 2FFM addoutput "icon obj_status_icon_wrench"
+
+give point_clientcommand
+give game_zone_player
+ent_fire game_zone_player addoutput"targetname txt_exec"
+ent_fire txt_exec addoutput"OnPlayerOutZone point_clientcommand,command,ent_fire 2FFM display"
+ent_fire txt_exec CountPlayersInZone
+ent_fire txt_exec kill:1
+///

@@ -1,0 +1,245 @@
+ent_remove timer;ent_remove_all info_player_teamspawn;ent_fire game_win setteam"3";
+noclip;setpos 3312.323242 -1659.842163 162.360077;setang 90 0 0;
+//setpos -4750 3267 -350;setang 0 180 0;test_wait .1;
+
+///
+
+prop_dynamic_create props_spytech/work_table001.mdl;ent_fire !picker addoutput"hammerid 73";test_wait .1;ent_keyvalue 73 targetname"tbl_b" origin"-2240 4096 -463.458" angles"0 285 0";
+test_wait .1;
+prop_dynamic_create props_spytech/work_table001.mdl;ent_fire !picker addoutput"hammerid 70";test_wait .1;ent_keyvalue 70 targetname"tbl_a" origin"128 558 -191.711" angles"0 285 0";
+test_wait .1;
+prop_physics_create effects\bday_gib02.mdl;ent_fire !picker setparent tbl_a;ent_fire !picker addoutput"hammerid 71";test_wait .1;ent_keyvalue 71 targetname"pres_a" origin"128 558 -153" angles"0 300 0" rendermode"6";
+test_wait .1;
+prop_physics_create effects\bday_gib02.mdl;ent_fire !picker setparent tbl_b;ent_fire !picker addoutput"hammerid 72";test_wait .1;ent_keyvalue 72 targetname"pres_b" origin"-2240 4096 -424.614" angles"0 255 0" rendermode"6";
+test_wait .1;
+prop_dynamic_create props_2fort/tire002.mdl;ent_fire !picker addoutput"angles 0 255 0";ent_fire !picker addoutput"origin -2080 3720 -560";
+test_wait .1;
+prop_dynamic_create props_mining/support_wall001a.mdl;ent_fire !picker addoutput"angles 60 90.036 -1.36747";ent_fire !picker addoutput"origin -2044 3323 -685";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate001.mdl;ent_fire !picker addoutput"targetname box01";ent_fire !picker SetHealth 99999;ent_fire !picker addoutput"angles 0 9.5 0";ent_fire !picker addoutput"origin -2136 3472 -638.998";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate002.mdl;ent_fire !picker addoutput"angles 0 266 0";ent_fire !picker addoutput"origin -2140 3491 -601.373";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate002.mdl;ent_fire !picker addoutput"angles 2.8307 190.634 -14.7365";ent_fire !picker addoutput"origin -2168 3507 -644";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate001.mdl;ent_fire !picker addoutput"targetname box01";ent_fire !picker SetHealth 99999;ent_fire !picker addoutput"angles 0 174.5 0";ent_fire !picker addoutput"origin -1984 3676 -559.75";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate002.mdl;ent_fire !picker addoutput"angles 0 11 0";ent_fire !picker addoutput"origin -1980 3604 -559.75";
+test_wait .1;
+
+
+prop_dynamic_create props_farm/tractor_tire001.mdl;ent_fire !picker addoutput"angles 45 90.0002 -90";ent_fire !picker addoutput"origin -4156 1008 -488";
+test_wait .1;
+prop_dynamic_create props_farm/spool_wire.mdl;ent_fire !picker addoutput"angles 2.48675 214.036 1.67856";ent_fire !picker addoutput"origin -4152 1004 -576";
+test_wait .1;
+prop_dynamic_create props_farm/spool_wire.mdl;ent_fire !picker addoutput"angles -33.9996 123 90";ent_fire !picker addoutput"origin -4124 956 -571.94";
+test_wait .1;
+prop_dynamic_create props_2fort/corrugated_metal001.mdl;ent_fire !picker addoutput"angles 0 0 -30";ent_fire !picker addoutput"origin -4152 988 -532";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate001.mdl;ent_fire !picker addoutput"targetname box01";ent_fire !picker SetHealth 99999;ent_fire !picker addoutput"angles -6.70205 126.748 44.6044";ent_fire !picker addoutput"origin -4108 1028 -568";
+test_wait .1;
+
+prop_dynamic_create props_farm/pallet001.mdl;ent_fire !picker addoutput"angles 0 0 -83";ent_fire !picker addoutput"origin -2288 3538 -512.462";
+test_wait .1;
+prop_dynamic_create props_2fort/oildrum.mdl;ent_fire !picker addoutput"angles 0 150 0";ent_fire !picker addoutput"origin -2176 3544 -560";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate002.mdl;ent_fire !picker addoutput"angles 0 266 0";ent_fire !picker addoutput"origin -2224 3552 -559.75";
+test_wait .1;
+prop_dynamic_create props_2fort/thermos.mdl;ent_fire !picker addoutput"angles 0 60.5 0";ent_fire !picker addoutput"origin -2210.54 3561.96 -518";
+test_wait .1;
+prop_dynamic_create props_2fort/lunchbag.mdl;ent_fire !picker addoutput"angles 0 60.5 0";ent_fire !picker addoutput"origin -2231 3550.15 -508.584";
+test_wait .1;
+
+
+prop_dynamic_create props_spytech/computer_wall03.mdl;ent_fire !picker addoutput"angles -60 225 90";ent_fire !picker addoutput"origin -2232 5439.29 -556.168";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_wall_cabinet.mdl;ent_fire !picker addoutput"angles -60 225 90";ent_fire !picker addoutput"origin -2231.29 5440 -557.9";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_wall.mdl;ent_fire !picker addoutput"angles -58.0301 227.368 23.3582";ent_fire !picker addoutput"origin -2316 5388.99 -560";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_wall_cabinet.mdl;ent_fire !picker addoutput"angles -58.0301 227.368 23.3582";ent_fire !picker addoutput"origin -2316.36 5388.6 -559.152";
+test_wait .1;
+prop_dynamic_create props_2fort/mop_and_bucket.mdl;ent_fire !picker addoutput"angles 0 180 0";ent_fire !picker addoutput"origin -2016 4412 -462.845";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_low.mdl;ent_fire !picker addoutput"angles 0 210 0";ent_fire !picker addoutput"origin -2000 3788 -463.75";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_printer.mdl;ent_fire !picker addoutput"angles 0 75 0";ent_fire !picker addoutput"origin -2076 3788 -463.954";
+test_wait .1;
+prop_dynamic_create props_spytech/terminal_chair.mdl;ent_fire !picker addoutput"angles 0 304 0";ent_fire !picker addoutput"origin -2088 3824 -463.989";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_wall04.mdl;ent_fire !picker addoutput"angles 0 90 -15";ent_fire !picker addoutput"origin -2402 3797 -456.308";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_wall.mdl;ent_fire !picker addoutput"angles 0 90 0";ent_fire !picker addoutput"origin -2480 3796 -462.205";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_wall_cabinet.mdl;ent_fire !picker addoutput"angles 0 90 0";ent_fire !picker addoutput"origin -2480 3797 -462.205";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_wall_cabinet.mdl;ent_fire !picker addoutput"angles 0 90 -15";ent_fire !picker addoutput"origin -2402 3796 -456.308";
+test_wait .1;
+prop_dynamic_create props_spytech/watercooler.mdl;ent_fire !picker addoutput"angles 0 255 0";ent_fire !picker addoutput"origin -1980 3848 -464";
+test_wait .1;
+prop_dynamic_create props_farm/oilcan01.mdl;ent_fire !picker addoutput"angles 0 30 0";ent_fire !picker addoutput"origin -2404 4412 -464";
+test_wait .1;
+prop_dynamic_create props_well/hand_truck01.mdl;ent_fire !picker addoutput"angles 0 231 0";ent_fire !picker addoutput"origin -2464 4412 -463.75";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate001.mdl;ent_fire !picker addoutput"targetname box01";ent_fire !picker SetHealth 99999;ent_fire !picker addoutput"angles 0 189.5 0";ent_fire !picker addoutput"origin 2015.4 4175.28 -463.75";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate002.mdl;ent_fire !picker addoutput"angles 0 86 0";ent_fire !picker addoutput"origin -2024 4112 -464";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate001.mdl;ent_fire !picker addoutput"targetname box01";ent_fire !picker SetHealth 99999;ent_fire !picker addoutput"angles 0 354.5 -3";ent_fire !picker addoutput"origin -2020 4144 -424";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate002.mdl;ent_fire !picker addoutput"angles 0 141 0";ent_fire !picker addoutput"origin -2444 4392 -463.75";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate001.mdl;ent_fire !picker addoutput"targetname box01";ent_fire !picker SetHealth 99999;ent_fire !picker addoutput"angles 0 189.5 0";ent_fire !picker addoutput"origin -2024 4176 -463.75";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_wall_cabinet.mdl;ent_fire !picker addoutput"angles 0 0 90";ent_fire !picker addoutput"origin -2432 4195.68 -440";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_wall03.mdl;ent_fire !picker addoutput"angles 0 0 90";ent_fire !picker addoutput"origin -2430 4195.68 -440";
+test_wait .1;
+
+prop_dynamic_create props_spytech/computer_wall_cabinet.mdl;ent_fire !picker addoutput"angles 0 270 -90";ent_fire !picker addoutput"origin -52 668 -326.281";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate002.mdl;ent_fire !picker addoutput"angles 0 141 0";ent_fire !picker addoutput"origin -4 684 -300.311";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_low.mdl;ent_fire !picker addoutput"angles 0 345 0";ent_fire !picker addoutput"origin 252 687 -351.75";
+test_wait .1;
+prop_dynamic_create props_spytech/computer_wall04.mdl;ent_fire !picker addoutput"angles -30 270 90";ent_fire !picker addoutput"origin 180 704 -332";
+test_wait .1;
+
+prop_dynamic_create props_farm/pallet001.mdl;ent_fire !picker addoutput"angles 0 60 -68";ent_fire !picker addoutput"origin 324 416 -144.462";
+test_wait .1;
+prop_dynamic_create props_well/computer_cart02.mdl;ent_fire !picker addoutput"angles 0 15 0";ent_fire !picker addoutput"origin -69.3091 428.668 -191.75";
+test_wait .1;
+prop_dynamic_create props_spytech/bench001b.mdl;ent_fire !picker addoutput"angles -59.7912 120.033 9.08605";ent_fire !picker addoutput"origin -92 708 -128";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate002.mdl;ent_fire !picker addoutput"angles 0 141 0";ent_fire !picker addoutput"origin -66.9521 718.185 -191.75";
+test_wait .1;
+prop_dynamic_create props_2fort/miningcrate002.mdl;ent_fire !picker addoutput"angles 0 171 0";ent_fire !picker addoutput"origin -57.7849 724.073 -148.5";
+test_wait .1;
+
+
+
+
+
+setpos -4154.167969 -69.973747 -183.960754;setang 90 0 0;
+test_wait .1;
+prop_dynamic_create player/scout.mdl;ent_fire !picker addoutput"hammerid 74";test_wait .1;ent_keyvalue 74 targetname"myth_scout" origin"-3620 -344 -533.673" angles"0 135 0";
+ent_fire myth_scout color 0 0 0;
+test_wait .1;
+setpos 3312.323242 -1659.842163 162.360077;setang 90 0 0;
+test_wait .1;
+ent_keyvalue 1234577 targetname"scout_laugh" message"Scout.LaughEvil02" radius"250" origin"-3860 452 -520" spawnflags"48";
+test_wait .1;
+ent_keyvalue 1234402 targetname"scout_laugh" message"Scout.LaughHappy01" radius"250" origin"-3776 436 -520" spawnflags"48";
+test_wait .1;
+give trigger_look;ent_fire trigger_look addoutput"hammerid 75";test_wait .1;ent_keyvalue 75 targetname"look_trg" origin"-3864 400 -544" maxs"72 80 64" mins"-72 -80 -64" FieldOfView"0.7" LookTime"0.25" spawnflags"129" target"myth_scout" OnTrigger"myth_scout,addoutput,origin 1558 -1816 -370" solid"2" OnTrigger"scout_laugh,playsound";
+
+
+
+prop_dynamic_create props_farm/wood_shack001.mdl;ent_fire !picker addoutput"solid 0";ent_fire !picker addoutput"angles 0 60 0";ent_fire !picker addoutput"origin 536 4172 -546.433";
+test_wait .1;
+ent_create trigger_brush;ent_fire !picker addoutput"hammerid 125";test_wait .1;ent_keyvalue 125 maxs"101 93 107.347" mins"-101 -93 -107.347" origin"533 4171 -393.43" solid"2" angles"0 60 0";
+
+//
+
+give point_servercommand;ent_fire point_servercommand addoutput"targetname psc";
+test_wait .1;
+give point_clientcommand;ent_fire point_clientcommand addoutput"targetname pcc";
+test_wait .1;
+give logic_timer;ent_fire logic_timer addoutput"hammerid 17";test_wait .1;ent_keyvalue 17 refiretime"3" OnTimer"loop,CountPlayersInZone"
+
+
+prop_dynamic_create props_2fort/sniper_fence01.mdl;ent_fire !picker addoutput"hammerid 68";test_wait .1;ent_keyvalue 68 origin"-2728 2668 -383" angles"0 180 0";
+ent_create info_player_teamspawn;ent_fire !picker addoutput"hammerid 4";test_wait .1;ent_keyvalue 4 targetname"spwnRed" origin"1208 3905 -440" angles"0 195 0";ent_fire spwnRed setteam"2";
+ent_create info_player_teamspawn;ent_fire !picker addoutput"hammerid 5";test_wait .1;ent_keyvalue 5 targetname"spwnRed1" origin"1253.41 3983.93 -440" angles"0 195 0";ent_fire spwnRed1 setteam"2";
+ent_create info_player_teamspawn;ent_fire !picker addoutput"hammerid 6";test_wait .1;ent_keyvalue 6 targetname"spwnRed2" origin"1286.54 3860.29 -440" angles"0 195 0";ent_fire spwnRed2 setteam"2";
+ent_create info_player_teamspawn;ent_fire !picker addoutput"hammerid 7";test_wait .1;ent_keyvalue 7 targetname"spwnBlu" origin"-4896 1312 -480";ent_fire spwnBlu setteam"3";
+ent_create info_player_teamspawn;ent_fire !picker addoutput"hammerid 8";test_wait .1;ent_keyvalue 8 targetname"spwnBlu1" origin"-4960 1248 -480";ent_fire spwnBlu1 setteam"3";
+ent_create info_player_teamspawn;ent_fire !picker addoutput"hammerid 9";test_wait .1;ent_keyvalue 9 targetname"spwnBlu2" origin"-4960 1376 -480";ent_fire spwnBlu2 setteam"3";
+ent_create info_player_teamspawn;ent_fire !picker addoutput"hammerid 10";test_wait .1;ent_keyvalue 10 targetname"spwnBlu3" origin"-4960 1152 -480";ent_fire spwnBlu3 setteam"3";
+ent_create info_player_teamspawn;ent_fire !picker addoutput"hammerid 11";test_wait .1;ent_keyvalue 11 targetname"spwnBlu4" origin"-4960 1472 -480";ent_fire spwnBlu4 setteam"3";
+ent_create info_player_teamspawn;ent_fire !picker addoutput"hammerid 12";test_wait .1;ent_keyvalue 12 targetname"spwnRed3" origin"1311.39 3767.56 -440" angles"0 195 0";ent_fire spwnRed3 setteam"2";
+ent_create info_player_teamspawn;ent_fire !picker addoutput"hammerid 13";test_wait .1;ent_keyvalue 13 targetname"spwnRed4" origin"1228.57 4076.66 -440" angles"0 195 0";ent_fire spwnRed4 setteam"2";
+ent_create func_capturezone;ent_fire func_capturezone addoutput"hammerid 14";test_wait .1;ent_keyvalue 14 targetname"plant_b" TeamNum"2" shouldBlock"1" capturepoint"1" capture_delay_offset"0.025" capture_delay"1.1" maxs"186 272 60" mins"-186 -272 -60" OnCapture"bomb,addoutput,origin 1558 -1816 -370" Origin"-2258 4168 -404" solid"2";ent_keyvalue 14 classname"cap1" OnCapture"game_timer,showinhud,0" OnCapture"bomb_timer,restart" OnCapture"bomb_timer,enable,,1" OnCapture"bomb_timer,showinhud,1,1.5" OnCapture"cap_b,enable" solid"2" OnCapture";ent_keyvalue 14 classname"cap1";ent_keyvalue 1201227 area_time_to_cap"10";ent_keyvalue 1201227 OnEndCap"game_win,RoundWin" OnEndCap"cap_b_flag,setowner,2";
+ent_create func_capturezone;ent_fire func_capturezone addoutput"hammerid 15";test_wait .1;ent_keyvalue 15 targetname"plant_a" TeamNum"2" shouldBlock"1" capturepoint"1" capture_delay_offset"0.025" capture_delay"1.1" maxs"234 186 85" mins"-234 -186 -85" OnCapture"bomb,addoutput,origin 1558 -1816 -370" Origin"122 556 -97" OnCapture"game_timer,disable" OnCapture"game_timer,showinhud,0" OnCapture"bomb_timer,restart" OnCapture"bomb_timer,enable,,1" OnCapture"bomb_timer,showinhud,1,1.5" OnCapture"cap_a,enable" solid"2" OnCapture";ent_keyvalue 15 classname"cap2";ent_keyvalue 80159 area_time_to_cap"10";ent_keyvalue 80159 OnEndCap"game_win,RoundWin" OnEndCap"cap_a_flag,setowner,2";
+ent_create team_round_timer;
+ent_fire team_round_timer disable;ent_fire team_round_timer addoutput"hammerid 3";test_wait .1;ent_keyvalue 3 classname"tmr1" origin"1558 -1816 -370" targetname"game_timer" auto_countdown"1" show_in_hud"1" show_time_remaining"1" start_paused"1" StartDisabled"0" timer_length"170" OnRoundStart"bomb_timer,showinhud,0" OnRoundStart"game_timer,showinhud,1" OnRoundStart"game_timer,enable,,5,-1" OnRoundStart"game_timer,resume,,5,-1" OnFinished"game_win,setteam,3" OnFinished"game_win,RoundWin,,0.05,-1";ent_keyvalue 85412 OnRoundWin"psc,command,Mp_restartround 1,1.5" OnRoundWin"game_timer,restart,,25" OnRoundWin"bomb,addoutput,origin 496 3776 -450,25";ent_keyvalue 3 OnRoundStart"wpns,CountPlayersInZone";
+ent_create team_round_timer;
+ent_fire team_round_timer disable;ent_fire team_round_timer addoutput"hammerid 16";test_wait .1;ent_keyvalue 16 targetname"bomb_timer"  auto_countdown"1" show_in_hud"0" show_time_remaining"1" start_paused"1" StartDisabled"0" timer_length"46" OnRoundStart"bomb_timer,restart,,5,-1" On1SecRemain"game_win,setteam,2,1" On1SecRemain"game_win,RoundWin,,1.5";
+ent_keyvalue 3 classname"team_round_timer";
+ent_fire item_healthkit_small disable;ent_fire func_regenerate disable;ent_fire item_healthkit_medium disable;ent_remove red_spawn_door_left_model;ent_remove_all func_door;ent_fire func_respawnroomvisualizer disable;ent_remove red_spawn_door_right_model;ent_remove red_spawn_main_door_model;ent_remove blue_spawn_door_left_model;ent_remove blue_spawn_door_right;ent_remove blue_spawn_model_door;ent_keyvalue 1562448 targetname"portal";ent_keyvalue 1562442 targetname"portal";ent_fire team_control_point_master disable;ent_remove_all trigger_multiple;ent_fire portal open;
+ent_fire trigger_capture_area disable;
+ent_fire cap_base_model_b addoutput"origin 1558 -1816 -370";ent_fire cap_base_model_c addoutput"origin 1558 -1816 -370";ent_fire cap_base_model_a addoutput"origin 1558 -1816 -370";
+test_wait .1;
+prop_dynamic_create props_trainyard/portable_stairs001.mdl;ent_fire !picker addoutput"hammerid 60";test_wait .1;ent_keyvalue 60 origin"-1696 4992 -656" angles"0 60 0";prop_dynamic_create props_trainyard/portable_stairs001.mdl;ent_fire !picker addoutput"hammerid 61";test_wait .1;ent_keyvalue 61 origin"-976 3872 -720" angles"0 90 0";prop_dynamic_create props_trainyard/portable_stairs001.mdl;ent_fire !picker addoutput"hammerid 62";test_wait .1;ent_keyvalue 62 origin"-608 2192 -656" angles"0 152 0";prop_dynamic_create props_trainyard/portable_stairs001.mdl;ent_fire !picker addoutput"hammerid 63";test_wait .1;ent_keyvalue 63 origin"848 2352 -656" angles"0 235 0";prop_dynamic_create props_spytech/work_table001.mdl;ent_fire !picker addoutput"hammerid 64";test_wait .1;ent_keyvalue 64 targetname"tbl" origin"496 3776 -495" angles"0 0 0";prop_dynamic_create props_gameplay/foot_spray_can01.mdl;ent_fire !picker addoutput"hammerid 66";test_wait .1;ent_keyvalue 66 solid"0" origin"504 3816 -456.749" angles"0 285 0";prop_dynamic_create weapons/w_models/w_grenade_mirv.mdl;ent_fire !picker addoutput"hammerid 67";test_wait .1;ent_keyvalue 67 origin"496 3744 -450" angles"75 315 0";prop_dynamic_create props_2fort/sniper_fence01.mdl;setang 86 -1 0;ent_fire !picker addoutput"hammerid 69";test_wait .1;ent_keyvalue 69 origin"-2864 2132 -399" angles"0 270 0";setang 89 -2 0;test_wait .1;
+ent_create item_teamflag;test_wait .1;ent_fire item_teamflag addoutput"hammerid 2";test_wait .1;ent_keyvalue 2 targetname"bomb" GameType"0" origin"496 3776 -450" skin"1" rendermode"6" OnReturn"bomb,addoutput,origin 496 3776 -450";ent_fire bomb setteam"3";prop_physics_create effects\bday_gib02.mdl;ent_fire !picker addoutput"hammerid 65";test_wait .1;ent_keyvalue 65 targetname"bomb_mdl" solid"0";ent_fire bomb_mdl setparent"bomb";test_wait .1;ent_keyvalue 65 origin"496 3776 -456" angles"0 180 0";
+
+////
+test_wait .1;
+give trigger_brush;ent_fire trigger_brush addoutput"hammerid 110";test_wait .1;ent_keyvalue 110 targetname"game_playerkill" classname"game_playerkill" onuse"red_team_filter,testactivator"
+test_wait .1;
+ent_keyvalue 79398 onPass"psc,command,ent_fire red_tally add 1" onfail"psc,command,ent_fire blu_tally add 1";
+test_wait .1;
+give math_counter;ent_fire math_counter addoutput"hammerid 113";test_wait .1;ent_keyvalue 113 targetname"red_tally" classname"red_tally" max"6" ongetvalue"blu_kills_case,invalue"
+test_wait .1;
+give math_counter;ent_fire math_counter addoutput"hammerid 112";test_wait .1;ent_keyvalue 112 targetname"red_kills" classname"red_kills" max"6" ongetvalue"case,invalue";
+test_wait .1;
+give math_counter;ent_fire math_counter addoutput"hammerid 124";test_wait .1;ent_keyvalue 124 targetname"blu_tally" classname"blu_tally" max"6" ongetvalue"red_kills_case,invalue";
+give math_counter;ent_fire math_counter addoutput"hammerid 116";test_wait .1;ent_keyvalue 116 targetname"blu_kills" classname"blu_kills" max"6" ongetvalue"case,invalue";
+test_wait .1;
+ent_create game_text;ent_fire game_text addoutput"hammerid 119";test_wait .1;ent_keyvalue 119 targetname"txt_shotgun" classname"txt_shotgun" channel"0" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"15" message"UP: Equip Shotgun" x"0.01" y"0.5";
+test_wait .1;
+ent_create game_text;ent_fire game_text addoutput"hammerid 120";test_wait .1;ent_keyvalue 120 targetname"txt_smg" classname"txt_smg" channel"1" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"15" message"RIGHT: Equip SMG" x"0.01" y"0.55";
+test_wait .1;
+ent_create game_text;ent_fire game_text addoutput"hammerid 121";test_wait .1;ent_keyvalue 121 targetname"txt_rifle" classname"txt_rifle" channel"2" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"15" message"DOWN: Equip Sniper" x"0.01" y"0.6";
+
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 126";test_wait .1;ent_keyvalue 126 targetname"blu_kills_case" classname"blu_kills_case" case01"2" case02"3"  case03"4";
+test_wait .1;
+ent_keyvalue 126 oncase01"blu_kills,setvalue,2" oncase02"blu_kills,setvalue,2" oncase03"blu_kills,setvalue,4";
+test_wait .1;
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 127";test_wait .1;ent_keyvalue 127 targetname"red_kills_case" classname"red_kills_case" case01"2" case02"3"  case03"4";
+test_wait .1;
+ent_keyvalue 127 oncase01"red_kills,setvalue,2" oncase02"red_kills,setvalue,2" oncase03"red_kills,setvalue,4";
+test_wait .1;
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 114";test_wait .1;ent_keyvalue 114 targetname"case" classname"case" case01"2" case02"4"  case03"6";
+
+ent_keyvalue 114 oncase01"pcc,command,ent_fire txt_shotgun" oncase01"pcc,command,bind UP shotgun";
+ent_keyvalue 114 oncase02"pcc,command,ent_fire txt_shotgun" oncase02"pcc,command,ent_fire txt_smg" oncase02"pcc,command,bind UP shotgun" oncase02"pcc,command,bind RIGHT smg";
+ent_keyvalue 114 oncase03"pcc,command,ent_fire txt_shotgun" oncase03"pcc,command,ent_fire txt_smg" oncase03"pcc,command,ent_fire txt_rifle" oncase03"pcc,command,bind UP shotgun" oncase03"pcc,command,bind RIGHT smg" oncase03"pcc,command,bind DOWN rifle";
+
+
+ent_keyvalue 114 oncase01"pcc,command,bind UP slot1,8";
+ent_keyvalue 114 oncase02"pcc,command,bind UP slot1,8" oncase02"pcc,command,bind RIGHT slot2,8";
+ent_keyvalue 114 oncase03"pcc,command,bind UP slot1,8" oncase03"pcc,command,bind RIGHT slot2,8" oncase03"pcc,command,bind DOWN slot3,8";
+
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 122";test_wait .1;ent_keyvalue 122 targetname"wpn_pckr" classname"wpn_pckr" case01"0" case02"1" case03"2";
+
+ent_keyvalue 122 oncase01"pcc,command,give tf_weapon_shotgun_primary" oncase01"pcc,command,ent_fire tf_weapon_shotgun_primary use,.4" oncase01"pcc,command,use tf_weapon_shotgun_primary,.5" oncase01"pcc,command,use tf_weapon_shotgun_primary,.5" oncase01"pcc,command,bind UP slot1" oncase01"pcc,command,bind RIGHT slot2" oncase01"pcc,command,bind DOWN slot3";
+ent_keyvalue 122 oncase02"pcc,command,give tf_weapon_smg" oncase01"pcc,command,ent_fire tf_weapon_smg use,.4" oncase01"pcc,command,use tf_weapon_smg,.5" oncase02"pcc,command,bind UP slot1" oncase02"pcc,command,bind RIGHT slot2" oncase02"pcc,command,bind DOWN slot3";
+ent_keyvalue 122 oncase02"pcc,command,give tf_weapon_sniperrifle" oncase01"pcc,command,ent_fire tf_weapon_sniperrifle use,.4" oncase01"pcc,command,use tf_weapon_sniperrifle,.5" oncase03"pcc,command,bind UP slot1" oncase03"pcc,command,bind RIGHT slot2" oncase03"pcc,command,bind DOWN slot3";
+
+ent_keyvalue 79542 onPass"pcc,command,ent_fire blu_kills getvalue" onfail"pcc,command,ent_fire red_kills getvalue";
+
+ent_keyvalue 85412 OnRoundWin"getters,CountPlayersInZone";
+
+ent_keyvalue 85412 OnRoundWin"red_tally,setvalue,0,27" OnRoundWin"blu_tally,setvalue,0,27" OnRoundWin"red_kills,setvalue,0,27" OnRoundWin"blu_kills,setvalue,0,27";
+
+ent_keyvalue 15 OnCapture"pres_a,addoutput,rendermode 0";
+
+ent_keyvalue 14 OnCapture"pres_b,addoutput,rendermode 0";
+
+ent_keyvalue 16 On1SecRemain"plant_a,dispatcheffect,explosion,1.5" On1SecRemain"plant_a,dispatcheffect,explosion,2.2" On1SecRemain"plant_a,dispatcheffect,explosion,2.7" On1SecRemain"plant_a,dispatcheffect,explosion,2.9" On1SecRemain"plant_a,dispatcheffect,explosion,3.4" On1SecRemain"plant_a,dispatcheffect,explosion,3.8";
+
+ent_keyvalue 16 On1SecRemain"plant_b,dispatcheffect,explosion,1.5" On1SecRemain"plant_b,dispatcheffect,explosion,2.2" On1SecRemain"plant_b,dispatcheffect,explosion,2.7" On1SecRemain"plant_b,dispatcheffect,explosion,2.9" On1SecRemain"plant_b,dispatcheffect,explosion,3.4" On1SecRemain"plant_b,dispatcheffect,explosion,3.8";
+////
+test_wait .1;
+give game_zone_player;ent_fire game_zone_player addoutput"hammerid 144";test_wait .1;ent_keyvalue 144 targetname"loop" classname"loop" OnPlayerOutZone"pcc,command,join_class civilian" OnPlayerOutZone"pcc,command,alias shotgun ent_fire wpn_pckr invalue 0" OnPlayerOutZone"pcc,command,alias smg ent_fire wpn_pckr invalue 1" OnPlayerOutZone"pcc,command,alias shotgun ent_fire wpn_pckr invalue 2";
+test_wait .1;
+give game_zone_player;ent_fire game_zone_player addoutput"hammerid 145";test_wait .1;ent_keyvalue 145 targetname"wpns" classname"wpns" OnPlayerOutZone"pcc,command,give tf_weapon_pistol_scout" OnPlayerOutZone"pcc,command,ent_fire tf_weapon_pistol_scout use,.1" OnPlayerOutZone"pcc,command,use tf_weapon_pistol_scout,.2" OnPlayerOutZone"pcc,command,give tf_weapon_knife" OnPlayerOutZone"pcc,command,ent_fire tf_weapon_knife use,.1" OnPlayerOutZone"pcc,command,use tf_weapon_knife,.2";
+test_wait .1;
+give game_zone_player;ent_fire game_zone_player addoutput"hammerid 146";test_wait .1;ent_keyvalue 146 targetname"getters" classname"getters" OnPlayerOutZone"pcc,command,ent_fire blue_team_filter testactivator,25" OnPlayerOutZone"psc,command,ent_fire blu_tally getvalue" OnPlayerOutZone"psc,command,ent_fire red_tally getvalue";
+test_wait .1;
+
+ent_keyvalue 85412 OnRoundWin"box,sethealth,99999" OnRoundWin"pres_a,addoutput,rendermode 6,25" OnRoundWin"pres_b,addoutput,rendermode 6,25" OnRoundWin"game_win,setteam,3,2" OnRoundWin"cap_a,disable" OnRoundWin"cap_b,disable";
+Mp_restartround 1;
+ent_fire team_control_point hidemodel;
+test_wait 3;ent_keyvalue 2 origin"496 3776 -450";ent_fire game_timer restart;

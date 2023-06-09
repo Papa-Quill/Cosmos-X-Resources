@@ -1,0 +1,310 @@
+alias "a" "prop_dynamic_create props_trainyard\crane_platform001"
+alias "b" "prop_dynamic_create props_mining\support_wall001a"
+alias "c" "prop_dynamic_create props_2fort\cow001_reference"
+alias "d" "prop_dynamic_create props_2fort\miningcrate002"
+alias "e" "prop_dynamic_create props_gameplay\cap_point_base"
+alias "f" "prop_dynamic_create props_trainyard\train_billboard001_sm"
+alias "g" "prop_dynamic_create props_hydro\metal_barrier02"
+alias "h" "give func_capturezone"
+alias "i" "ent_create item_teamflag"
+alias "j" "ent_create item_healthkit_medium"
+alias "k" "ent_create item_ammopack_medium"
+alias "l" "give game_text"
+alias "m" "give math_counter"
+alias "n" "give logic_case"
+alias "o" "give info_player_teamspawn"
+alias "p" "give func_respawnroom"
+alias "q" "give game_round_win"
+alias "r" "prop_dynamic_create Shadertest\shaderslab4"
+alias "r2" "prop_dynamic_create Shadertest\shaderslab3"
+alias "s" "prop_dynamic_create props_gameplay\resupply_locker"
+alias "t" "give trigger_multiple"
+alias "u" "give func_respawnroomvisualizer"
+alias "v" "give func_wall"
+
+ent_fire ai* kill;ent_fire beam kill;ent_fire filter_activator_class kill;ent_fire func_* kill;ent_fire instanced* kill;ent_fire logic_a* kill;ent_fire math_* kill;ent_fire path_track kill;ent_fire env_dustpuff kill;ent_fire env_explo* kill;ent_fire env_fire kill;ent_fire env_shake kill;
+ent_fire point_t* kill;ent_fire prop_* kill;ent_fire trigger_* kill;ent_fire func_us* kill;ent_fire logic_r* kill;ent_fire info_target kill;ent_fire info_ladder_dismount kill;ent_fire bf kill;ent_fire rf kill;ent_fire rest kill;ent_fire env_sprite kill;
+noclip;test_wait .5;setpos 1042 -3710 2034;setang 90 90;tf_flag_caps_per_round 9;test_wait .5;
+
+// red platforms under cp
+a;ent_setname aa;ent_fire aa addoutput"origin 1880 -3620 1265";ent_fire aa addoutput"angles 0 90;
+a;ent_setname ab;ent_fire ab addoutput"origin 1880 -3300 1265";ent_fire ab addoutput"angles 0 90;
+
+// red base walls
+a;ent_setname ja;ent_fire ja addoutput"origin 1484 -4928 1317";ent_fire ja addoutput"angles 90 -90;
+a;ent_setname jb;ent_fire jb addoutput"origin 1484 -4425 1317";ent_fire jb addoutput"angles 90 90;
+a;ent_setname jc;ent_fire jc addoutput"origin 1656 -4754 1317";ent_fire jc addoutput"angles 90;
+a;ent_setname jd;ent_fire jd addoutput"origin 1312 -4754 1317";ent_fire jd addoutput"angles 90 180;
+a;ent_setname je;ent_fire je addoutput"origin 1484 -4745 1490;
+a;ent_setname jf;ent_fire jf addoutput"origin 1484 -4610 1490;
+
+//blu base walls
+a;ent_setname ka;ent_fire ka addoutput"origin 1546 -2736 1600";ent_fire ka addoutput"angles 90 -90;
+a;ent_setname kb;ent_fire kb addoutput"origin 1720 -2562 1600";ent_fire kb addoutput"angles 90;
+a;ent_setname kc;ent_fire kc addoutput"origin 1546 -2388 1600";ent_fire kc addoutput"angles 90 90;
+a;ent_setname kd;ent_fire kd addoutput"origin 1386 -2388 1600";ent_fire kd addoutput"angles 90 90;
+a;ent_setname ke;ent_fire ke addoutput"origin 1215 -2562 1600";ent_fire ke addoutput"angles 90 180;
+a;ent_setname kf;ent_fire kf addoutput"origin 1374 -2562 1775;
+a;ent_setname kg;ent_fire kg addoutput"origin 1560 -2562 1775;
+
+ent_fire j* color 255
+ent_fire k* color 0+0+255
+
+test_wait .05;b;ent_setname ad;test_wait .05;ent_fire ad addoutput"origin 3500 -3900 1278";ent_fire ad addoutput"angles 59 90;
+test_wait .05;b;ent_setname ae;test_wait .05;ent_fire ae addoutput"origin 1735 -2048 1519;
+test_wait .05;b;ent_setname af;test_wait .05;ent_fire af addoutput"origin 2144 -1567 1528";ent_fire af addoutput"angles 90 90 180;
+test_wait .05;b;ent_setname ag;test_wait .05;ent_fire ag addoutput"origin 3170 -1830 1310;
+test_wait .05;b;ent_setname ah;test_wait .05;ent_fire ah addoutput"origin 2234 -1567 1528";ent_fire ah addoutput"angles 90 90 180;
+test_wait .05;b;ent_setname a0;test_wait .05;ent_fire a0 addoutput"origin 2234 -1391 1353";ent_fire a0 addoutput"angles 45 -90;
+
+test_wait .05;c;ent_setname ai;test_wait .05;ent_fire ai addoutput"origin 4284 -1920 1439.3";ent_fire ai addoutput"angles 0 180;
+test_wait .05;c;ent_setname ak;test_wait .05;ent_fire ak addoutput"origin 3906 -4522 1284";ent_fire ak addoutput"angles 0 180;
+test_wait .05;d;ent_setname al;test_wait .05;ent_fire al addoutput"origin 3361 -3085 1408;
+
+//red spawn portals
+test_wait .05;r;ent_setname da;test_wait .05;ent_fire da addoutput"origin 1648 -4584 1273";ent_fire da addoutput"angles 0 0 -90;
+test_wait .05;r;ent_setname db;test_wait .05;ent_fire db addoutput"origin 1648 -4584 1353";ent_fire db addoutput"angles 0 0 -90;
+test_wait .05;r;ent_setname dc;test_wait .05;ent_fire dc addoutput"origin 1648 -4584 1433";ent_fire dc addoutput"angles 0 0 -90;
+test_wait .05;r;ent_setname dd;test_wait .05;ent_fire dd addoutput"origin 1320 -4584 1273";ent_fire dd addoutput"angles 0 0 -90;
+test_wait .05;r;ent_setname de;test_wait .05;ent_fire de addoutput"origin 1320 -4584 1353";ent_fire de addoutput"angles 0 0 -90;
+test_wait .05;r;ent_setname df;test_wait .05;ent_fire df addoutput"origin 1320 -4584 1433";ent_fire df addoutput"angles 0 0 -90;
+
+//blu spawn portals
+test_wait .05;r2;ent_setname dg;test_wait .05;ent_fire dg addoutput"origin 1375 -2728 1717";ent_fire dg addoutput"angles 0 90 -90;
+test_wait .05;r2;ent_setname dh;test_wait .05;ent_fire dh addoutput"origin 1375 -2728 1637";ent_fire dh addoutput"angles 0 90 -90;
+test_wait .05;r2;ent_setname di;test_wait .05;ent_fire di addoutput"origin 1375 -2728 1557";ent_fire di addoutput"angles 0 90 -90;
+
+ent_fire d* disablecollision
+test_wait .05;s;ent_setname ya;test_wait .05;ent_fire ya addoutput"origin 1235 -2562 1536;
+test_wait .05;s;ent_setname yb;test_wait .05;ent_fire yb addoutput"origin 1484 -4444 1284.4";ent_fire yb addoutput"angles 0 -90;
+
+d;ent_setname am;test_wait .05;ent_fire am addoutput"origin 3361 -3038 1408;
+d;ent_setname an;test_wait .05;ent_fire an addoutput"origin 3361 -3135 1408;
+d;ent_setname ao;test_wait .05;ent_fire ao addoutput"origin 3361 -3185 1408;
+d;ent_setname ap;test_wait .05;ent_fire ap addoutput"origin 3361 -3085 1450.1;
+d;ent_setname aq;test_wait .05;ent_fire aq addoutput"origin 3361 -3135 1450.1;
+d;ent_setname a2;test_wait .05;ent_fire a2 addoutput"origin 2052 -1503 1600;
+d;ent_setname a3;test_wait .05;ent_fire a3 addoutput"origin 2052 -1503 1642;
+
+test_wait .05;e;ent_setname as;test_wait .05;ent_fire as addoutput"origin 1905 -3370 1265";ent_fire as skin 1;
+test_wait .05;e;ent_setname at;test_wait .05;ent_fire at addoutput"origin 1485 -3370 1536";ent_fire at skin 2;
+test_wait .05;f;ent_setname au;test_wait .05;ent_fire au addoutput"origin 1810 -4050 1360";ent_fire au addoutput"angles 0 180";ent_fire au disablecollision;
+test_wait .05;f;ent_setname av;test_wait .05;ent_fire av addoutput"origin 1793 -1747 1630";ent_fire av addoutput"angles 0 0 180";ent_fire av disablecollision;
+test_wait .05;f;ent_setname aw;test_wait .05;ent_fire aw addoutput"origin 1152 -2981 1630";ent_fire aw addoutput"angles 0 0 180";ent_fire aw disablecollision;
+test_wait .05;prop_dynamic_create props_mining\billboard002;ent_setname ax;test_wait .05;ent_fire ax addoutput"origin 4470 -3000 1786";ent_fire ax addoutput"angles 0 180;
+test_wait .05;g;ent_setname ay;test_wait .05;ent_fire ay addoutput"origin 2802 -1372 1409.7";ent_fire ay addoutput"angles 0 -30;
+test_wait .05;g;ent_setname az;test_wait .05;ent_fire az addoutput"origin 2762 -4830 1298.2";ent_fire az addoutput"angles 0 30 -4;
+
+h;ent_fire func_capturezone addoutput"hammerid 1";test_wait .05;ent_keyvalue 1 classname fc1 origin"1905 -3370 1295"mins"-100 -100 -30"maxs"100 100 100"solid"2";ent_fire fc1 setteam 2;
+h;ent_fire func_capturezone addoutput"hammerid 2";test_wait .05;ent_keyvalue 2 classname fc2 origin"1485 -3370 1566"mins"-100 -100 -30"maxs"100 100 100"solid"2";ent_fire fc2 setteam 3;
+i;ent_fire item_teamflag addoutput"hammerid 3";test_wait .05;ent_keyvalue 3 classname rf origin"1905 -3370 1300"oncapture"rf,addoutput,origin 1905 -3370 1300"OnReturn"rf,addoutput,origin 1905 -3370 1300"oncapture"mc1,add,1";ent_fire rf setteam 2;
+i;ent_fire item_teamflag addoutput"hammerid 4";test_wait .05;ent_keyvalue 4 classname bf origin"1485 -3370 1571"oncapture"bf,addoutput,origin 1485 -3370 1571"OnReturn"bf,addoutput,origin 1485 -3370 1571"oncapture"mc2,add,1";ent_fire bf setteam 3;
+
+// hotfix wrong intel skin for blu team
+ent_fire rf addoutput "skin 0";test_wait .05;ent_fire rf turnoff;test_wait .05;ent_fire rf turnon
+test_wait .05
+ent_fire bf addoutput "skin 1";test_wait .05;ent_fire bf turnoff;test_wait .05;ent_fire bf turnon
+test_wait .05
+
+j;ent_fire item_healthkit_medium addoutput"hammerid 5";test_wait .05;ent_keyvalue 5 classname hp1 origin"2590 -2142 1408"OnPlayerTouch"hp1,addoutput,origin 2590 -2142 1408,30;
+j;ent_fire item_healthkit_medium addoutput"hammerid 6";test_wait .05;ent_keyvalue 6 classname hp2 origin"4332 -1914 1442"OnPlayerTouch"hp2,addoutput,origin 4332 -1914 1442,30;
+j;ent_fire item_healthkit_medium addoutput"hammerid 7";test_wait .05;ent_keyvalue 7 classname hp3 origin"2906 -3648 1280"OnPlayerTouch"hp3,addoutput,origin 2906 -3648 1280,30;
+j;ent_fire item_healthkit_medium addoutput"hammerid 8";test_wait .05;ent_keyvalue 8 classname hp4 origin"3959 -4537 1285"OnPlayerTouch"hp4,addoutput,origin 3959 -4537 1285,30;
+k;ent_fire item_ammopack_medium addoutput"hammerid 9";test_wait .05;ent_keyvalue 9 classname ap1 origin"1782 -2050 1536"OnPlayerTouch"ap1,addoutput,origin 1782 -2050 1536,30;
+k;ent_fire item_ammopack_medium addoutput"hammerid 10";test_wait .05;ent_keyvalue 10 classname ap2 origin"3862 -2708 1408"OnPlayerTouch"ap2,addoutput,origin 3862 -2708 1408,30;
+k;ent_fire item_ammopack_medium addoutput"hammerid 11";test_wait .05;ent_keyvalue 11 classname ap3 origin"3225 -3103 1412"OnPlayerTouch"ap3,addoutput,origin 3225 -3103 1412,30;
+k;ent_fire item_ammopack_medium addoutput"hammerid 12";test_wait .05;ent_keyvalue 12 classname ap4 origin"2636 -4914 1297"OnPlayerTouch"ap4,addoutput,origin 2636 -4914 1297,30;
+
+l;ent_fire game_text addoutput"hammerid 13";test_wait .05;ent_keyvalue 13 classname msg1 message"Capture The Flag"channel"1"origin"0"x"-1"y".04"holdtime"4"color"255 255 255"spawnflags"1;
+l;ent_fire game_text addoutput"hammerid 14";test_wait .05;ent_keyvalue 14 classname msg2 channel"2"origin"0"x"0.47"y".07"holdtime"4"color"0 0 255"spawnflags"1;
+l;ent_fire game_text addoutput"hammerid 15";test_wait .05;ent_keyvalue 15 classname msg3 channel"3"origin"0"x"0.53"y".07"holdtime"4"color"255"spawnflags"1;
+
+m;ent_fire math_counter addoutput"hammerid 16";test_wait .05;ent_keyvalue 16 classname mc1 outvalue"lo1,invalue;
+m;ent_fire math_counter addoutput"hammerid 17";test_wait .05;ent_keyvalue 17 classname mc2 outvalue"lo2,invalue;
+
+n;ent_fire logic_case addoutput"hammerid 18";test_wait .05;ent_keyvalue 18 classname lo1 case01"1"case02"2"case03"3"case04"4"case05"5"case06"6"oncase01"msg2,addoutput,message 1"oncase02"msg2,addoutput,message 2"oncase03"msg2,addoutput,message 3"oncase04"msg2,addoutput,message 4"oncase05"msg2,addoutput,message 5"oncase06"msg2,addoutput,message 6;
+ent_keyvalue 18 oncase06"winb,roundwin,1;
+n;ent_fire logic_case addoutput"hammerid 19";test_wait .05;ent_keyvalue 19 classname lo2 case01"1"case02"2"case03"3"case04"4"case05"5"case06"6"oncase01"msg3,addoutput,message 1"oncase02"msg3,addoutput,message 2"oncase03"msg3,addoutput,message 3"oncase04"msg3,addoutput,message 4"oncase05"msg3,addoutput,message 5"oncase06"msg3,addoutput,message 6;
+ent_keyvalue 19 oncase06"winr,roundwin,1;
+
+o;ent_fire info_player_teamspawn addoutput"hammerid 20";test_wait .05;ent_keyvalue 20 classname SP1 origin"1612 -4880 1324";
+o;ent_fire info_player_teamspawn addoutput"hammerid 21";test_wait .05;ent_keyvalue 21 classname SP1 origin"1542 -4880 1324";
+o;ent_fire info_player_teamspawn addoutput"hammerid 22";test_wait .05;ent_keyvalue 22 classname SP1 origin"1472 -4880 1324";
+o;ent_fire info_player_teamspawn addoutput"hammerid 23";test_wait .05;ent_keyvalue 23 classname SP1 origin"1402 -4880 1324";
+o;ent_fire info_player_teamspawn addoutput"hammerid 24";test_wait .05;ent_keyvalue 24 classname SP1 origin"1612 -4790 1324";
+o;ent_fire info_player_teamspawn addoutput"hammerid 25";test_wait .05;ent_keyvalue 25 classname SP1 origin"1542 -4790 1324";
+o;ent_fire info_player_teamspawn addoutput"hammerid 26";test_wait .05;ent_keyvalue 26 classname SP1 origin"1472 -4790 1324";
+o;ent_fire info_player_teamspawn addoutput"hammerid 27";test_wait .05;ent_keyvalue 27 classname SP1 origin"1402 -4790 1324";
+o;ent_fire info_player_teamspawn addoutput"hammerid 28";test_wait .05;ent_keyvalue 28 classname SP1 origin"1612 -4700 1304";
+o;ent_fire info_player_teamspawn addoutput"hammerid 29";test_wait .05;ent_keyvalue 29 classname SP1 origin"1542 -4700 1304";
+o;ent_fire info_player_teamspawn addoutput"hammerid 30";test_wait .05;ent_keyvalue 30 classname SP1 origin"1472 -4700 1304";
+o;ent_fire info_player_teamspawn addoutput"hammerid 31";test_wait .05;ent_keyvalue 31 classname SP1 origin"1402 -4700 1314";
+
+o;ent_fire info_player_teamspawn addoutput"hammerid 32";test_wait .05;ent_keyvalue 32 classname SP2 origin"1460 -2650 1550";
+o;ent_fire info_player_teamspawn addoutput"hammerid 33";test_wait .05;ent_keyvalue 33 classname SP2 origin"1460 -2550 1550";
+o;ent_fire info_player_teamspawn addoutput"hammerid 34";test_wait .05;ent_keyvalue 34 classname SP2 origin"1460 -2450 1550";
+o;ent_fire info_player_teamspawn addoutput"hammerid 35";test_wait .05;ent_keyvalue 35 classname SP2 origin"1530 -2650 1550";
+o;ent_fire info_player_teamspawn addoutput"hammerid 36";test_wait .05;ent_keyvalue 36 classname SP2 origin"1530 -2550 1550";
+o;ent_fire info_player_teamspawn addoutput"hammerid 37";test_wait .05;ent_keyvalue 37 classname SP2 origin"1530 -2450 1550";
+o;ent_fire info_player_teamspawn addoutput"hammerid 38";test_wait .05;ent_keyvalue 38 classname SP2 origin"1600 -2650 1550";
+o;ent_fire info_player_teamspawn addoutput"hammerid 39";test_wait .05;ent_keyvalue 39 classname SP2 origin"1600 -2550 1550";
+o;ent_fire info_player_teamspawn addoutput"hammerid 40";test_wait .05;ent_keyvalue 40 classname SP2 origin"1600 -2450 1550";
+o;ent_fire info_player_teamspawn addoutput"hammerid 41";test_wait .05;ent_keyvalue 41 classname SP2 origin"1670 -2650 1550";
+o;ent_fire info_player_teamspawn addoutput"hammerid 42";test_wait .05;ent_keyvalue 42 classname SP2 origin"1670 -2550 1550";
+o;ent_fire info_player_teamspawn addoutput"hammerid 43";test_wait .05;ent_keyvalue 43 classname SP2 origin"1670 -2450 1550";
+
+ent_fire SP1* setteam 2;ent_fire SP2* setteam 3;ent_fire SP1* addoutput"angles 0 90";ent_fire SP2* addoutput"angles 0 180;
+
+p;ent_fire func_respawnroom addoutput"hammerid 44";test_wait .05;ent_keyvalue 44 classname frr origin"1476 -4593 1255"maxs"178 160 220"mins"-160 -325"setteam"2"solid"2;
+p;ent_fire func_respawnroom addoutput"hammerid 45";test_wait .05;ent_keyvalue 45 classname frr origin"1452 -2563 1520"maxs"260 170 250"mins"-230 -170"setteam"3"solid"2;
+
+ent_fire frr addoutput "classname func_respawnroom";
+q;ent_fire game_round_win addoutput "classname winr";ent_fire winr setteam 2;
+test_wait .05;
+q;ent_fire game_round_win addoutput "classname winb";ent_fire winb setteam 3;
+ent_fire winr addoutput "force_map_reset 0";ent_fire winb addoutput "force_map_reset 0"
+
+give team_round_timer;ent_fire team_round_timer addoutput"hammerid 46";test_wait .05;ent_keyvalue 46 targetname"rest"classname"player"OnRoundStart"rf,addoutput,origin 1905 -3370 1300"OnRoundStart"bf,addoutput,origin 1485 -3370 1571"OnRoundStart"cred,display,,15;
+ent_keyvalue 46 OnRoundStart"msg2,addoutput,message 0"OnRoundStart"msg3,addoutput,message 0"OnRoundStart"mc*,setvalue,0"OnRoundStart"tf_gamerules,setblueteamrespawnwavetime,5"OnRoundStart"tf_gamerules,setredteamrespawnwavetime,5;
+give logic_timer;ent_fire logic_timer addoutput"hammerid 47";test_wait .05;ent_keyvalue 47 classname LT1 ontimer"msg*,display";ent_fire LT1 RefireTime 1;
+give game_text_tf;ent_fire game_text_tf addoutput"hammerid 48";test_wait .05;ent_keyvalue 48 classname cred message"CTF Prison script by Slow Slug"icon"voice_player;
+
+// enable anim on blu resupply locker
+give trigger_multiple
+test_wait .05
+ent_fire trigger_multiple addoutput "targetname tm1"
+ent_fire trigger_multiple addoutput "classname tm1"
+ent_fire tm1 addoutput "origin 1235 -2562 1536"
+ent_fire tm1 addoutput "maxs 80 80 130"
+ent_fire tm1 addoutput "mins -15 -80"
+ent_fire tm1 addoutput "solid 2"
+ent_fire tm1 addoutput "spawnflags 1"
+ent_fire tm1 addoutput "OnStartTouch ya,setanimation,open"
+ent_fire tm1 addoutput "OnEndTouch ya,setanimation,close,.2"
+test_wait .05
+
+// enable anim on red resupply locker
+give trigger_multiple
+test_wait .05
+ent_fire trigger_multiple addoutput "targetname tm2"
+ent_fire trigger_multiple addoutput "classname tm2"
+ent_fire tm2 addoutput "origin 1484 -4444 1284.4"
+ent_fire tm2 addoutput "maxs 80 80 130"
+ent_fire tm2 addoutput "mins -15 -80"
+ent_fire tm2 addoutput "angles 0 -90"
+ent_fire tm2 addoutput "solid 2"
+ent_fire tm2 addoutput "spawnflags 1"
+ent_fire tm2 addoutput "OnStartTouch yb,setanimation,open"
+ent_fire tm2 addoutput "OnEndTouch yb,setanimation,close,.2"
+test_wait .05
+
+give func_regenerate
+test_wait .05
+ent_fire func_regenerate addoutput "targetname func_regen_red"
+ent_fire func_regenerate addoutput "classname func_regen_red"
+ent_fire func_regen_red addoutput "origin 1484 -4444 1284.4"
+ent_fire func_regen_red addoutput "solid 2"
+ent_fire func_regen_red addoutput "maxs 80 80 130"
+ent_fire func_regen_red addoutput "mins -15 -80"
+ent_fire func_regen_red addoutput "associatedmodel yb"
+ent_fire func_regen_red addoutput "TeamNum 2"
+ent_fire func_regen_red addoutput "StartDisabled 0"
+ent_fire func_regen_red setteam 2
+test_wait .05
+
+give func_regenerate
+test_wait .05
+ent_fire func_regenerate addoutput "targetname func_regen_blue"
+ent_fire func_regenerate addoutput "classname func_regen_blue"
+ent_fire func_regen_blue addoutput "origin 1235 -2562 1536"
+ent_fire func_regen_blue addoutput "solid 2"
+ent_fire func_regen_blue addoutput "maxs 80 80 130"
+ent_fire func_regen_blue addoutput "mins -15 -80"
+ent_fire func_regen_blue addoutput "associatedmodel ya"
+ent_fire func_regen_blue addoutput "TeamNum 3"
+ent_fire func_regen_blue addoutput "StartDisabled 0"
+ent_fire func_regen_blue setteam 3
+test_wait .05
+
+// brighten blu arrow outside blu spawn
+ent_remove_all info_lighting
+give trigger_multiple
+test_wait .05
+ent_fire trigger_multiple addoutput "targetname info_lighting"
+ent_fire trigger_multiple addoutput "classname info_lighting"
+ent_fire info_lighting addoutput "origin 1858 -3472 1565"
+test_wait .05
+ent_fire aw setlightingorigin "info_lighting"
+test_wait .05
+
+// brighten platforms under red cp
+ent_fire aa setlightingorigin "info_lighting"
+ent_fire ab setlightingorigin "info_lighting"
+test_wait .05
+
+// brighten red intel
+ent_fire rf setlightingorigin "info_lighting"
+test_wait .05
+
+// brighten red base & remove shadows
+ent_fire ja setlightingorigin "info_lighting";ent_fire ja disableshadow
+ent_fire jb setlightingorigin "info_lighting";ent_fire jb disableshadow
+ent_fire jc setlightingorigin "info_lighting";ent_fire jc disableshadow
+ent_fire jd setlightingorigin "info_lighting";ent_fire jd disableshadow
+ent_fire je setlightingorigin "info_lighting";ent_fire je disableshadow
+ent_fire jf setlightingorigin "info_lighting";ent_fire jf disableshadow
+ent_fire da setlightingorigin "info_lighting";ent_fire da disableshadow
+ent_fire db setlightingorigin "info_lighting";ent_fire db disableshadow
+ent_fire dc setlightingorigin "info_lighting";ent_fire dc disableshadow
+ent_fire dd setlightingorigin "info_lighting";ent_fire dd disableshadow
+ent_fire de setlightingorigin "info_lighting";ent_fire de disableshadow
+ent_fire df setlightingorigin "info_lighting";ent_fire df disableshadow
+test_wait .05
+
+// remove blu base shadows
+ent_fire ka disableshadow
+ent_fire kb disableshadow
+ent_fire kc disableshadow
+ent_fire kd disableshadow
+ent_fire ke disableshadow
+ent_fire kf disableshadow
+ent_fire kg disableshadow
+ent_fire dg disableshadow
+ent_fire dh disableshadow
+ent_fire di disableshadow
+test_wait .05
+
+// block clip ledge around blu intel so you cant jump over the wall
+give func_wall
+test_wait .05
+ent_fire func_wall addoutput "targetname cliphotfix1"
+ent_fire func_wall addoutput "classname cliphotfix1"
+ent_fire cliphotfix1 addoutput "origin 1724 -3344 1968"
+ent_fire cliphotfix1 addoutput "maxs 380 240 48"
+ent_fire cliphotfix1 addoutput "mins -380 -240 -48"
+ent_fire cliphotfix1 addoutput "solid 2"
+test_wait .05
+give func_wall
+test_wait .05
+ent_fire func_wall addoutput "targetname cliphotfix2"
+ent_fire func_wall addoutput "classname cliphotfix2"
+ent_fire cliphotfix2 addoutput "origin 1648 -3088 1968"
+ent_fire cliphotfix2 addoutput "maxs 19.5 20 48"
+ent_fire cliphotfix2 addoutput "mins -19.5 -20 -48"
+ent_fire cliphotfix2 addoutput "solid 2"
+test_wait .05
+
+ent_fire tf_gamerules setblueteamgoalstring "Grab the Intelligence Briefcase from the enemy base. Return to your base 6 times to win!"
+ent_fire tf_gamerules setredteamgoalstring "Grab the Intelligence Briefcase from the enemy base. Return to your base 6 times to win!"
+test_wait .05
+
+u;ent_fire func_respawnroomvisualizer addoutput"hammerid 51";test_wait .05;ent_keyvalue 51 classname rra origin"1652 -4512 1280"solid"2"maxs"10 70 205"mins"-340 -70
+u;ent_fire func_respawnroomvisualizer addoutput"hammerid 52";test_wait .05;ent_keyvalue 52 classname rrb origin"1300 -2724 1536"solid"2"maxs "72 10 205"mins"-72 -10
+ent_fire rra setteam 2
+ent_fire rrb setteam 3
+v;ent_fire func_wall addoutput"hammerid 53";test_wait .05;ent_keyvalue 53 classname w origin"3270 -1847 1408"maxs"85 80 80"mins"-90 -90"solid"2
+v;ent_fire func_wall addoutput"hammerid 54";test_wait .05;ent_keyvalue 54 classname w origin"1237 -2405 1775"maxs"85 300 1"mins"-90 -90"solid"2
+v;ent_fire func_wall addoutput"hammerid 55";test_wait .05;ent_keyvalue 55 classname w origin"2791 -3107 2012"maxs"5000 5000 1"mins"-5000 -5000"solid"2
+ent_fire SP* addoutput "classname info_player_teamspawn"
+mp_restartround 1
+///

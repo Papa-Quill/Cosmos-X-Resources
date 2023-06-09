@@ -1,0 +1,9 @@
+give point_clientcommand;ent_fire point_clientcommand addoutput"targetname pcc;
+give game_text;ent_fire game_text addoutput"hammerid 1";test_wait .1;ent_keyvalue 1 classname"msg0"message"Melee Only"channel"3"origin"0"x"-1"y".04"holdtime"3"color"255 255 255"spawnflags"1;
+give game_zone_player;ent_fire game_zone_player addoutput"hammerid 2";test_wait .1;
+ent_keyvalue 2 classname"area1"origin"0 0 0"maxs"100000 100000 100000"mins"-100000 -100000 -100000"spawnflags"1"solid"2"onplayerinzone"pcc,command,slot3"onplayerinzone"pcc,command,hud_fastswitch 1;
+give logic_timer;ent_fire logic_timer addoutput"hammerid 3";test_wait .1;
+ent_keyvalue 3 classname"LT"ontimer"area1,countplayersinzone"ontimer"msg0,display"ontimer"tf_weapon_fl*,kill"ontimer"tf_weapon_m*,kill"ontimer"tf_weapon_g*,kill"ontimer"tf_weapon_r*,kill"ontimer"tf_weapon_sc*,kill"ontimer"tf_weapon_shot*,kill;
+ent_keyvalue 3 ontimer"tf_weapon_sn*,kill"ontimer"tf_weapon_sy*,kill"ontimer"tf_weapon_p*,kill"ontimer"tf_weapon_sm*,kill"ontimer"obj*,kill"ontimer"tf_weapon_i*,kill"ontimer"tf_weapon_bu*,kill";test_wait .1;ent_fire LT RefireTime 2;
+give game_text_tf;ent_fire game_text_tf addoutput"hammerid 4";test_wait .1;ent_keyvalue 4 classname"g_1"message"Melee Only script by Slow Slug"origin"0"icon"voice_player";ent_fire g_1 display:5;
+///

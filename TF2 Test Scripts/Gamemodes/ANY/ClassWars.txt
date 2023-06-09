@@ -1,0 +1,67 @@
+ent_fire filter_activator_tfteam kill;ent_fire team_round_timer kill;ent_fire logic_relay kill;ent_fire logic_case kill
+alias a "give filter_activator_tfteam";
+test_wait .1;
+give game_text;ent_fire game_text addoutput"hammerid 181";
+test_wait .1;
+ent_keyvalue 181 targetname gt_cw classname player message"Class Wars"color"255 255 255"y".08"x".46"channel"1"holdtime"99999"spawnflags"1";
+test_wait .1;
+give game_text;ent_fire game_text addoutput"hammerid 182";
+test_wait .1;
+ent_keyvalue 182 targetname gt_red classname player message"Temp Red"color"255 0 0"y".12"x".37"channel"2"holdtime"99999"spawnflags"1";
+test_wait .1;
+give game_text;ent_fire game_text addoutput"hammerid 183";
+test_wait .1;
+ent_keyvalue 183 targetname gt_blue classname player message"Temp blue"color"0 0 255"y".12"x".55"channel"3"holdtime"99999"spawnflags"1";
+give logic_case;ent_fire logic_case addoutput"hammerid 184";test_wait .1;ent_keyvalue 184 targetname lc1 classname player case01"1"case02"2"case03"3"case04"4"case05"5"case06"6"case07"7"case08"8"case09"9"
+ent_keyvalue 184 oncase01"gt_red,addoutput,message Scout"oncase01"filred1,addoutput,targetname currentred"oncase02"gt_red,addoutput,message Soldier"oncase02"filred2,addoutput,targetname currentred";
+ent_keyvalue 184 oncase03"gt_red,addoutput,message Pyro"oncase03"filred3,addoutput,targetname currentred"oncase04"gt_red,addoutput,message Demoman"oncase04"filred4,addoutput,targetname currentred";
+ent_keyvalue 184 oncase05"gt_red,addoutput,message Heavy"oncase05"filred5,addoutput,targetname currentred"oncase06"gt_red,addoutput,message Engineer"oncase06"filred6,addoutput,targetname currentred";
+ent_keyvalue 184 oncase07"gt_red,addoutput,message Medic"oncase07"filred7,addoutput,targetname currentred"oncase08"gt_red,addoutput,message Sniper"oncase08"filred8,addoutput,targetname currentred"oncase09"gt_red,addoutput,message Spy"oncase09"filred9,addoutput,targetname currentred";
+give logic_case;ent_fire logic_case addoutput"hammerid 185";test_wait .1;ent_keyvalue 185 targetname lc2 classname player case01"1"case02"2"case03"3"case04"4"case05"5"case06"6"case07"7"case08"8"case09"9";
+ent_keyvalue 185 oncase01"gt_blue,addoutput,message Scout"oncase01"filblue1,addoutput,targetname currentblue"oncase02"gt_blue,addoutput,message Soldier"oncase02"filblue2,addoutput,targetname currentblue";
+ent_keyvalue 185 oncase03"gt_blue,addoutput,message Pyro"oncase03"filblue3,addoutput,targetname currentblue"oncase04"gt_blue,addoutput,message Demoman"oncase04"filblue4,addoutput,targetname currentblue";
+ent_keyvalue 185 oncase05"gt_blue,addoutput,message Heavy"oncase05"filblue5,addoutput,targetname currentblue"oncase06"gt_blue,addoutput,message Engineer"oncase06"filblue6,addoutput,targetname currentblue";
+ent_keyvalue 185 oncase07"gt_blue,addoutput,message Medic"oncase07"filblue7,addoutput,targetname currentblue"oncase08"gt_blue,addoutput,message Sniper"oncase08"filblue8,addoutput,targetname currentblue"oncase09"gt_blue,addoutput,message Spy"oncase09"filblue9,addoutput,targetname currentblue";
+a;ent_fire filter_activator_tfteam addoutput"hammerid 186";test_wait .1;ent_keyvalue 186 targetname filred1 classname player OnPass"pcc,command,join_class scout;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 187";test_wait .1;ent_keyvalue 187 targetname filred2 classname player OnPass"pcc,command,join_class soldier;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 188";test_wait .1;ent_keyvalue 188 targetname filred3 classname player OnPass"pcc,command,join_class pyro;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 189";test_wait .1;ent_keyvalue 189 targetname filred4 classname player OnPass"pcc,command,join_class demoman;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 190";test_wait .1;ent_keyvalue 190 targetname filred5 classname player OnPass"pcc,command,join_class heavyweapons;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 191";test_wait .1;ent_keyvalue 191 targetname filred6 classname player OnPass"pcc,command,join_class engineer;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 192";test_wait .1;ent_keyvalue 192 targetname filred7 classname player OnPass"pcc,command,join_class medic;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 193";test_wait .1;ent_keyvalue 193 targetname filred8 classname player OnPass"pcc,command,join_class sniper;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 194";test_wait .1;ent_keyvalue 194 targetname filred9 classname player OnPass"pcc,command,join_class spy;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 195";test_wait .1;ent_keyvalue 195 targetname filblue1 classname player OnPass"pcc,command,join_class scout;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 196";test_wait .1;ent_keyvalue 196 targetname filblue2 classname player OnPass"pcc,command,join_class soldier;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 197";test_wait .1;ent_keyvalue 197 targetname filblue3 classname player OnPass"pcc,command,join_class pyro;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 198";test_wait .1;ent_keyvalue 198 targetname filblue4 classname player OnPass"pcc,command,join_class demoman;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 199";test_wait .1;ent_keyvalue 199 targetname filblue5 classname player OnPass"pcc,command,join_class heavyweapons;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 200";test_wait .1;ent_keyvalue 200 targetname filblue6 classname player OnPass"pcc,command,join_class engineer;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 201";test_wait .1;ent_keyvalue 201 targetname filblue7 classname player OnPass"pcc,command,join_class medic;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 202";test_wait .1;ent_keyvalue 202 targetname filblue8 classname player OnPass"pcc,command,join_class sniper;
+a;ent_fire filter_activator_tfteam addoutput"hammerid 203";test_wait .1;ent_keyvalue 203 targetname filblue9 classname player OnPass"pcc,command,join_class spy;
+test_wait .1;
+ent_fire filblue* setteam 3;ent_fire filred* setteam 2
+test_wait .1;
+ent_create logic_relay;ent_fire logic_relay addoutput"hammerid 204";
+test_wait .1;
+ent_keyvalue 204 targetname lr1 classname player ontrigger"psc,command,ent_keyvalue 186 targetname filred1"ontrigger"psc,command,ent_keyvalue 187 targetname filred2"ontrigger"psc,command,ent_keyvalue 188 targetname filred3"ontrigger"psc,command,ent_keyvalue 189 targetname filred4";
+ent_keyvalue 204 ontrigger"psc,command,ent_keyvalue 190 targetname filred5"ontrigger"psc,command,ent_keyvalue 191 targetname filred6"ontrigger"psc,command,ent_keyvalue 192 targetname filred7"ontrigger"psc,command,ent_keyvalue 193 targetname filred8"ontrigger"psc,command,ent_keyvalue 194 targetname filred9";
+ent_keyvalue 204 ontrigger"psc,command,ent_keyvalue 195 targetname filblue1"ontrigger"psc,command,ent_keyvalue 196 targetname filblue2"ontrigger"psc,command,ent_keyvalue 197 targetname filblue3"ontrigger"psc,command,ent_keyvalue 198 targetname filblue4";
+ent_keyvalue 204 ontrigger"psc,command,ent_keyvalue 199 targetname filblue5"ontrigger"psc,command,ent_keyvalue 200 targetname filblue6"ontrigger"psc,command,ent_keyvalue 201 targetname filblue7"ontrigger"psc,command,ent_keyvalue 202 targetname filblue8"ontrigger"psc,command,ent_keyvalue 203 targetname filblue9";
+test_wait .1;
+give team_round_timer;ent_fire team_round_timer addoutput"hammerid 205";test_wait .1;ent_keyvalue 205 classname player targetname trt1 OnRoundStart"lr1,trigger,,.1"OnRoundStart"lc*,pickrandom,,.2"OnRoundStart"credits,display,,7"
+test_wait .1;
+give game_text_tf;ent_fire game_text_tf addoutput"hammerid 206";test_wait .1;ent_keyvalue 206 targetname credits classname player icon"voice_player"message"Class Wars Created by Fangthe1st"
+test_wait .1;
+ent_create point_clientcommand;ent_fire point_clientcommand addoutput"targetname pcc";test_wait .1;ent_fire pcc addoutput"classname player"
+ent_create point_servercommand;ent_fire point_servercommand addoutput"targetname psc";test_wait .1;ent_fire psc addoutput"classname player"
+give game_zone_player;ent_fire game_zone_player addoutput"hammerid 207";test_wait .1;ent_keyvalue 207 targetname zon1 classname player onplayeroutzone"currentred,testactivator"onplayeroutzone"currentblue,testactivator";
+give logic_timer;ent_fire logic_timer addoutput"hammerid 208";test_wait .1;ent_keyvalue 208 targetname LT1 classname player ontimer"gt*,display"ontimer"zon1,CountPlayersInZone";ent_fire LT1 RefireTime 7;
+test_wait .1;
+ent_fire tf_gamerules setblueteamrespawnwavetime 3;
+ent_fire tf_gamerules setredteamrespawnwavetime 3;
+ent_fire fatd addoutput"classname filter_activator_tfteam";ent_fire trtd addoutput"classname team_round_timer";
+test_wait .1;
+mp_restartgame 1
+///

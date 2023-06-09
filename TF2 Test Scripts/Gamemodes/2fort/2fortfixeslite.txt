@@ -1,0 +1,25 @@
+sv_cheats 1;noclip;picker;cl_showpos 1
+alias lad2 "prop_dynamic_create props_2fort\ladder001"
+
+// Quill's Fixes (Revised by Fangthe1st)
+// Blue spawn entrance gap
+ent_keyvalue 4433902 origin"-924 -1440 316"
+// Blue spawn open trigger position
+ent_keyvalue 3828473 origin"-1570 -1440 320"
+// Blue spawn func_door position fix
+ent_keyvalue 3828413 OnFullyClosed"door_blue1_1_right,addoutput,origin -1534.5 -1465 320"
+ent_keyvalue 3828429 OnFullyClosed"door_blue1_1_left,addoutput,origin -1534.5 -1415 320"
+
+// Ladders
+setpos -2406.8 -3703.2 680;setang 90 90;test_wait .04
+lad2;test_wait .04;
+ent_setname redladder1;ent_fire redladder1 addoutput "origin -480 436 -266";ent_fire redladder1 addoutput"angles -2 -90";test_wait .04
+lad2;test_wait .04;
+ent_setname redladder2;ent_fire redladder2 addoutput "origin -480 440.47 -138.1";ent_fire redladder2 addoutput"angles -2 -90";test_wait .04
+
+lad2;test_wait .04;
+ent_setname blueladder1;ent_fire blueladder1 addoutput "origin 480 -436 -266";ent_fire blueladder1 addoutput"angles -2 90";test_wait .04
+lad2;test_wait .04;
+ent_setname blueladder2;ent_fire blueladder2 addoutput "origin 480 -440.47 -138.1";ent_fire blueladder2 addoutput"angles -2 90";
+picker;cl_showpos 0
+///

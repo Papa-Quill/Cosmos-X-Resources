@@ -1,0 +1,3 @@
+noclip;setpos -2250 -3360 825;setang 90 90 0;test_wait .02;
+prop_dynamic_create props_skybox/sunnoon;test_wait .02;ent_setname sun2;test_wait .02;ent_fire sun2 color 255+220+180;ent_fire sun2 addoutput "origin -3636 -715 1109";ent_fire sun2 addoutput "angles 48 130 0";test_wait .02;
+say "2nd Sun Complete"

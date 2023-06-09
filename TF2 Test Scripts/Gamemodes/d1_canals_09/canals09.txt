@@ -1,0 +1,119 @@
+//CTF - d1_canals_09
+alias a"prop_dynamic_create props_trainyard/crane_platform001;
+alias b"prop_dynamic_create props_mining/support_wall001a;
+alias c"prop_dynamic_create props_wasteland/rockgranite04a;
+alias d"give func_respawnroomvisualizer;
+alias e"prop_dynamic_create props_gameplay/resupply_locker;
+alias f"give trigger_multiple;
+alias g"prop_dynamic_create props_spytech/work_table001;
+alias h"ent_create item_teamflag;
+alias i"give func_capturezone;
+alias j"give game_text;
+alias k"give math_counter;
+alias l"give logic_case;
+alias m"give game_round_win;
+alias n"give logic_relay;
+alias o"give info_player_teamspawn;
+ent_fire logic_relay kill;ent_fire trigger_multiple kill;
+give point_clientcommand;ent_fire point_clientcommand addoutput"classname pcc;
+give point_servercommand;ent_fire point_servercommand addoutput"classname psc;
+noclip;setpos -863 1949 1536;setang 90 90;
+Test_Wait .2;
+a;ent_setname rp1;ent_fire rp1 addoutput"origin 128 6976 -64";ent_fire rp1 addoutput"angles 90;
+a;ent_setname rp2;ent_fire rp2 addoutput"origin -52 6976 -64";ent_fire rp2 addoutput"angles 90 90;
+a;ent_setname rp3;ent_fire rp3 addoutput"origin -256 6976 -64";ent_fire rp3 addoutput"angles 90 90;
+a;ent_setname rp4;ent_fire rp4 addoutput"origin 128 6464 -64";ent_fire rp4 addoutput"angles 90;
+a;ent_setname rp5;ent_fire rp5 addoutput"origin 128 6336 -64";ent_fire rp5 addoutput"angles 90;
+a;ent_setname rp6;ent_fire rp6 addoutput"origin -50 6208 -64";ent_fire rp6 addoutput"angles 90 270;
+a;ent_setname rp7;ent_fire rp7 addoutput"origin -256 6208 -64";ent_fire rp7 addoutput"angles 90 -90;
+a;ent_setname rp8;ent_fire rp8 addoutput"origin -384 6336 -64";ent_fire rp8 addoutput"angles 90;
+a;ent_setname rp9;ent_fire rp9 addoutput"origin -384 6656 -64";ent_fire rp9 addoutput"angles 90;
+a;ent_setname rp10;ent_fire rp10 addoutput"origin -384 6848 -64";ent_fire rp10 addoutput"angles 90;
+a;ent_setname rr1;ent_fire rr1 addoutput"origin -36 6806 96;
+a;ent_setname rr2;ent_fire rr2 addoutput"origin -256 6806 96;
+a;ent_setname rr3;ent_fire rr3 addoutput"origin -36 6486 96";
+a;ent_setname rr4;ent_fire rr4 addoutput"origin -256 6486 96;
+a;ent_setname rr5;ent_fire rr5 addoutput"origin -256 6382 96;
+a;ent_setname rr6;ent_fire rr6 addoutput"origin -36 6382 96;
+test_wait .1;
+ent_fire rr* addoutput"angles 0;
+prop_dynamic_create props_gameplay/sewer_door01;ent_setname red_gate;ent_fire red_gate addoutput"origin 122 6714 46";ent_fire red_gate addoutput"angles 0 90 90;
+Test_Wait .1;
+b;ent_setname red_ramp1;ent_fire red_ramp1 addoutput"origin 644 6708 -270";ent_fire red_ramp1 addoutput"angles 130;
+Test_Wait .1;
+b;ent_setname red_ramp2;ent_fire red_ramp2 addoutput"origin 834 6708 -430";ent_fire red_ramp2 addoutput"angles 50 180 -180;
+Test_Wait .1;
+b;ent_setname red_ramp3;ent_fire red_ramp3 addoutput"origin 1532 6634 -220";ent_fire red_ramp3 addoutput"angles 50 0 -180;
+Test_Wait .1;
+b;ent_setname red_ramp4;ent_fire red_ramp4 addoutput"origin 1342 6634 -380";ent_fire red_ramp4 addoutput"angles 50 0 -180;
+Test_Wait .1;
+b;ent_setname blue_intel_platform;ent_fire blue_intel_platform addoutput"origin 12583 -1721 -439";ent_fire blue_intel_platform addoutput"angles 90 -90;
+Test_Wait .1;
+b;ent_setname blue_intel_platform2;ent_fire blue_intel_platform2 addoutput"origin 12474 -1721 -485";ent_fire blue_intel_platform2 addoutput"angles 45 0 90;
+Test_Wait .1;
+d;ent_fire func_respawnroomvisualizer addoutput"hammerid 30";test_wait .1;ent_keyvalue 30 targetname red_vis classname Rrv maxs"330 350 200"mins"-330 -350"origin"-50 6695 -192"solid"2;
+ent_fire red_vis setteam 2;
+Test_Wait .1;
+c;ent_setname bw1;ent_fire bw1 addoutput"origin 9833 -3055 -316
+Test_Wait .1;
+c;ent_setname bw2;ent_fire bw2 addoutput"origin 9613 -3055 -316
+Test_Wait .1;
+c;ent_setname bw3;ent_fire bw3 addoutput"origin 9833 -3055 -233
+Test_Wait .1;
+c;ent_setname bw4;ent_fire bw4 addoutput"origin 9613 -3055 -233
+Test_Wait .1;
+ent_fire bw* addoutput"angles 0;
+Test_Wait .1;
+g;ent_setname blue_table;ent_fire blue_table addoutput "origin 12572 -1845 -439";ent_fire blue_table addoutput"angles 0;
+g;ent_setname red_table;ent_fire red_table addoutput"origin 2009 6638 -198";ent_fire red_table addoutput"angles 0;
+d;ent_fire func_respawnroomvisualizer addoutput"hammerid 31";test_wait .1;ent_keyvalue 31 targetname blue_vis classname Rrv maxs"300 350 200"mins"-300 -350"origin"9721 -2592 -440"solid"2;
+ent_fire blue_vis setteam 3
+Test_Wait .1;
+e;ent_setname blue_cab;ent_fire blue_cab addoutput"origin 9727 -2932 -343";ent_fire blue_cab addoutput"angles 0 90;
+f;ent_fire trigger_multiple addoutput"hammerid 32";test_wait .1;ent_keyvalue 32 classname tm origin"9727 -2932 -343"OnStartTouch"blue_cab,setanimation,Open"OnEndTouchAll"blue_cab,setanimation,Close"spawnflags"1"solid"2;
+Test_Wait .1;
+e;ent_setname red_cab;ent_fire red_cab addoutput"origin 9 6236 -192";ent_fire red_cab addoutput"angles 0 90;
+f;ent_fire trigger_multiple addoutput"hammerid 33";test_wait .1;ent_keyvalue 33 targetname red_res classname tm origin"9 6236 -192"OnStartTouch"red_cab,setanimation,Open"OnEndTouchAll"red_cab,setanimation,Close"spawnflags"1"solid"2;
+Test_Wait .1;
+ent_fire tm addoutput"OnStartTouch pcc,command,impulse 101;
+ent_fire tm addoutput"maxs 30 50 90;
+ent_fire tm addoutput"mins -30 -50 -90;
+h;ent_fire item_teamflag addoutput"hammerid 34";test_wait .1;ent_keyvalue 34 classname blueflag origin"12567 -1850 -394"angles"0 300"OnCapture"blueflag,addoutput,origin 12567 -1850 -394"OnReturn"blueflag,addoutput,origin 12567 -1850 -394;
+ent_fire blueflag setteam 3;ent_fire blueflag skin 1
+i;ent_fire func_capturezone addoutput"hammerid 35";test_wait .1;ent_keyvalue 35 classname bluecapzone origin"12572 -1845 -439"OnCapture"blue_flag_count,add,1"maxs"60 80 100"mins"-60 -80"Solid"2;
+ent_fire bluecapzone setteam 3;
+h;ent_fire item_teamflag addoutput"hammerid 36";test_wait .1;ent_keyvalue 36 classname redflag origin"2002 6639 -153"angles"0 300"OnCapture"redflag,addoutput,origin 2002 6639 -153"OnReturn"redflag,addoutput,origin 2002 6639 -153;
+ent_fire redflag setteam 2
+i;ent_fire func_capturezone addoutput"hammerid 37";test_wait .1;ent_keyvalue 37 classname redcapzone origin"2009 6638 -198"OnCapture"red_flag_count,add,1"maxs"60 80 100"mins"-60 -80"Solid"2;
+ent_fire redcapzone setteam 2;
+o;ent_fire info_player_teamspawn addoutput"classname spawnblue";ent_fire spawnblue addoutput"origin 9711 -2818 -343";ent_fire spawnblue addoutput"angles 0 90";ent_fire spawnblue setteam 3;
+test_wait .1;
+o;ent_fire info_player_teamspawn addoutput"classname spawnred";ent_fire spawnred addoutput"origin -167 6454 -187";ent_fire spawnred setteam 2;
+test_wait .1;
+ent_fire spawn* addoutput"classname info_player_teamspawn;
+j;ent_fire game_text addoutput"hammerid 114";test_wait .1;ent_keyvalue 114 classname ctf_flag message"Capture the Flag"channel"1"holdtime"10"color"255 255 255"x"-1"y".14"spawnflags"1"
+give logic_timer;ent_fire logic_timer addoutput"hammerid 115";test_wait .1;ent_keyvalue 115 classname timer_ctf_text OnTimer"ctf_*,display;
+ent_fire timer_ctf_text refiretime 1;
+give team_round_timer;ent_fire team_round_timer addoutput"hammerid 116";test_wait .1;ent_keyvalue 116 OnRoundStart"credits,display,,5"OnRoundStart"blueflag,addoutput,origin 12567 -1850 -394"OnRoundStart"redflag,addoutput,origin 2002 6639 -153;
+ent_keyvalue 116 OnRoundStart"red_flag_count,setvalue,0"OnRoundStart"blue_flag_count,setvalue,0;
+Test_Wait .1;
+j;ent_fire game_text addoutput"hammerid 117";test_wait .1;ent_keyvalue 117 classname ctf_blue channel"3"holdtime"10"color"255 255 255"x".58"y".8"spawnflags"1;
+k;ent_fire math_counter addoutput"hammerid 118";test_wait .1;ent_keyvalue 118 classname blue_flag_count min"0"max"3"OutValue"lc_blue_flag_count,InValue"OnHitMax"lr_blue_win,Trigger;
+l;ent_fire logic_case addoutput"hammerid 119";test_wait .1;ent_keyvalue 119 classname lc_blue_flag_count Case01"0"Case02"1"Case03"2"Case04"3"OnCase01"ctf_blue,addoutput,message Blu Team (0)"OnCase02"ctf_blue,addoutput,message Blu Team (1);
+ent_keyvalue 119 OnCase03"ctf_blue,addoutput,message Blu Team (2)"OnCase04"ctf_blue,addoutput,message Blu Team (3);
+m;ent_fire game_round_win addoutput"classname win_blue";ent_fire win_blue setteam 3
+n;ent_fire logic_relay addoutput"classname lr_blue_win";ent_fire lr_blue_win addoutput"OnTrigger win_blue,RoundWin;
+j;ent_fire game_text addoutput"hammerid 120";test_wait .1;ent_keyvalue 120 classname ctf_red channel"2"holdtime"10"color"255 255 255"x".32"y".8"spawnflags"1;
+k;ent_fire math_counter addoutput"hammerid 121";test_wait .1;ent_keyvalue 121 classname red_flag_count min"0"max"3"OutValue"lc_red_flag_count,InValue"OnHitMax"lr_red_win,Trigger;
+l;ent_fire logic_case addoutput"hammerid 122";test_wait .1;ent_keyvalue 122 classname lc_red_flag_count Case01"0"Case02"1"Case03"2"Case04"3"OnCase01"ctf_red,addoutput,message Red Team (0)"OnCase02"ctf_red,addoutput,message Red Team (1);
+ent_keyvalue 122 OnCase03"ctf_red,addoutput,message Red Team (2)"OnCase04"ctf_red,addoutput,message Red Team (3)"
+m;ent_fire game_round_win addoutput"classname win_red";ent_fire win_red setteam 2;
+n;ent_fire logic_relay addoutput"classname lr_red_win";ent_fire lr_red_win addoutput"OnTrigger win_red,RoundWin;
+Test_Wait .1;
+ent_fire win_* addoutput"force_map_reset 0;
+ent_fire lr_* addoutput"OnTrigger psc,Command,mp_scrambleteams;
+ent_fire lr_* addoutput"OnTrigger psc,Command,mp_restartround 10,1.5;
+give game_text_tf;ent_fire game_text_tf addoutput"hammerid 123";test_wait .1;ent_keyvalue 123 classname credits message"CTF script by FrozenWasteland"icon"voice_player;
+Test_Wait .1;
+mp_restartround 1;
+///

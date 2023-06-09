@@ -1,0 +1,41 @@
+///
+ent_create game_text_tf
+ent_fire game_text_tf addoutput "targetname anti-cheat-tx"
+ent_fire anti-cheat-tx addoutput "classname anti-cheat-tx"
+ent_fire anti-cheat-tx addoutput "message Anti-Cheat Enabled!"
+ent_fire anti-cheat-tx addoutput "background 0"
+ent_fire anti-cheat-tx addoutput "display_to_team 0"
+ent_fire anti-cheat-tx addoutput "icon obj_status_icon_wrench"
+///
+ent_create point_clientcommand
+ent_create game_zone_player
+ent_fire game_zone_player addoutput"targetname txt_exec"
+ent_fire txt_exec addoutput"OnPlayerOutZone point_clientcommand,command,ent_fire anti-cheat-tx display"
+ent_fire txt_exec CountPlayersInZone
+ent_fire txt_exec kill:1
+///
+test_wait 4
+ent_fire anti-cheat-tx addoutput "message Anti-Cheat may cause scripts to break!"
+ent_fire anti-cheat-tx addoutput "icon ico_demolish"
+ent_create point_clientcommand
+ent_create game_zone_player
+ent_fire game_zone_player addoutput"targetname txt_exec"
+ent_fire txt_exec addoutput"OnPlayerOutZone point_clientcommand,command,ent_fire anti-cheat-tx display"
+ent_fire txt_exec CountPlayersInZone
+ent_fire txt_exec kill:1
+ent_fire anti-cheat-tx kill:1
+///
+ent_fire pc3 kill;ent_fire filter kill;ent_fire zone kill;
+ent_fire filter_activator_name addoutput"classname no;
+test_wait .1;
+give point_clientcommand;ent_fire point_clientcommand addoutput"targetname pc3;
+give game_zone_player;ent_fire game_zone_player addoutput"hammerid 60";test_wait .1;ent_keyvalue 60 classname zone Onplayeroutzone"filter,testactivator;
+give filter_activator_name;ent_fire filter_activator_name addoutput"hammerid 61";test_wait .1;ent_keyvalue 61 filtername me classname"filter"onfail"pc3,command,alias sv_cheats disconnect"onfail"pc3,command,alias noclip disconnect"onfail"pc3,command,alias ent_fire disconnect"onfail"pc3,command,alias ent_create disconnect"onfail"pc3,command,alias ent_setname disconnect"onfail"pc3,command,alias ent_remove disconnect"onfail"pc3,command,alias kick disconnect"onfail"pc3,command,alias ai_test_los quit"onfail"pc3,command,alias give quit;
+ent_fire !activator addoutput"targetname me;
+test_wait .1;
+ent_fire zone countplayersinzone;
+test_wait .1;
+give logic_timer;
+ent_fire logic_timer addoutput"ontimer zone,countplayersinzone;
+ent_fire logic_timer refiretime 10;
+///

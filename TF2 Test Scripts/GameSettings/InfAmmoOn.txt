@@ -1,0 +1,63 @@
+give game_text
+ent_fire game_text addoutput "targetname texty"
+ent_fire texty addoutput "classname texty"
+ent_fire texty addoutput "message [COSMOS] Enabled Infinite Ammo Regen!"
+ent_fire texty addoutput "x 0.02"
+ent_fire texty addoutput "y 0.6"
+ent_fire texty addoutput "effect 2"
+ent_fire texty addoutput "color 175 0 255"
+ent_fire texty addoutput "color2 210 0 255"
+ent_fire texty addoutput "fadein 0.05"
+ent_fire texty addoutput "fadeout 1"
+ent_fire texty addoutput "holdtime 3"
+ent_fire texty addoutput "fxtime 3"
+ent_fire texty addoutput "channel 6"
+ent_fire texty addoutput "spawnflags 1"
+ent_fire texty display
+ent_fire texty kill
+test_wait .1
+
+ent_remove_all entity_pcc_instant
+give point_clientcommand
+ent_fire point_clientcommand addoutput "targetname entity_pcc_instant"
+ent_fire entity_pcc_instant addoutput "classname entity_pcc_instant"
+test_wait .1
+give game_zone_player
+ent_fire game_zone_player addoutput "targetname test"
+ent_fire test addoutput "classname test"
+ent_fire test addoutput "spawnflags 64"
+ent_fire test addoutput "solid 2"
+ent_fire test addoutput "origin 0 0 0"
+ent_fire test addoutput "maxs 100000 100000 100000"
+ent_fire test addoutput "mins -100000 -100000 -100000"
+ent_fire test addoutput "OnPlayerInZone entity_pcc_instant,command,playgamesound Hud.Hint,0"
+ent_fire test CountPlayersInZone
+ent_fire test kill
+test_wait .1
+
+ent_remove_all entity_pcc_infammo
+give point_clientcommand
+ent_fire point_clientcommand addoutput "targetname entity_pcc_infammo"
+ent_fire entity_pcc_infammo addoutput "classname entity_pcc_infammo"
+test_wait .1
+give game_zone_player
+ent_fire game_zone_player addoutput "targetname zone_infammo"
+ent_fire zone_infammo addoutput "classname zone_infammo"
+ent_fire zone_infammo addoutput "spawnflags 64"
+ent_fire zone_infammo addoutput "solid 2"
+ent_fire zone_infammo addoutput "origin 0 0 0"
+ent_fire zone_infammo addoutput "maxs 100000 100000 100000"
+ent_fire zone_infammo addoutput "mins -100000 -100000 -100000"
+ent_fire zone_infammo addoutput "OnPlayerInZone entity_pcc_infammo,command,givecurrentammo,0"
+ent_fire zone_infammo CountPlayersInZone
+test_wait .1
+
+give logic_timer
+ent_fire logic_timer addoutput "targetname logic_timer_infammo"
+test_wait .1
+ent_fire logic_timer_infammo addoutput "classname logic_timer_infammo"
+ent_fire logic_timer_infammo addoutput "ontimer zone_infammo,CountPlayersInZone,,0"
+test_wait .1
+ent_fire logic_timer_infammo refiretime 10
+///
+

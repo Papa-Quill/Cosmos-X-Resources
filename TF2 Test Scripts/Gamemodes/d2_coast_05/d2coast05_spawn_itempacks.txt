@@ -1,0 +1,102 @@
+say Executing d2coast05_spawn_itempacks script ...
+
+ent_fire ammo_* kill
+ent_fire health_* kill
+ent_fire item_* kill
+test_wait .1
+
+// setpos is used due to ent_setname being used - do not move away from this position or look around!
+setpos 1072 1374 1765;setang 90 -90 0;noclip
+test_wait .5
+
+
+ent_create item_ammopack_small
+test_wait .1
+ent_setname ammo_small_1
+ent_fire ammo_small_1 addoutput "origin -3890 20 1090"
+ent_fire ammo_small_1 addoutput "OnPlayerTouch ammo_small_1,addoutput,origin -3890 20 1090,10"
+test_wait .1
+
+ent_create item_ammopack_small
+test_wait .1
+ent_setname ammo_small_2
+ent_fire ammo_small_2 addoutput "origin -4945 -12206 707"
+ent_fire ammo_small_2 addoutput "OnPlayerTouch ammo_small_2,addoutput,origin -4945 -12206 707,10"
+test_wait .1
+
+ent_create item_healthkit_small
+test_wait .1
+ent_setname health_small_1
+ent_fire health_small_1 addoutput "origin -3927 20 1090"
+ent_fire health_small_1 addoutput "OnPlayerTouch health_small_1,addoutput,origin -3927 20 1090,10"
+test_wait .1
+
+ent_create item_healthkit_small
+test_wait .1
+ent_setname health_small_2
+ent_fire health_small_2 addoutput "origin -4908 -12206 707"
+ent_fire health_small_2 addoutput "OnPlayerTouch health_small_2,addoutput,origin -4908 -12206 707,10"
+test_wait .1
+
+ent_create item_healthkit_medium
+test_wait .1
+ent_setname health_medium_1
+ent_fire health_medium_1 addoutput "origin -3840 -4103 1320"
+ent_fire health_medium_1 addoutput "OnPlayerTouch health_medium_1,addoutput,origin -3840 -4103 1320,10"
+test_wait .1
+
+ent_create item_healthkit_medium
+test_wait .1
+ent_setname health_medium_2
+ent_fire health_medium_2 addoutput "origin -3728 -7411 1275"
+ent_fire health_medium_2 addoutput "OnPlayerTouch health_medium_2,addoutput,origin -3728 -7411 1275,10"
+test_wait .1
+
+ent_create item_healthkit_medium
+test_wait .1
+ent_setname health_medium_3
+ent_fire health_medium_3 addoutput "origin -3052 -165 1090"
+ent_fire health_medium_3 addoutput "OnPlayerTouch health_medium_3,addoutput,origin -3052 -165 1090,10"
+test_wait .1
+
+ent_create item_healthkit_medium
+test_wait .1
+ent_setname health_medium_4
+ent_fire health_medium_4 addoutput "origin -5745 -11009 728"
+ent_fire health_medium_4 addoutput "OnPlayerTouch health_medium_4,addoutput,origin -5745 -11009 728,10"
+test_wait .1
+
+ent_create item_ammopack_medium
+test_wait .1
+ent_setname ammo_medium_1
+ent_fire ammo_medium_1 addoutput "origin -584 -6143 1295"
+ent_fire ammo_medium_1 addoutput "OnPlayerTouch ammo_medium_1,addoutput,origin -584 -6143 1295,10"
+test_wait .1
+
+ent_create item_ammopack_medium
+test_wait .1
+ent_setname ammo_medium_2
+ent_fire ammo_medium_2 addoutput "origin -5772 -11009 739"
+ent_fire ammo_medium_2 addoutput "OnPlayerTouch ammo_medium_2,addoutput,origin -5772 -11009 739,10"
+test_wait .1
+
+ent_create item_ammopack_medium
+test_wait .1
+ent_setname ammo_medium_3
+ent_fire ammo_medium_3 addoutput "origin -3052 -226 1090"
+ent_fire ammo_medium_3 addoutput "OnPlayerTouch ammo_medium_3,addoutput,origin -3052 -226 1090,10"
+test_wait .1
+
+
+// fix incorrect model position bug. might still be bugged at first spawn. fixes itself afterwards.
+ent_fire ammo_* disable
+ent_fire health_* disable
+test_wait .05
+ent_fire ammo_* enable
+ent_fire health_* enable
+test_wait .05
+
+
+say Done executing d2coast05_spawn_itempacks script!
+noclip
+///

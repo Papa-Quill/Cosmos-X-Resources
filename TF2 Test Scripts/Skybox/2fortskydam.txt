@@ -1,0 +1,11 @@
+noclip;test_wait .02;
+setpos -2250 -3360 825;setang 90 90 0;alias createdam "prop_dynamic_create props_hydro/dam";alias createwater prop_dynamic_create Shadertest\shaderslab3;test_wait .02;
+createdam;test_wait .02;ent_setname skydam1;test_wait .02;ent_fire skydam1 addoutput "origin -4760 254 80";ent_fire skydam1 addoutput "angles 0 180 0";ent_fire skydam1 addoutput "solid 0";test_wait .02;
+createdam;test_wait .02;ent_setname skydam2;test_wait .02;ent_fire skydam2 addoutput "origin -4328 254 80";ent_fire skydam2 addoutput "solid 0";test_wait .02;
+createwater;test_wait .02;ent_setname skywater1;ent_fire skywater1 addoutput "origin -4675 168 14";ent_fire skywater1 addoutput "angles -18 0 0";ent_fire skywater1 addoutput "solid 0";test_wait .02;
+createwater;test_wait .02;ent_setname skywater2;ent_fire skywater2 addoutput "origin -4675 248 14";ent_fire skywater2 addoutput "angles -18 0 0";ent_fire skywater2 addoutput "solid 0";test_wait .02;
+createwater;test_wait .02;ent_setname skywater3;ent_fire skywater3 addoutput "origin -4675 328 14';ent_fire skywater3 addoutput "angles -18 0 0";ent_fire skywater3 addoutput "solid 0";test_wait .02;
+createwater;test_wait .02;ent_setname skywater4;ent_fire skywater4 addoutput "origin -4410 168 14";ent_fire skywater4 addoutput "angles 18 0 0";ent_fire skywater4 addoutput "solid 0";test_wait .02;
+createwater;test_wait .02;ent_setname skywater5;ent_fire skywater5 addoutput "origin -4410 248 14";ent_fire skywater5 addoutput "angles 18 0 0";ent_fire skywater5 addoutput "solid 0";test_wait .02;
+createwater;test_wait .02;ent_setname skywater6;ent_fire skywater6 addoutput "origin -4410 328 14";ent_fire skywater6 addoutput "angles 18 0 0";ent_fire skywater6 addoutput "solid 0";
+say "Skybox Dam Completed"

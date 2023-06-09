@@ -1,0 +1,290 @@
+noclip;setpos -2120 -3393 1617;setang 90 90;
+//Remove previous game mode
+ent_fire func_capturezone kill
+ent_fire item_teamflag kill
+Test_Wait .1
+//Clean-up Map
+ent_fire trigger_multiple addoutput"classname maptm
+ent_fire path_track kill
+
+mp_maxrounds 99999999
+mp_winlimit 99999999
+tf_flag_caps_per_round 0
+
+//Game texts
+ent_create game_text
+ent_fire game_text addoutput "targetname doomsday_info"
+ent_fire doomsday_info addoutput "classname doomsday_info"
+ent_fire doomsday_info addoutput "message    You are playing Special Delivery on 2fort"
+ent_fire doomsday_info addoutput "x 0"
+ent_fire doomsday_info addoutput "y 0.01"
+ent_fire doomsday_info addoutput "color 255 255 255"
+ent_fire doomsday_info addoutput "fadein 0.2"
+ent_fire doomsday_info addoutput "fadeout 0"
+ent_fire doomsday_info addoutput "holdtime 300"
+ent_fire doomsday_info addoutput "channel 1"
+ent_fire doomsday_info addoutput "spawnflags 1"
+ent_fire doomsday_info addoutput "OnUser3 doomsday_info,display"
+ent_fire doomsday_info addoutput "OnUser3 doomsday_info,fireuser3,,3"
+ent_fire doomsday_info fireuser3
+Test_Wait .1
+ent_create game_text
+ent_fire game_text addoutput "targetname doomsday_info2"
+ent_fire doomsday_info2 addoutput "classname doomsday_info2"
+ent_fire doomsday_info2 addoutput "message    Grab the australium from under the bridge and take it to the rocket"
+ent_fire doomsday_info2 addoutput "x 0"
+ent_fire doomsday_info2 addoutput "y .05"
+ent_fire doomsday_info2 addoutput "color 255 0 0"
+ent_fire doomsday_info2 addoutput "fadein 0.2"
+ent_fire doomsday_info2 addoutput "fadeout 0"
+ent_fire doomsday_info2 addoutput "holdtime 300"
+ent_fire doomsday_info2 addoutput "channel 2"
+ent_fire doomsday_info2 addoutput "spawnflags 1"
+ent_fire doomsday_info2 addoutput "OnUser3 doomsday_info2,display"
+ent_fire doomsday_info2 addoutput "OnUser3 doomsday_info2,fireuser3,,3"
+ent_fire doomsday_info2 fireuser3
+Test_Wait .1
+ent_create game_text
+ent_fire game_text addoutput "targetname doomsday_capture"
+ent_fire doomsday_capture addoutput "classname doomsday_capture"
+ent_fire doomsday_capture addoutput "message  The australium has been captured"
+ent_fire doomsday_capture addoutput "x -1"
+ent_fire doomsday_capture addoutput "y .14"
+ent_fire doomsday_capture addoutput "color 0 255 0"
+ent_fire doomsday_capture addoutput "holdtime 10"
+ent_fire doomsday_capture addoutput "channel 3"
+ent_fire doomsday_capture addoutput "spawnflags 1"
+
+//Props
+Test_Wait .1;
+prop_dynamic_create props_mining/support_wall001a;
+Test_Wait .1;
+ent_setname prop3;
+ent_fire prop3 addoutput"angles 93 90;
+ent_fire prop3 addoutput"origin -174 200 56;
+
+Test_Wait .1;
+prop_dynamic_create props_mining/support_wall001a;
+Test_Wait .1;
+ent_setname prop5;
+ent_fire prop5 addoutput"angles 90 90;
+ent_fire prop5 addoutput"origin -174 -30 55;
+
+Test_Wait .1;
+prop_dynamic_create props_mining/support_wall001a;
+Test_Wait .1;
+ent_setname prop7;
+ent_fire prop7 addoutput"angles 90 90;
+ent_fire prop7 addoutput"origin -174 -218 55.1;
+
+Test_Wait .1;
+prop_dynamic_create props_mining/support_wall001a;
+Test_Wait .1;
+ent_setname prop9;
+ent_fire prop9 addoutput"angles 93 -90;
+ent_fire prop9 addoutput"origin -174 -200 56;
+
+Test_Wait .1;
+prop_dynamic_create props_mining/support_wall001a;
+Test_Wait .1;
+ent_setname prop11;
+ent_fire prop11 addoutput"angles 60 90;
+ent_fire prop11 addoutput"origin -174 -662 -81;
+
+Test_Wait .1;
+prop_dynamic_create props_mining/support_wall001a;
+Test_Wait .1;
+ent_setname prop13;
+ent_fire prop13 addoutput"angles 60 -90;
+ent_fire prop13 addoutput"origin -174 662 -81;
+
+Test_Wait .1;
+prop_dynamic_create props_mining/support_wall001a;
+Test_Wait .1;
+ent_setname blu1;
+ent_fire blu1 addoutput"angles 60 180;
+ent_fire blu1 addoutput"origin -238 -60 55;
+
+Test_Wait .1;
+prop_dynamic_create props_mining/support_wall001a;
+Test_Wait .1;
+ent_setname blu2;
+ent_fire blu2 addoutput"angles 90 90;
+ent_fire blu2 addoutput"origin -516 -124 179;
+
+Test_Wait .1;
+prop_dynamic_create props_mining/support_wall001a;
+Test_Wait .1;
+ent_setname blu3;
+ent_fire blu3 addoutput"angles 112 180;
+ent_fire blu3 addoutput"origin -223 60 272;
+
+Test_Wait .1;
+prop_dynamic_create props_mining/support_wall001a;
+Test_Wait .1;
+ent_setname prop15;
+ent_fire prop15 addoutput"angles 90;
+ent_fire prop15 addoutput"origin -223 60 272;
+
+Test_Wait .1;
+prop_dynamic_create props_mining/support_wall001a;
+Test_Wait .1;
+ent_setname prop17;
+ent_fire prop17 addoutput"angles 90;
+ent_fire prop17 addoutput"origin -223 -60 272.1;
+
+Test_Wait .1;
+prop_dynamic_create props_spytech/rocket002_top;
+ent_setname rocket;
+ent_fire rocket addoutput"origin 500 28 -1180;
+ent_fire rocket addoutput"angles 0 0 0;
+
+Test_Wait .1;
+ent_create func_train;
+ent_fire func_train addoutput"targetname train_to_rocket";
+ent_fire train_to_rocket addoutput"classname train_to_rocket";
+ent_fire train_to_rocket addoutput"speed 25";
+ent_fire train_to_rocket addoutput"origin 174 -3. 272;
+ent_fire train_to_rocket addoutput"target track2";
+ent_fire train_to_rocket addoutput"model .";
+
+Test_Wait .1;
+ent_create path_track;
+ent_fire path_track addoutput"targetname track1";
+ent_fire track1 addoutput"classname track1";
+ent_fire track1 addoutput"origin 174 -3. 272";
+ent_fire track1 addoutput "target track2"
+ent_fire track1 addoutput"OnPass train_to_rocket,stop"
+ent_fire track1 addoutput"OnPass train_to_rocket,addoutput,speed 25,.1"
+
+Test_Wait .1;
+ent_create path_track;
+ent_fire path_track addoutput"targetname track2";
+ent_fire track2 addoutput"classname track2";
+ent_fire track2 addoutput"origin 174 -3. 830";
+ent_fire track2 addoutput "target track1"
+ent_fire track2 addoutput"OnPass train_to_rocket,stop"
+ent_fire track2 addoutput"OnPass train_to_rocket,addoutput,speed 25,.1"
+
+Test_Wait .1;
+prop_dynamic_create props_trainyard\crane_platform001.mdl;
+ent_setname plat_to_rocket;
+ent_fire plat_to_rocket addoutput"classname plat_to_rocket;
+ent_fire plat_to_rocket setparent train_to_rocket;
+ent_fire plat_to_rocket addoutput"origin 174 -3. 272;
+ent_fire plat_to_rocket addoutput"angles 0 0 0;
+
+Test_Wait .1
+prop_dynamic_create props_spytech/work_table001
+ent_setname delivery_station
+ent_fire delivery_station addoutput"origin 305 27 830
+ent_fire delivery_station addoutput"angles 0 90 0
+Test_Wait .1
+ent_fire train_to_rocket use
+//ent_fire train_to_rocket start
+
+Test_Wait .1
+//Capture zone entities
+give func_capturezone
+ent_fire func_capturezone addoutput"targetname capzone"
+ent_fire capzone addoutput"classname capzone"
+ent_fire capzone addoutput"controlpoint 1"
+ent_fire capzone addoutput"origin 305 27 830"
+ent_fire capzone addoutput"maxs 148 168 100"
+ent_fire capzone addoutput"mins -148 -168"
+ent_fire capzone addoutput"Solid 2"
+ent_fire capzone setteam 2
+Test_Wait .1
+give func_capturezone
+ent_fire func_capturezone addoutput"targetname capzone2"
+ent_fire capzone2 addoutput"classname capzone2"
+ent_fire capzone2 addoutput"controlpoint 1"
+ent_fire capzone2 addoutput"origin 305 27 830"
+ent_fire capzone2 addoutput"maxs 148 168 100"
+ent_fire capzone2 addoutput"mins -148 -168"
+ent_fire capzone2 addoutput"Solid 2"
+ent_fire capzone2 setteam 3
+Test_Wait .1;
+ent_create item_teamflag;
+ent_fire item_teamflag addoutput"targetname australium";
+ent_fire australium addoutput"classname australium";
+ent_fire australium addoutput"origin 0 0 -287";
+ent_fire australium addoutput"GameType 0";
+ent_fire australium addoutput"StartDisabled 0";
+ent_fire australium addoutput"angles 0 300 0";
+ent_fire australium addoutput"OnCapture australium,addoutput,origin 0 0 -287";
+ent_fire australium addoutput"OnCapture sd_repsawn,forcerespawn"
+ent_fire australium addoutput"OnCapture australium_carrier,addoutput,targetname non_carrier"
+ent_fire australium addoutput"OnCapture train_to_rocket,stop"
+ent_fire australium addoutput"OnCapture train_to_rocket,addoutput,target track1,.1"
+ent_fire australium addoutput"OnCapture train_to_rocket,addoutput,speed 75,.1"
+ent_fire australium addoutput"OnCapture train_to_rocket,start,,.5"
+ent_fire australium addoutput"OnCapture sd_gzp2,CountPlayersInZone"
+ent_fire australium addoutput"OnReturn australium,addoutput,origin 0 0 -287";
+ent_fire australium addoutput"OnCapture doomsday_capture,display,,.5";
+ent_fire australium setteam 0;
+Test_Wait .1
+ent_create trigger_multiple
+ent_fire trigger_multiple addoutput"targetname sd_trig_name"
+ent_fire sd_trig_name addoutput"classname sd_trig_name"
+ent_fire sd_trig_name addoutput"maxs 20 20 20"
+ent_fire sd_trig_name addoutput"mins -20 -20"
+ent_fire sd_trig_name addoutput"origin 0 0 -287";
+ent_fire sd_trig_name addoutput"solid 2"
+ent_fire sd_trig_name addoutput"spawnflags 1"
+ent_fire sd_trig_name addoutput"OnStartTouch !activator,addoutput,targetname australium_carrier"
+ent_fire sd_trig_name addoutput"OnEndTouch !activator,addoutput,targetname non_carrier"
+ent_fire sd_trig_name setparent australium
+Test_Wait .1
+ent_create game_forcerespawn
+ent_fire game_forcerespawn addoutput"targetname sd_repsawn"
+ent_fire addoutput sd_repsawn addoutput"classname sd_repsawn"
+Test_Wait .1;
+give team_round_timer;
+ent_fire team_round_timer addoutput"targetname sd_timer";
+ent_fire sd_timer addoutput"classname sd_timer";
+ent_fire sd_timer addoutput"OnRoundStart australium,addoutput,origin 0 0 -287";
+ent_fire sd_timer ShowInHUD 1;
+ent_fire sd_timer disable;
+Test_Wait .1
+ent_create trigger_multiple
+ent_fire trigger_multiple addoutput"targetname sd_ele_trig"
+ent_fire sd_ele_trig addoutput"classname sd_ele_trig"
+ent_fire sd_ele_trig addoutput"maxs 165 170 100"
+ent_fire sd_ele_trig addoutput"mins -165 -170"
+ent_fire sd_ele_trig addoutput"origin 174 -3. 272";
+ent_fire sd_ele_trig addoutput"solid 2"
+ent_fire sd_ele_trig addoutput"spawnflags 1"
+ent_fire sd_ele_trig addoutput"OnStartTouch sd_fan,testactivator"
+//ent_fire sd_ele_trig addoutput"OnStartTouch sd_gzp,CountPlayersInZone"
+ent_fire sd_ele_trig addoutput"OnEndTouchAll train_to_rocket,stop"
+ent_fire sd_ele_trig addoutput"OnEndTouchAll train_to_rocket,addoutput,target track1,.1"
+ent_fire sd_ele_trig addoutput"OnEndTouchAll train_to_rocket,addoutput,speed 75,.1"
+ent_fire sd_ele_trig addoutput"OnEndTouchAll train_to_rocket,start,,.5"
+ent_fire sd_ele_trig addoutput"OnEndTouchAll sd_gzp2,CountPlayersInZone"
+Test_Wait .1
+give point_clientcommand
+ent_fire point_clientcommand addoutput"classname sd_pcc
+give game_zone_player
+ent_fire game_zone_player addoutput"classname sd_gzp
+ent_fire sd_gzp addoutput"OnPlayerOutZone sd_pcc,command,play ambient/alarms/alarm_citizen_loop1.wav
+Test_Wait .1
+give game_zone_player
+ent_fire game_zone_player addoutput"classname sd_gzp2
+ent_fire sd_gzp2 addoutput"OnPlayerOutZone sd_pcc,command,stopsound
+Test_Wait .1
+ent_fire sd_gzp setparent plat_to_rocket
+ent_fire sd_ele_trig setparent plat_to_rocket
+
+Test_Wait .1
+ent_create filter_activator_name
+ent_fire filter_activator_name addoutput "targetname sd_fan"
+ent_fire sd_fan addoutput "classname sd_fan"
+ent_fire sd_fan addoutput"filtername australium_carrier"
+ent_fire sd_fan addoutput"OnPass train_to_rocket,addoutput,target track2"
+ent_fire sd_fan addoutput"OnPass train_to_rocket,start,,.1"
+ent_fire sd_fan addoutput"OnPass sd_gzp,CountPlayersInZone
+
+Test_Wait .3
+mp_restartround 1
+///

@@ -1,0 +1,41 @@
+ent_remove_all info_lighting
+
+// preserve pre-existing trigger_multiple
+ent_fire trigger_multiple addoutput "targetname trigger_multiple_original"
+ent_fire trigger_multiple addoutput "classname trigger_multiple_original"
+test_wait .05
+
+give trigger_multiple
+test_wait .1
+ent_fire trigger_multiple addoutput "targetname info_lighting"
+ent_fire trigger_multiple addoutput "classname info_lighting"
+ent_fire info_lighting addoutput "origin -3210 -2172 1823"
+test_wait .5
+ent_fire blulocker1 setlightingorigin "info_lighting"
+ent_fire blulocker2 setlightingorigin "info_lighting"
+ent_fire redlocker1 setlightingorigin "info_lighting"
+ent_fire redlocker2 setlightingorigin "info_lighting"
+ent_fire frog1_red setlightingorigin "info_lighting"
+ent_fire frog2_green setlightingorigin "info_lighting"
+ent_fire frog3_blue setlightingorigin "info_lighting"
+ent_fire frog4_yellow setlightingorigin "info_lighting"
+ent_fire frog5_purple setlightingorigin "info_lighting"
+ent_fire frog6_orange setlightingorigin "info_lighting"
+ent_fire frog7_black setlightingorigin "info_lighting"
+ent_fire bluportal1 setlightingorigin "info_lighting"
+ent_fire bluportal2 setlightingorigin "info_lighting"
+ent_fire redportal1 setlightingorigin "info_lighting"
+ent_fire redportal2 setlightingorigin "info_lighting"
+ent_fire blu_tele_prop1 setlightingorigin "info_lighting"
+ent_fire blu_tele_prop2 setlightingorigin "info_lighting"
+ent_fire red_tele_prop1 setlightingorigin "info_lighting"
+ent_fire red_tele_prop2 setlightingorigin "info_lighting"
+test_wait .1
+ent_fire bluportal1 disableshadow
+ent_fire bluportal2 disableshadow
+ent_fire redportal1 disableshadow
+ent_fire redportal2 disableshadow
+
+// restore pre-existing trigger_multiple
+ent_fire trigger_multiple_original addoutput "targetname trigger_multiple"
+ent_fire trigger_multiple_original addoutput "classname trigger_multiple"

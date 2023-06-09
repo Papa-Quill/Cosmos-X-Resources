@@ -1,0 +1,50 @@
+// Papa Quill was here
+ent_fire bluestairs* kill;ent_fire blueramp* kill;ent_fire redstairs* kill;ent_fire redramp* kill;
+noclip;picker;cl_showpos 1;alias supw "prop_dynamic_create props_mining/support_wall001a;setpos -2406.8 -3703.2 680;setang 90 90;test_wait .04;
+
+// Blue Step Stairs Block
+supw;test_wait .04;
+ent_setname bluestairs1;test_wait .04;
+ent_fire bluestairs1 addoutput "origin -1160 -2808 256";ent_fire bluestairs1 addoutput "angles 90 90";test_wait .04;
+supw;test_wait .04;
+ent_setname bluestairs2;test_wait .04;
+ent_fire bluestairs2 addoutput "origin -1148 -2808 256";ent_fire bluestairs2 addoutput "angles 90 90";test_wait .04;
+supw;test_wait .04;
+ent_setname bluestairs3;test_wait .04;
+ent_fire bluestairs3 addoutput "origin -1148 -2904 256";ent_fire bluestairs3 addoutput "angles 90 90";test_wait .04;
+supw;test_wait .04;
+ent_setname bluestairs4;test_wait .04;
+ent_fire bluestairs4 addoutput "origin -1160 -2904 256";ent_fire bluestairs4 addoutput "angles 90 90";test_wait .04;
+
+// Blue Ramp Stairs Block
+supw;test_wait .04;
+ent_setname blueramp1;test_wait .04;
+ent_fire blueramp1 addoutput "origin -290 -1667 255";ent_fire blueramp1 addoutput "angles 0 270";test_wait .04;
+supw;test_wait .04;
+ent_setname blueramp2;test_wait .04;
+ent_fire blueramp2 addoutput "origin -400 -1740 260";ent_fire blueramp2 addoutput "angles 90";test_wait .04;
+
+// Red Step Stairs Block
+supw;test_wait .04;
+ent_setname redstairs1;test_wait .04;
+ent_fire redstairs1 addoutput "origin 1160 2560 256";ent_fire redstairs1 addoutput "angles 90 90";test_wait .04;
+supw;test_wait .04;
+ent_setname redstairs2;test_wait .04;
+ent_fire redstairs2 addoutput "origin 1148 2560 256";ent_fire redstairs2 addoutput "angles 90 90";test_wait .04;
+supw;test_wait .04;
+ent_setname redstairs3;test_wait .04;
+ent_fire redstairs3 addoutput "origin 1148 2656 256";ent_fire redstairs3 addoutput "angles 90 90";test_wait .04;
+supw;test_wait .04;
+ent_setname redstairs4;test_wait .04;
+ent_fire redstairs4 addoutput "origin 1160 2656 256";ent_fire redstairs4 addoutput "angles 90 90";test_wait .04;
+
+// Red Ramp Stairs Block
+supw;test_wait .04;
+ent_setname redramp1;test_wait .04;
+ent_fire redramp1 addoutput "origin 290 1667 255";ent_fire redramp1 addoutput "angles 0 90";test_wait .04;
+supw;test_wait .04;
+ent_setname redramp2;test_wait .04;
+ent_fire redramp2 addoutput "origin 200 1740 260";ent_fire redramp2 addoutput "angles 90";test_wait .04;
+
+picker;cl_showpos 0;mp_forcerespawnplayers
+///

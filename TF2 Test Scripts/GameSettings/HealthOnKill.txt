@@ -1,0 +1,12 @@
+ent_fire pccHealthOnKill kill;ent_fire tbHealthOnKill kill
+test_wait .02
+ent_fire trigger_brush addoutput"classname BeforeTB";ent_fire point_clientcommand addoutput "BeforePCC"
+test_wait .02
+give trigger_brush;give point_clientcommand
+test_wait .02
+ent_fire point_clientcommand addoutput "classname pccHealthOnKill"
+ent_fire trigger_brush addoutput "classname tbHealthOnKill"
+test_wait .02
+ent_fire tbHealthOnKill addoutput "targetname game_playerkill"
+ent_fire tbHealthOnKill addoutput "OnUse pccHealthOnKill,command,hurtme -35
+say Kill reward finished.

@@ -1,0 +1,65 @@
+ent_fire ammo_* kill
+ent_fire health_* kill
+test_wait .1
+
+setpos -639 -3896 504;setang 90 180 0
+noclip
+test_wait .1
+
+ent_create item_ammopack_small
+test_wait .05
+ent_setname ammo_blu_1
+ent_fire ammo_blu_1 addoutput "origin -212 -1783 259"
+ent_fire ammo_blu_1 addoutput "OnPlayerTouch ammo_blu_1,addoutput,origin -212 -1783 259,10"
+test_wait .05
+ent_create item_ammopack_medium
+test_wait .05
+ent_setname ammo_blu_2
+ent_fire ammo_blu_2 addoutput "origin -665 -2476 -190"
+ent_fire ammo_blu_2 addoutput "OnPlayerTouch ammo_blu_2,addoutput,origin -665 -2476 -190,10"
+test_wait .05
+ent_create item_healthkit_small
+test_wait .05
+ent_setname health_blu_1
+ent_fire health_blu_1 addoutput "origin -211 -1824 259"
+ent_fire health_blu_1 addoutput "OnPlayerTouch health_blu_1,addoutput,origin -211 -1824 259,10"
+test_wait .05
+ent_create item_healthkit_medium
+test_wait .05
+ent_setname health_blu_2
+ent_fire health_blu_2 addoutput "origin -665 -2540 -190"
+ent_fire health_blu_2 addoutput "OnPlayerTouch health_blu_2,addoutput,origin -665 -2540 -190,10"
+test_wait .05
+
+ent_create item_ammopack_small
+test_wait .05
+ent_setname ammo_red_1
+ent_fire ammo_red_1 addoutput "origin 212 1785 259"
+ent_fire ammo_red_1 addoutput "OnPlayerTouch ammo_red_1,addoutput,origin 212 1785 259,10"
+test_wait .05
+ent_create item_ammopack_medium
+test_wait .05
+ent_setname ammo_red_2
+ent_fire ammo_red_2 addoutput "origin 665 2476 -190"
+ent_fire ammo_red_2 addoutput "OnPlayerTouch ammo_red_2,addoutput,origin 665 2476 -190,10"
+test_wait .05
+ent_create item_healthkit_small
+test_wait .05
+ent_setname health_red_1
+ent_fire health_red_1 addoutput "origin 211 1825 259"
+ent_fire health_red_1 addoutput "OnPlayerTouch health_red_1,addoutput,origin 211 1825 259,10"
+test_wait .05
+ent_create item_healthkit_medium
+test_wait .05
+ent_setname health_red_2
+ent_fire health_red_2 addoutput "origin 665 2540 -190"
+ent_fire health_red_2 addoutput "OnPlayerTouch health_red_2,addoutput,origin 665 2540 -190,10"
+test_wait .1
+
+// fix incorrect model position bug
+ent_fire ammo_* disable
+ent_fire health_* disable
+test_wait .1
+ent_fire ammo_* enable
+ent_fire health_* enable
+///

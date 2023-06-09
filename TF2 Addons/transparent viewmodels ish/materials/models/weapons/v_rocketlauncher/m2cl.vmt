@@ -1,0 +1,3 @@
+"VertexLitGeneric"{ "$additive" "1"
+	"$baseTexture" "models\weapons\v_rocketlauncher/m2cl"
+}

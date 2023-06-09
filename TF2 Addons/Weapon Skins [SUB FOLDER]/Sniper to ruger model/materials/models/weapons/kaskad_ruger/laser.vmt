@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models\weapons\kaskad_ruger\laser"
+	"$translucent" "1"
+	"$model" "1"
+	"$selfillum" "1"
+	"$nocull" "1"
+}

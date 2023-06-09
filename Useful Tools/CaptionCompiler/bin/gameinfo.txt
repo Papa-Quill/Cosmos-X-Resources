@@ -1,0 +1,10 @@
+"GameInfo"
+{
+	FileSystem
+	{
+		SearchPaths
+		{
+			Game			"|gameinfo_path|."
+		}
+	}
+}

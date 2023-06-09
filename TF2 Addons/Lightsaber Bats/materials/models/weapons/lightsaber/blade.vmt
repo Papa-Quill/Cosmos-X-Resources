@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\lightsaber\blade"
+	"$selfillum" 1
+}

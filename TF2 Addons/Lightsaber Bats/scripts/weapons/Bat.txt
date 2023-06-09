@@ -1,0 +1,77 @@
+// ------------------------------------------------------------------------------------ //
+// BAT
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Bat.Draw"
+{
+	"channel"	"CHAN_AUTO"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	".5"
+	"wave"		"weapons/lightsaber_draw.wav"
+}
+
+"Weapon_Bat.DrawSwoosh1"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	".45"
+	"wave"		"weapons/lightsaber_draw_swoosh.wav"
+}
+
+"Weapon_Bat.DrawSwoosh2"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	".45"
+	"wave"		"weapons/lightsaber_idle.wav"
+}
+
+
+"Weapon_Bat.DrawCatch"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1"
+	"wave"		"weapons/lightsaber_hit_hand.wav"
+}
+
+"Weapon_Bat.Miss"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_64dB"
+	"volume"	".6"
+	"wave"		")weapons/lightsaber_miss.wav"
+}
+
+"Weapon_Bat.MissCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_64dB"
+	"volume"	".6"
+	"wave"		")weapons/lightsaber_miss_crit.wav"
+}
+
+"Weapon_Bat.HitFlesh"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		"weapons/lightsaber_hitflesh1.wav"
+		"wave"		"weapons/lightsaber_hitflesh2.wav"
+		"wave"		"weapons/lightsaber_hitflesh3.wav"
+	}
+}
+
+"Weapon_Bat.HitWorld"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		"weapons/lightsaber_hit1.wav"
+		"wave"		"weapons/lightsaber_hit2.wav"
+	}
+}

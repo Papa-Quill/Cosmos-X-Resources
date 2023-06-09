@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\weapons\kaskad_ruger\glass"
+	"$envmapmask" "models\weapons\kaskad_ruger\glass_ref"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.40 .40 .40]"
+
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" "10"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 1]"
+}

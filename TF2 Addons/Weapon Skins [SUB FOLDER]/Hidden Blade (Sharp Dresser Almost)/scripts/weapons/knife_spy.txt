@@ -1,0 +1,8 @@
+"blade_deploy"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+	"wave"			"weapons/sin_knife/blade.deploy.wav"
+}

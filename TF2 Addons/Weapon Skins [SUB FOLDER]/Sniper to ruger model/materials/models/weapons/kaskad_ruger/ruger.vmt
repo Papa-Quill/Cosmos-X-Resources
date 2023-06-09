@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\kaskad_ruger\ruger"
+	"$bumpmap" "models\weapons\kaskad_ruger\ruger_normal"
+
+	"$phong" "1"
+	"$phongexponent" "40"
+	"$phongboost" "1.5"
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$halflambert" "1"
+}

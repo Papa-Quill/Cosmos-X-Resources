@@ -276,7 +276,7 @@ ent_keyvalue 85412 OnRoundWin"box,sethealth,99999" OnRoundWin"pres_a,addoutput,r
 ent_keyvalue 85412 OnRoundWin"spwnRed,addoutput,origin 1208 3905 -440" OnRoundWin"spwnRed1,addoutput,origin 1253.41 3983.93 -440" OnRoundWin"spwnRed2,addoutput,origin 1286.54 3860.29 -440" OnRoundWin"spwnRed3,addoutput,origin 1311.39 3767.56 -440" OnRoundWin"spwnRed4,addoutput,origin 1228.57 4076.66 -440";
 ent_keyvalue 85412 OnRoundWin"spwnBlu,addoutput,origin -4896 1312 -480" OnRoundWin"spwnBlu1,addoutput,origin -4960 1248 -480" OnRoundWin"spwnBlu2,addoutput,origin -4960 1376 -480" OnRoundWin"spwnBlu3,addoutput,origin -4960 1152 -480" OnRoundWin"spwnBlu4,addoutput,origin -4960 1472 -480";
 ent_keyvalue 3 OnRoundStart"spwnRed,addoutput,origin -10727.7 -3113.53 -323.451,5" OnRoundStart"spwnRed1,addoutput,origin -10728 -3192 -323.451,5" OnRoundStart"spwnRed2,addoutput,origin -10728 -3264 -312,5" OnRoundStart"spwnRed3,addoutput,origin -10728 -3340 -292,5" OnRoundStart"spwnRed4,addoutput,origin -10709.8 -3408.02 -292,5"
-ent_keyvalue 3 OnRoundStart"spwnBlu,addoutput,origin -10727.7 -3113.53 -323.451,5" OnRoundStart"spwnBlu1,addoutput,origin -10728 -3192 -323.451,5" OnRoundStart"spwnBlu2,addoutput,origin -10728 -3264 -312,5" OnRoundStart"spwnBlu3,addoutput,origin -10728 -3340 -292,5" OnRoundStart"spwnBlu4,addoutput,origin -10709.8 -3408.02 -292,5"
+ent_keyvalue 3 OnRoundStart"spwnBlu,addoutput,origin -11714.9 -3501.38 -301.621,5" OnRoundStart"spwnBlu1,addoutput,origin -11714.9 -3400 -301.621,5" OnRoundStart"spwnBlu2,addoutput,origin -11714.9 -3304 -301.621,5" OnRoundStart"spwnBlu3,addoutput,origin -11714.9 -3176 -301.621,5" OnRoundStart"spwnBlu4,addoutput,origin -11714.9 -3072 -301.621,5"
 ent_keyvalue 3 OnRoundStart"game_win,setteam,3";
 ent_keyvalue 85412 OnRoundWin"round_fire,CountPlayersInZone,,26";
 ent_fire live_setter setteam 2;
@@ -286,4 +286,5 @@ ent_fire game_text_tf display:5;
 ent_fire round_fire CountPlayersInZone:5;
 ent_fire team_control_point hidemodel;
 test_wait 3;ent_keyvalue 2 origin"496 3776 -450";ent_fire game_timer restart;
-test_wait 10;ent_keyvalue 85412 OnRoundWin"rand_title,PickRandom,26";
+test_wait 10;ent_keyvalue 85412 OnRoundWin"rand_title,PickRandom,26"
+///

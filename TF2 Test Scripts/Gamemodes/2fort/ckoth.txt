@@ -1,0 +1,811 @@
+alias a"prop_dynamic_create props_trainyard/crane_platform001
+alias b"prop_dynamic_create props_mining\support_wall001a
+alias c"prop_dynamic_create props_foliage/shrub_03b
+alias d"prop_dynamic_create props_foliage/shrub_03c
+alias e"prop_dynamic_create props_foliage/tree02
+alias f"prop_dynamic_create props_foliage/shrub_03a
+alias g"ent_create func_wall;
+alias h"PROP_PHYSICS_CREATE EFFECTS/BDAY_GIB01
+alias i"PROP_PHYSICS_CREATE EFFECTS/BDAY_GIB02
+alias j"PROP_PHYSICS_CREATE EFFECTS/BDAY_GIB03
+alias k"PROP_PHYSICS_CREATE EFFECTS/BDAY_GIB04
+alias l"prop_dynamic_create props_mining\billboard002;
+alias p"prop_dynamic_create props_farm\tree001;
+alias q"prop_dynamic_create props_spytech\work_table001;
+alias r"ent_create item_healthkit_full;
+alias s"ent_create item_ammopack_full;
+Test_Wait .05;
+setpos -4371.7 157.7 40
+setang -50 -40 0
+Test_Wait .05;
+ent_fire !picker kill;
+Test_Wait .05;
+noclip;setpos 2257.3 2297.9 1015.9;setang 90 90;Test_Wait .05;
+ent_fire start_timer kill;
+ent_fire func_brush kill;
+ent_fire observer_blue_spyhall1 kill;
+ent_fire observer_blue_flagroom1 kill;
+ent_fire observer_red_spyhall1 kill;
+ent_fire observer_red_flagroom1 kill;
+ent_fire observer_bridge addoutput"origin 609.4 577 205.6;ent_fire observer_bridge addoutput"angles 45 40 0;
+ent_fire info_player_teamspawn kill;ent_fire info_player_start kill;give info_player_start;
+Test_Wait .05;
+ent_fire z* addoutput"classname player;
+Test_Wait .05;
+ent_fire team_round_timer disable;
+ent_fire filter_* addoutput"classname map;
+ent_fire trigger_multiple addoutput"classname map;
+
+Test_Wait .1
+give point_clientcommand;
+ent_fire point_clientcommand addoutput"targetname pcc;
+ent_fire flag* disable;
+ent_fire flag* addoutput"origin 0 0 11;
+
+Test_Wait .1
+prop_dynamic_create props_gameplay/cap_point_base;
+ent_setname cp1;
+ent_fire cp1 addoutput"origin -4550 250 600;
+ent_fire cp1 addoutput"angles 0;
+
+Test_Wait .1
+prop_dynamic_create effects/cappoint_hologram;
+ent_remove;
+
+Test_Wait .1
+give team_control_point;
+ent_fire team_control_point addoutput"targetname cph;
+ent_fire cph addoutput"origin -4550 250 600;
+ent_fire cph addoutput"angles 0;
+ent_fire cph addoutput"team_model_3 models/effects/cappoint_hologram.mdl;
+ent_fire cph addoutput"team_model_2 models/effects/cappoint_hologram.mdl;
+ent_fire cph addoutput"team_model_0 models/effects/cappoint_hologram.mdl;
+ent_fire cph addoutput"team_icon_3 sprites/obj_icons/icon_obj_blu;
+ent_fire cph addoutput"team_icon_2 sprites/obj_icons/icon_obj_red;
+ent_fire cph addoutput"team_icon_0 sprites/obj_icons/icon_obj_neutral;
+
+Test_Wait .1
+ent_fire cph setowner 1;
+ent_fire cph setowner 0;
+
+Test_Wait .1
+give math_counter;
+ent_fire math_counter addoutput"classname countred;
+ent_fire countred addoutput"OutValue lc_r,InValue;
+
+Test_Wait .1
+give math_counter;
+ent_fire math_counter addoutput"classname countblue;
+ent_fire countblue addoutput"OutValue lc_b,InValue;
+
+Test_Wait .1
+ent_fire cou* addoutput"min 0;
+ent_fire cou* addoutput"max 8;
+
+Test_Wait .1
+give filter_activator_tfteam;
+ent_fire filter_activator_tfteam addoutput"classname team_starttouch;
+ent_fire team_starttouch addoutput"OnPass countred,add,1;
+ent_fire team_starttouch addoutput"OnFail countblue,add,1;
+
+Test_Wait .1
+give filter_activator_tfteam;
+ent_fire filter_activator_tfteam addoutput"classname team_endtouch;
+ent_fire team_endtouch addoutput"OnPass countred,subtract,1;
+ent_fire team_endtouch addoutput"OnFail countblue,subtract,1;
+
+Test_Wait .1
+ent_fire te* setteam 2;
+
+Test_Wait .1
+give trigger_multiple;
+ent_fire trigger_multiple addoutput"classname mtrig;
+ent_fire mtrig addoutput"spawnflags 1;
+ent_fire mtrig addoutput"OnStartTouch team_starttouch,testactivator;
+ent_fire mtrig addoutput"OnStartTouch l_cmp,compare,,.1;
+ent_fire mtrig addoutput"OnEndTouch team_endtouch,testactivator;
+ent_fire mtrig addoutput"OnEndTouch l_cmp,compare,,.1;
+ent_fire mtrig addoutput"OnEndTouchAll count*,setvalue,0;
+ent_fire mtrig addoutput"solid 2;
+ent_fire mtrig addoutput"origin -4650 110 600;
+ent_fire mtrig addoutput"maxs 217 300 168;
+
+Test_Wait .1
+give logic_case;
+ent_fire logic_case addoutput"classname lc_r;
+ent_fire lc_r addoutput"OnCase01 l_cmp,setvalue,0;
+ent_fire lc_r addoutput"OnCase02 l_cmp,setvalue,1;
+ent_fire lc_r addoutput"OnCase03 l_cmp,setvalue,2;
+ent_fire lc_r addoutput"OnCase04 l_cmp,setvalue,3;
+ent_fire lc_r addoutput"OnCase05 l_cmp,setvalue,4;
+ent_fire lc_r addoutput"OnCase06 l_cmp,setvalue,5;
+ent_fire lc_r addoutput"OnCase07 l_cmp,setvalue,6;
+ent_fire lc_r addoutput"OnCase08 l_cmp,setvalue,7;
+ent_fire lc_r addoutput"OnCase09 l_cmp,setvalue,8;
+
+Test_Wait .1
+give logic_case;
+ent_fire logic_case addoutput"classname lc_b;
+ent_fire lc_b addoutput"OnCase01 l_cmp,setcomparevalue,0;
+ent_fire lc_b addoutput"OnCase02 l_cmp,setcomparevalue,1;
+ent_fire lc_b addoutput"OnCase03 l_cmp,setcomparevalue,2;
+ent_fire lc_b addoutput"OnCase04 l_cmp,setcomparevalue,3;
+ent_fire lc_b addoutput"OnCase05 l_cmp,setcomparevalue,4;
+ent_fire lc_b addoutput"OnCase06 l_cmp,setcomparevalue,5;
+ent_fire lc_b addoutput"OnCase07 l_cmp,setcomparevalue,6;
+ent_fire lc_b addoutput"OnCase08 l_cmp,setcomparevalue,7;
+ent_fire lc_b addoutput"OnCase09 l_cmp,setcomparevalue,8;
+
+Test_Wait .1
+ent_fire lc* addoutput"Case01 0;
+ent_fire lc* addoutput"Case02 1;
+ent_fire lc* addoutput"Case03 2;
+ent_fire lc* addoutput"Case04 3;
+ent_fire lc* addoutput"Case05 4;
+ent_fire lc* addoutput"Case06 5;
+ent_fire lc* addoutput"Case07 6;
+ent_fire lc* addoutput"Case08 7;
+ent_fire lc* addoutput"Case09 8;
+
+Test_Wait .1
+give logic_compare;
+ent_fire logic_compare addoutput"classname l_cmp;
+ent_fire l_cmp addoutput"OnEqualTo onboth,trigger;
+ent_fire l_cmp addoutput"OnLessThan onblue,trigger;
+ent_fire l_cmp addoutput"OnGreaterThan onred,trigger;
+
+Test_Wait .1
+give logic_relay;
+ent_fire logic_relay addoutput"classname onred;
+ent_fire onred addoutput"OnTrigger cp1,skin,1;
+ent_fire onred addoutput"OnTrigger cph,setowner,2;
+ent_fire onred addoutput"OnTrigger timerblue,ShowInHUD,0;
+ent_fire onred addoutput"OnTrigger timerblue,pause;
+ent_fire onred addoutput"OnTrigger timerred,ShowInHUD,1,.1;
+ent_fire onred addoutput"OnTrigger timerred,resume;
+ent_fire onred addoutput"OnTrigger pcc,command,play ui/hint;
+ent_fire onred addoutput"OnTrigger gt_red,display;
+
+Test_Wait .1
+give logic_relay;
+ent_fire logic_relay addoutput"classname onblue;
+ent_fire onblue addoutput"OnTrigger cp1,skin,2;
+ent_fire onblue addoutput"OnTrigger cph,setowner,3;
+ent_fire onblue addoutput"OnTrigger timerred,ShowInHUD,0;
+ent_fire onblue addoutput"OnTrigger timerred,pause;
+ent_fire onblue addoutput"OnTrigger timerblue,ShowInHUD,1,.1;
+ent_fire onblue addoutput"OnTrigger timerblue,resume;
+ent_fire onblue addoutput"OnTrigger pcc,command,play ui/hint;
+ent_fire onblue addoutput"OnTrigger gt_blue,display;
+
+Test_Wait .1
+give logic_relay;
+ent_fire logic_relay addoutput"classname onboth;
+ent_fire onboth addoutput"OnTrigger cp1,skin,0;
+ent_fire onboth addoutput"OnTrigger cph,setowner,0;
+ent_fire onboth addoutput"OnTrigger ti*,ShowInHUD,0;
+ent_fire onboth addoutput"OnTrigger ti*,pause;
+ent_fire onboth addoutput"OnTrigger gt_both,display;
+
+Test_Wait .1
+give logic_relay;
+ent_fire logic_relay addoutput"classname onnone;
+ent_fire onnone addoutput"OnTrigger cp1,skin,0;
+ent_fire onnone addoutput"OnTrigger cph,setowner,0;
+ent_fire onnone addoutput"OnTrigger ti*,ShowInHUD,0;
+ent_fire onnone addoutput"OnTrigger ti*,pause;
+ent_fire onnone addoutput"OnTrigger gt_none,display;
+
+Test_Wait .1
+give team_round_timer;
+ent_fire team_round_timer addoutput"targetname timerred;
+ent_fire timerred addoutput"classname timered;
+ent_fire timerred addoutput"OnFinished winred,RoundWin;
+ent_fire timerred addoutput "OnFinished onred,trigger,,.3;
+
+Test_Wait .1
+give team_round_timer;
+ent_fire team_round_timer addoutput"targetname timerblue;
+ent_fire timerblue addoutput"classname timerblue;
+ent_fire timerblue addoutput"OnFinished winblue,RoundWin;
+ent_fire timerblue addoutput "OnFinished onblue,trigger,,.3;
+
+Test_Wait .1
+ent_fire ti* settime 240;
+ent_fire ti* addoutput"OnFinished mtrig,disable;
+ent_fire ti* addoutput"OnFinished ti*,pause,,.4;
+ent_fire timerred addoutput"OnRoundStart mtrig,enable;
+ent_fire timerred addoutput"OnRoundStart ti*,ShowInHUD,0;
+ent_fire timerred addoutput"OnRoundStart ti*,settime,240;
+ent_fire timerred addoutput"OnRoundStart flag_*,addoutput,origin -4560 250 700;
+ent_fire timerred addoutput"OnRoundStart cph,setowner,0,5;
+ent_fire timerred addoutput"OnRoundStart onnone,trigger,,.1;
+ent_fire timerred addoutput"OnRoundStart cou*,setvalue,0;
+ent_fire timerred addoutput"OnRoundStart credits,display,,5;
+ent_fire timerred addoutput"OnRoundStart wincounter,add,1;
+
+Test_Wait .1
+give game_round_win;
+ent_fire game_round_win addoutput"classname winred;
+ent_fire winred setteam 2;
+
+Test_Wait .1
+give game_round_win;
+ent_fire game_round_win addoutput"classname winblue;
+ent_fire winblue setteam 3;
+
+Test_Wait .1
+ent_fire w* addoutput"force_map_reset 0;
+
+Test_Wait .1
+give game_text;
+ent_fire game_text addoutput"classname gt_red;
+ent_fire gt_red addoutput"message Red Controls the Hill!;
+
+Test_Wait .1
+give game_text;
+ent_fire game_text addoutput"classname gt_blue;
+ent_fire gt_blue addoutput"message Blue Controls the Hill!;
+
+Test_Wait .1
+give game_text;
+ent_fire game_text addoutput"classname gt_both;
+ent_fire gt_both addoutput"message Hill Contested / Empty!;
+
+Test_Wait .1
+give game_text;
+ent_fire game_text addoutput"classname gt_none;
+ent_fire gt_none addoutput"message Hill Empty - Capture the Hill!;
+
+Test_Wait .1
+ent_fire gt_* addoutput"spawnflags 1;
+ent_fire gt_* addoutput"color 255 255 255;
+ent_fire gt_* addoutput"holdtime 60;
+ent_fire gt_* addoutput"x -1;
+ent_fire gt_* addoutput"y .14;
+
+Test_Wait .1
+ent_fire gt_red addoutput"color 255;
+ent_fire gt_blue addoutput"color 0 0 255;
+ent_fire gt_none display;
+Test_Wait .1
+b;ent_setname wol1;Test_Wait .05;ent_fire wol1 addoutput"origin -4550 -480 131;
+b;ent_setname wol2;Test_Wait .05;ent_fire wol2 addoutput"origin -4550 -300 281;
+b;ent_setname wol3;Test_Wait .05;ent_fire wol3 addoutput"origin -4550 -110 440;
+ent_fire wol* addoutput"angles 50 90 0;
+Test_Wait .05;
+b;ent_setname wor1;Test_Wait .05;ent_fire wor1 addoutput"origin -4550 989 121;
+b;ent_setname wor2;Test_Wait .05;ent_fire wor2 addoutput"origin -4550 800 280;
+b;ent_setname wor3;Test_Wait .05;ent_fire wor3 addoutput"origin -4550 610 439;
+ent_fire wor* addoutput"angles 50 -90 0;
+Test_Wait .05;
+c;ent_setname tr2;Test_Wait .05;ent_fire tr2 addoutput"origin -4550 280 210;ent_fire tr2 addoutput"angles 180 180 0;
+c;ent_setname tr3;Test_Wait .05;ent_fire tr3 addoutput"origin -4550 220 210;ent_fire tr3 addoutput"angles 180 180 0;
+c;ent_setname tr4;Test_Wait .05;ent_fire tr4 addoutput"origin -4510 250 210;ent_fire tr4 addoutput"angles 180 90 0;
+c;ent_setname tr5;Test_Wait .05;ent_fire tr5 addoutput"origin -4590 250 210;ent_fire tr5 addoutput"angles 180 -90 0;
+Test_Wait .05;
+c;ent_setname tr6;Test_Wait .05;ent_fire tr6 addoutput"origin -4555 250 255;ent_fire tr6 addoutput"angles 180 180 0;
+c;ent_setname tr7;Test_Wait .05;ent_fire tr7 addoutput"origin -4555 270 255;ent_fire tr7 addoutput"angles 180 180 0;
+c;ent_setname tr8;Test_Wait .05;ent_fire tr8 addoutput"origin -4555 230 255;ent_fire tr8 addoutput"angles 180 180 0;
+c;ent_setname tr9;Test_Wait .05;ent_fire tr9 addoutput"origin -4550 250 300;ent_fire tr9 addoutput"angles 180 90 0;
+Test_Wait .05;
+c;ent_setname tr12;Test_Wait .05;ent_fire tr12 addoutput"origin -4555 250 250;ent_fire tr12 addoutput"angles 180 0 0;
+c;ent_setname tr13;Test_Wait .05;ent_fire tr13 addoutput"origin -4555 260 250;ent_fire tr13 addoutput"angles 180 0 0;
+c;ent_setname tr14;Test_Wait .05;ent_fire tr14 addoutput"origin -4555 225 250;ent_fire tr14 addoutput"angles 180 0 0;
+Test_Wait .05;
+f;ent_setname tr15;Test_Wait .05;ent_fire tr15 addoutput"origin -4540 250 240;ent_fire tr15 addoutput"angles 0 -90 0
+f;ent_setname tr16;Test_Wait .05;ent_fire tr16 addoutput"origin -4575 250 240;ent_fire tr16 addoutput"angles 0 -90 0
+Test_Wait .05;
+d;ent_setname tr10;Test_Wait .05;ent_fire tr10 addoutput"origin -4555 245 320;ent_fire tr10 addoutput"angles 180 180 0;
+d;ent_setname tr11;Test_Wait .05;ent_fire tr11 addoutput"origin -4555 250 280;ent_fire tr11 addoutput"angles 0 90 0;
+d;ent_setname tr17;Test_Wait .05;ent_fire tr17 addoutput"origin -4555 250 280;
+ent_fire tr* color 23+59+25;
+ent_fire tr* disablecollision;
+Test_Wait .05;
+ent_keyvalue 1311445 origin"-4600 270 190
+ent_keyvalue 1311445 renderamt"1000"
+ent_keyvalue 1311445 rendercolor"255 0 0"
+ent_keyvalue 1307725 origin"-4585 220 230
+ent_keyvalue 1307725 renderamt"1000"
+ent_keyvalue 1307725 rendercolor"0 255 0"
+ent_keyvalue 1306067 origin"-4580 250 280
+ent_keyvalue 1306067 renderamt"1000"
+ent_keyvalue 1306067 rendercolor"0 0 255"
+ent_keyvalue 1306064 origin"-4490 230 180
+ent_keyvalue 1306064 renderamt"1000"
+ent_keyvalue 1306064 rendercolor"0 255 0"
+ent_keyvalue 1312848 origin"-4510 270 220"
+ent_keyvalue 1312848 renderamt"1000"
+ent_keyvalue 1312848 rendercolor"0 0 255"
+ent_keyvalue 1312866 origin"-4525 240 270"
+ent_keyvalue 1312866 renderamt"1000"
+ent_keyvalue 1312866 rendercolor"255 0 0"
+ent_keyvalue 1079458 origin"-4545 290 190
+ent_keyvalue 1079458 renderamt"1000"
+ent_keyvalue 1079458 rendercolor"0 0 255"
+ent_keyvalue 1304824 origin"-4570 280 240"
+ent_keyvalue 1304824 renderamt"1000"
+ent_keyvalue 1304824 rendercolor"0 255 0"
+ent_keyvalue 1304812 origin"-4570 200 190"
+ent_keyvalue 1304812 renderamt"1000"
+ent_keyvalue 1304812 rendercolor"0 255 0"
+ent_keyvalue 1304815 origin"-4550 210 240"
+ent_keyvalue 1304815 renderamt"1000"
+ent_keyvalue 1304815 rendercolor"255 0 0"
+Test_Wait .05;
+ent_keyvalue 3844142 origin"-3750 250.8 845.6;
+ent_keyvalue 3844142 angles"10 180 0;
+ent_keyvalue 4301068 origin"-5342.1 259 836.5
+ent_keyvalue 4301068 angles"10 0 0;
+Test_Wait .05;
+ent_keyvalue 4434260 origin"-3740 1000 200.7;
+ent_keyvalue 4433902 origin"-5350 -493 200.7;
+Test_Wait .05;
+e;ent_setname tur1;Test_Wait .05;ent_fire tur1 addoutput"origin -4550 250 160;ent_fire tur1 addoutput"angles 180 180 0;
+ent_fire tur1 addoutput"angles 180 180 0;
+ent_fire tur1 disablecollision;
+Test_Wait .05;
+ent_create env_smokestack
+ent_fire env_smokestack addoutput "targetname snow1"
+ent_fire snow1 addoutput "BaseSpread 700"
+ent_fire snow1 addoutput "SpreadSpeed 100"
+ent_fire snow1 addoutput "Speed 20"
+ent_fire snow1 addoutput "StartSize 1"
+ent_fire snow1 addoutput "EndSize 1"
+ent_fire snow1 addoutput "rate 10"
+ent_fire snow1 addoutput "JetLength 2000"
+ent_fire snow1 addoutput "angles 0 0 180
+ent_fire snow1 addoutput "rendercolor 225 225 225"
+ent_fire snow1 addoutput "renderamt 200"
+ent_fire snow1 addoutput "SmokeMaterial effects/circle2"
+ent_fire snow1 addoutput"origin -4550 250 1050'
+ent_fire snow1 turnon
+Test_Wait .05;
+a;ent_setname b1;Test_Wait .05;ent_fire b1 addoutput"origin -3590 -595 130;
+a;ent_setname b2;Test_Wait .05;ent_fire b2 addoutput"origin -3910 -595 130;
+a;ent_setname b3;Test_Wait .05;ent_fire b3 addoutput"origin -4230 -595 130;
+a;ent_setname b4;Test_Wait .05;ent_fire b4 addoutput"origin -4550 -595 131;
+a;ent_setname b5;Test_Wait .05;ent_fire b5 addoutput"origin -4860 -595 130;
+a;ent_setname b6;Test_Wait .05;ent_fire b6 addoutput"origin -5180 -595 130;
+a;ent_setname b7;Test_Wait .05;ent_fire b7 addoutput"origin -5500 -595 130;
+a;ent_setname b8;Test_Wait .05;ent_fire b8 addoutput"origin -3590 -257 130;
+a;ent_setname b9;Test_Wait .05;ent_fire b9 addoutput"origin -3910 -257 130;
+a;ent_setname b10;Test_Wait .05;ent_fire b10 addoutput"origin -4230 -257 130;
+a;ent_setname b11;Test_Wait .05;ent_fire b11 addoutput"origin -4550 -257 131;
+a;ent_setname b12;Test_Wait .05;ent_fire b12 addoutput"origin -4860 -257 130;
+a;ent_setname b13;Test_Wait .05;ent_fire b13 addoutput"origin -5180 -257 130;
+a;ent_setname b14;Test_Wait .05;ent_fire b14 addoutput"origin -5500 -257 130;
+a;ent_setname b15;Test_Wait .05;ent_fire b15 addoutput"origin -3590 81 130;
+a;ent_setname b16;Test_Wait .05;ent_fire b16 addoutput"origin -3910 81 130;
+a;ent_setname b17;Test_Wait .05;ent_fire b17 addoutput"origin -4230 81 130;
+a;ent_setname b18;Test_Wait .05;ent_fire b18 addoutput"origin -4550 81 130;
+a;ent_setname b19;Test_Wait .05;ent_fire b19 addoutput"origin -4860 81 130;
+a;ent_setname b20;Test_Wait .05;ent_fire b20 addoutput"origin -5180 81 130;
+a;ent_setname b21;Test_Wait .05;ent_fire b21 addoutput"origin -5500 81 130;
+a;ent_setname b22;Test_Wait .05;ent_fire b22 addoutput"origin -3590 419 130;
+a;ent_setname b23;Test_Wait .05;ent_fire b23 addoutput"origin -3910 419 130;
+a;ent_setname b24;Test_Wait .05;ent_fire b24 addoutput"origin -4230 419 130;
+a;ent_setname b25;Test_Wait .05;ent_fire b25 addoutput"origin -4550 419 130;
+a;ent_setname b26;Test_Wait .05;ent_fire b26 addoutput"origin -4860 419 130;
+a;ent_setname b27;Test_Wait .05;ent_fire b27 addoutput"origin -5180 419 130;
+a;ent_setname b28;Test_Wait .05;ent_fire b28 addoutput"origin -5500 419 130;
+a;ent_setname b29;Test_Wait .05;ent_fire b29 addoutput"origin -3590 757 130;
+a;ent_setname b30;Test_Wait .05;ent_fire b30 addoutput"origin -3910 757 130;
+a;ent_setname b31;Test_Wait .05;ent_fire b31 addoutput"origin -4230 757 130;
+a;ent_setname b32;Test_Wait .05;ent_fire b32 addoutput"origin -4550 757 131;
+a;ent_setname b33;Test_Wait .05;ent_fire b33 addoutput"origin -4860 757 130;
+a;ent_setname b34;Test_Wait .05;ent_fire b34 addoutput"origin -5180 757 130;
+a;ent_setname b35;Test_Wait .05;ent_fire b35 addoutput"origin -5500 757 130;
+a;ent_setname b36;Test_Wait .05;ent_fire b36 addoutput"origin -3590 1095 130;
+a;ent_setname b37;Test_Wait .05;ent_fire b37 addoutput"origin -3910 1095 130;
+a;ent_setname b38;Test_Wait .05;ent_fire b38 addoutput"origin -4230 1095 130;
+a;ent_setname b39;Test_Wait .05;ent_fire b39 addoutput"origin -4550 1095 131;
+a;ent_setname b40;Test_Wait .05;ent_fire b40 addoutput"origin -4860 1095 130;
+a;ent_setname b41;Test_Wait .05;ent_fire b41 addoutput"origin -5180 1095 130;
+a;ent_setname b42;Test_Wait .05;ent_fire b42 addoutput"origin -5500 1095 130;
+ent_fire b* color 255+255+255"
+a;ent_setname d1;Test_Wait .05;ent_fire d1 addoutput"origin -3431 -595 280;
+a;ent_setname d2;Test_Wait .05;ent_fire d2 addoutput"origin -3431 -257 280;
+a;ent_setname d3;Test_Wait .05;ent_fire d3 addoutput"origin -3431 81 280;
+a;ent_setname d4;Test_Wait .05;ent_fire d4 addoutput"origin -3431 419 280;
+a;ent_setname d5;Test_Wait .05;ent_fire d5 addoutput"origin -3431 757 280;
+a;ent_setname d6;Test_Wait .05;ent_fire d6 addoutput"origin -3431 1095 280;
+a;ent_setname d7;Test_Wait .05;ent_fire d7 addoutput"origin -3431 -595 595;
+a;ent_setname d8;Test_Wait .05;ent_fire d8 addoutput"origin -3431 -257 595;
+a;ent_setname d9;Test_Wait .05;ent_fire d9 addoutput"origin -3431 81 595;
+a;ent_setname d10;Test_Wait .05;ent_fire d10 addoutput"origin -3431 419 595;
+a;ent_setname d11;Test_Wait .05;ent_fire d11 addoutput"origin -3431 757 595;
+a;ent_setname d12;Test_Wait .05;ent_fire d12 addoutput"origin -3431 1095 595;
+a;ent_setname d13;Test_Wait .05;ent_fire d13 addoutput"origin -3431 -595 910;
+a;ent_setname d14;Test_Wait .05;ent_fire d14 addoutput"origin -3431 -257 910;
+a;ent_setname d15;Test_Wait .05;ent_fire d15 addoutput"origin -3431 81 910;
+a;ent_setname d16;Test_Wait .05;ent_fire d16 addoutput"origin -3431 419 910;
+a;ent_setname d17;Test_Wait .05;ent_fire d17 addoutput"origin -3431 757 910;
+a;ent_setname d18;Test_Wait .05;ent_fire d18 addoutput"origin -3431 1095 910;
+ent_fire d* addoutput"angles 90 180;
+ent_fire d* color 255+0+0"
+Test_Wait .05;
+a;ent_setname h1;Test_Wait .05;ent_fire h1 addoutput"origin -5659 -595 280;
+a;ent_setname h2;Test_Wait .05;ent_fire h2 addoutput"origin -5659 -257 280;
+a;ent_setname h3;Test_Wait .05;ent_fire h3 addoutput"origin -5659 81 280;
+a;ent_setname h4;Test_Wait .05;ent_fire h4 addoutput"origin -5659 419 280;
+a;ent_setname h5;Test_Wait .05;ent_fire h5 addoutput"origin -5659 757 280;
+a;ent_setname h6;Test_Wait .05;ent_fire h6 addoutput"origin -5659 1095 280;
+a;ent_setname h7;Test_Wait .05;ent_fire h7 addoutput"origin -5659 -595 595;
+a;ent_setname h8;Test_Wait .05;ent_fire h8 addoutput"origin -5659 -257 595;
+a;ent_setname h9;Test_Wait .05;ent_fire h9 addoutput"origin -5659 81 595;
+a;ent_setname h10;Test_Wait .05;ent_fire h10 addoutput"origin -5659 419 595;
+a;ent_setname h11;Test_Wait .05;ent_fire h11 addoutput"origin -5659 757 595;
+a;ent_setname h12;Test_Wait .05;ent_fire h12 addoutput"origin -5659 1095 595;
+a;ent_setname h13;Test_Wait .05;ent_fire h13 addoutput"origin -5659 -595 910;
+a;ent_setname h14;Test_Wait .05;ent_fire h14 addoutput"origin -5659 -257 910;
+a;ent_setname h15;Test_Wait .05;ent_fire h15 addoutput"origin -5659 81 910;
+a;ent_setname h16;Test_Wait .05;ent_fire h16 addoutput"origin -5659 419 910;
+a;ent_setname h17;Test_Wait .05;ent_fire h17 addoutput"origin -5659 757 910;
+a;ent_setname h18;Test_Wait .05;ent_fire h18 addoutput"origin -5659 1095 910;
+ent_fire h* addoutput"angles 90;
+ent_fire h* color 255+0+0"
+Test_Wait .05;
+a;ent_setname j1;Test_Wait .05;ent_fire j1 addoutput"origin -3590 -763 270;
+a;ent_setname j2;Test_Wait .05;ent_fire j2 addoutput"origin -3910 -763 270;
+a;ent_setname j3;Test_Wait .05;ent_fire j3 addoutput"origin -4230 -763 270;
+a;ent_setname j4;Test_Wait .05;ent_fire j4 addoutput"origin -4550 -763 270;
+a;ent_setname j5;Test_Wait .05;ent_fire j5 addoutput"origin -4860 -763 270;
+a;ent_setname j6;Test_Wait .05;ent_fire j6 addoutput"origin -5180 -763 270;
+a;ent_setname j7;Test_Wait .05;ent_fire j7 addoutput"origin -5500 -763 270;
+a;ent_setname j8;Test_Wait .05;ent_fire j8 addoutput"origin -3590 -763 583;
+a;ent_setname j9;Test_Wait .05;ent_fire j9 addoutput"origin -3910 -763 583;
+a;ent_setname j10;Test_Wait .05;ent_fire j10 addoutput"origin -4230 -763 583;
+a;ent_setname j11;Test_Wait .05;ent_fire j11 addoutput"origin -4550 -763 583;
+a;ent_setname j12;Test_Wait .05;ent_fire j12 addoutput"origin -4860 -763 583;
+a;ent_setname j13;Test_Wait .05;ent_fire j13 addoutput"origin -5180 -763 583;
+a;ent_setname j14;Test_Wait .05;ent_fire j14 addoutput"origin -5500 -763 583;
+a;ent_setname j15;Test_Wait .05;ent_fire j15 addoutput"origin -3590 -763 896;
+a;ent_setname j16;Test_Wait .05;ent_fire j16 addoutput"origin -3910 -763 896;
+a;ent_setname j17;Test_Wait .05;ent_fire j17 addoutput"origin -4230 -763 896;
+a;ent_setname j18;Test_Wait .05;ent_fire j18 addoutput"origin -4550 -763 896;
+a;ent_setname j19;Test_Wait .05;ent_fire j19 addoutput"origin -4860 -763 896;
+a;ent_setname j20;Test_Wait .05;ent_fire j20 addoutput"origin -5180 -763 896;
+a;ent_setname j21;Test_Wait .05;ent_fire j21 addoutput"origin -5500 -763 896;
+ent_fire j* addoutput"angles 0 0 -90;
+ent_fire j* color 0+255+0"
+Test_Wait .05;
+a;ent_setname k1;Test_Wait .05;ent_fire k1 addoutput"origin -3590 1263 270;
+a;ent_setname k2;Test_Wait .05;ent_fire k2 addoutput"origin -3910 1263 270;
+a;ent_setname k3;Test_Wait .05;ent_fire k3 addoutput"origin -4230 1263 270;
+a;ent_setname k4;Test_Wait .05;ent_fire k4 addoutput"origin -4550 1263 270;
+a;ent_setname k5;Test_Wait .05;ent_fire k5 addoutput"origin -4860 1263 270;
+a;ent_setname k6;Test_Wait .05;ent_fire k6 addoutput"origin -5180 1263 270;
+a;ent_setname k7;Test_Wait .05;ent_fire k7 addoutput"origin -5500 1263 270;
+a;ent_setname k8;Test_Wait .05;ent_fire k8 addoutput"origin -3590 1263 583;
+a;ent_setname k9;Test_Wait .05;ent_fire k9 addoutput"origin -3910 1263 583;
+a;ent_setname k10;Test_Wait .05;ent_fire k10 addoutput"origin -4230 1263 583;
+a;ent_setname k11;Test_Wait .05;ent_fire k11 addoutput"origin -4550 1263 583;
+a;ent_setname k12;Test_Wait .05;ent_fire k12 addoutput"origin -4860 1263 583;
+a;ent_setname k13;Test_Wait .05;ent_fire k13 addoutput"origin -5180 1263 583;
+a;ent_setname k14;Test_Wait .05;ent_fire k14 addoutput"origin -5500 1263 583;
+a;ent_setname k15;Test_Wait .05;ent_fire k15 addoutput"origin -3590 1263 896;
+a;ent_setname k16;Test_Wait .05;ent_fire k16 addoutput"origin -3910 1263 896;
+a;ent_setname k17;Test_Wait .05;ent_fire k17 addoutput"origin -4230 1263 896;
+a;ent_setname k18;Test_Wait .05;ent_fire k18 addoutput"origin -4550 1263 896;
+a;ent_setname k19;Test_Wait .05;ent_fire k19 addoutput"origin -4860 1263 896;
+a;ent_setname k20;Test_Wait .05;ent_fire k20 addoutput"origin -5180 1263 896;
+a;ent_setname k21;Test_Wait .05;ent_fire k21 addoutput"origin -5500 1263 896;
+ent_fire k* addoutput"angles 0 0 90;
+ent_fire k* color 0+255+0"
+Test_Wait .05;
+a;ent_setname m1;Test_Wait .05;ent_fire m1 addoutput"origin -3590 -595 1060;
+a;ent_setname m2;Test_Wait .05;ent_fire m2 addoutput"origin -3910 -595 1060;
+a;ent_setname m3;Test_Wait .05;ent_fire m3 addoutput"origin -4230 -595 1060;
+a;ent_setname m4;Test_Wait .05;ent_fire m4 addoutput"origin -4550 -595 1060;
+a;ent_setname m5;Test_Wait .05;ent_fire m5 addoutput"origin -4860 -595 1060;
+a;ent_setname m6;Test_Wait .05;ent_fire m6 addoutput"origin -5180 -595 1060;
+a;ent_setname m7;Test_Wait .05;ent_fire m7 addoutput"origin -5500 -595 1060;
+a;ent_setname m8;Test_Wait .05;ent_fire m8 addoutput"origin -3590 -257 1060;
+a;ent_setname m9;Test_Wait .05;ent_fire m9 addoutput"origin -3910 -257 1060;
+a;ent_setname m10;Test_Wait .05;ent_fire m10 addoutput"origin -4230 -257 1060;
+a;ent_setname m11;Test_Wait .05;ent_fire m11 addoutput"origin -4550 -257 1060;
+a;ent_setname m12;Test_Wait .05;ent_fire m12 addoutput"origin -4860 -257 1060;
+a;ent_setname m13;Test_Wait .05;ent_fire m13 addoutput"origin -5180 -257 1060;
+a;ent_setname m14;Test_Wait .05;ent_fire m14 addoutput"origin -5500 -257 1060;
+a;ent_setname m15;Test_Wait .05;ent_fire m15 addoutput"origin -3590 81 1060;
+a;ent_setname m16;Test_Wait .05;ent_fire m16 addoutput"origin -3910 81 1060;
+a;ent_setname m17;Test_Wait .05;ent_fire m17 addoutput"origin -4230 81 1060;
+a;ent_setname m18;Test_Wait .05;ent_fire m18 addoutput"origin -4550 81 1060;
+a;ent_setname m19;Test_Wait .05;ent_fire m19 addoutput"origin -4860 81 1060;
+a;ent_setname m20;Test_Wait .05;ent_fire m20 addoutput"origin -5180 81 1060;
+a;ent_setname m21;Test_Wait .05;ent_fire m21 addoutput"origin -5500 81 1060;
+a;ent_setname m22;Test_Wait .05;ent_fire m22 addoutput"origin -3590 419 1060;
+a;ent_setname m23;Test_Wait .05;ent_fire m23 addoutput"origin -3910 419 1060;
+a;ent_setname m24;Test_Wait .05;ent_fire m24 addoutput"origin -4230 419 1060;
+a;ent_setname m25;Test_Wait .05;ent_fire m25 addoutput"origin -4550 419 1060;
+a;ent_setname m26;Test_Wait .05;ent_fire m26 addoutput"origin -4860 419 1060;
+a;ent_setname m27;Test_Wait .05;ent_fire m27 addoutput"origin -5180 419 1060;
+a;ent_setname m28;Test_Wait .05;ent_fire m28 addoutput"origin -5500 419 1060;
+a;ent_setname m29;Test_Wait .05;ent_fire m29 addoutput"origin -3590 757 1060;
+a;ent_setname m30;Test_Wait .05;ent_fire m30 addoutput"origin -3910 757 1060;
+a;ent_setname m31;Test_Wait .05;ent_fire m31 addoutput"origin -4230 757 1060;
+a;ent_setname m32;Test_Wait .05;ent_fire m32 addoutput"origin -4550 757 1060;
+a;ent_setname m33;Test_Wait .05;ent_fire m33 addoutput"origin -4860 757 1060;
+a;ent_setname m34;Test_Wait .05;ent_fire m34 addoutput"origin -5180 757 1060;
+a;ent_setname m35;Test_Wait .05;ent_fire m35 addoutput"origin -5500 757 1060;
+a;ent_setname m36;Test_Wait .05;ent_fire m36 addoutput"origin -3590 1095 1060;
+a;ent_setname m37;Test_Wait .05;ent_fire m37 addoutput"origin -3910 1095 1060;
+a;ent_setname m38;Test_Wait .05;ent_fire m38 addoutput"origin -4230 1095 1060;
+a;ent_setname m39;Test_Wait .05;ent_fire m39 addoutput"origin -4550 1095 1060;
+a;ent_setname m40;Test_Wait .05;ent_fire m40 addoutput"origin -4860 1095 1060;
+a;ent_setname m41;Test_Wait .05;ent_fire m41 addoutput"origin -5180 1095 1060;
+a;ent_setname m42;Test_Wait .05;ent_fire m42 addoutput"origin -5500 1095 1060;
+ent_fire m* addoutput"angles 180;
+ent_fire m* color 0+0+0"
+Test_Wait .05;
+a;ent_setname sop1;Test_Wait .05;ent_fire sop1 addoutput"origin -5342.2 -250.5 291.7;
+a;ent_setname sop2;Test_Wait .05;ent_fire sop2 addoutput"origin -5342.1 93 291.7;
+a;ent_setname sop3;Test_Wait .05;ent_fire sop3 addoutput"origin -5342.1 435 291.7;
+a;ent_setname sop4;Test_Wait .05;ent_fire sop4 addoutput"origin -5342.2 -250.5 600.7;
+a;ent_setname sop5;Test_Wait .05;ent_fire sop5 addoutput"origin -5342.1 93 340;
+a;ent_setname sop6;Test_Wait .05;ent_fire sop6 addoutput"origin -5342.1 435 600.7;
+a;ent_setname sop7;Test_Wait .05;ent_fire sop7 addoutput"origin -5342.1 93 700;
+a;ent_setname sop8;Test_Wait .05;ent_fire sop8 addoutput"origin -5342.2 -250.5 700;
+a;ent_setname sop9;Test_Wait .05;ent_fire sop9 addoutput"origin -5342.1 435 700;
+ent_fire sop* addoutput"angles 90 90 90;
+ent_fire sop* color 0+255+0;
+Test_Wait .05;
+a;ent_setname sow1;Test_Wait .05;ent_fire sow1 addoutput"origin -5620.3 605 291.7;
+a;ent_setname sow2;Test_Wait .05;ent_fire sow2 addoutput"origin -5500.3 605 600.7;
+a;ent_setname sow3;Test_Wait .05;ent_fire sow3 addoutput"origin -5500.3 605 690.7
+ent_fire sow* addoutput"angles 90 90 0;
+ent_fire sow* color 0+255+0;
+Test_Wait .05;
+b;ent_setname sos1;Test_Wait .05;ent_fire sos1 addoutput"origin -5610 220 280;
+b;ent_setname sos2;Test_Wait .05;ent_fire sos2 addoutput"origin -5610 398 130
+ent_fire sos* addoutput"angles 50 -90 0;
+Test_Wait .05;
+a;ent_setname sof1;Test_Wait .05;ent_fire sof1 addoutput"origin -5510 -257 450;
+a;ent_setname sof2;Test_Wait .05;ent_fire sof2 addoutput"origin -5510 -140 450;
+ent_fire sof* color 0+255+0;
+Test_Wait .05;
+b;ent_setname sofs1;Test_Wait .05;ent_fire sofs1 addoutput"origin -5420 280 450;
+b;ent_setname sofs2;Test_Wait .05;ent_fire sofs2 addoutput"origin -5420 528 450;
+b;ent_setname sofs3;Test_Wait .05;ent_fire sofs3 addoutput"origin -5420 600 450;
+ent_fire sofs* addoutput"angles 90 -90 0;
+ent_fire sofs* color 0+255+0;
+Test_Wait .05;
+a;ent_setname sor1;Test_Wait .05;ent_fire sor1 addoutput"origin -5506.2 -250 792.6;
+a;ent_setname sor2;Test_Wait .05;ent_fire sor2 addoutput"origin -5506.2 90 792.6;
+a;ent_setname sor3;Test_Wait .05;ent_fire sor3 addoutput"origin -5506.2 434 792.6;
+ent_fire sor* color 0+255+0;
+Test_Wait .05;
+a;ent_setname snp1;Test_Wait .05;ent_fire snp1 addoutput"origin -3750 760 291.7;
+a;ent_setname snp2;Test_Wait .05;ent_fire snp2 addoutput"origin -3750 420 291.7;
+a;ent_setname snp3;Test_Wait .05;ent_fire snp3 addoutput"origin -3750 80 291.7;
+a;ent_setname snp4;Test_Wait .05;ent_fire snp4 addoutput"origin -3750 760 600.7;
+a;ent_setname snp5;Test_Wait .05;ent_fire snp5 addoutput"origin -3750 420 340;
+a;ent_setname snp6;Test_Wait .05;ent_fire snp6 addoutput"origin -3750 80 600.7;
+a;ent_setname snp7;Test_Wait .05;ent_fire snp7 addoutput"origin -3750 420 700;
+a;ent_setname snp8;Test_Wait .05;ent_fire snp8 addoutput"origin -3750 760 700;
+a;ent_setname snp9;Test_Wait .05;ent_fire snp9 addoutput"origin -3750 81 700;
+ent_fire snp* addoutput"angles 90 90 -90;
+ent_fire snp* color 0+255+0;
+Test_Wait .05;
+a;ent_setname snw1;Test_Wait .05;ent_fire snw1 addoutput"origin -3450 -90 291.7;
+a;ent_setname snw2;Test_Wait .05;ent_fire snw2 addoutput"origin -3450 -90 600.7;
+a;ent_setname snw3;Test_Wait .05;ent_fire snw3 addoutput"origin -3587.9 -90 600.7;
+a;ent_setname snw4;Test_Wait .05;ent_fire snw4 addoutput"origin -3587.9 -90 700;
+ent_fire snw* addoutput"angles 90 -90 0;
+ent_fire snw* color 0+255+0
+Test_Wait .05;
+b;ent_setname sns1;Test_Wait .05;ent_fire sns1 addoutput"origin -3498.7 100 130;
+b;ent_setname sns2;Test_Wait .05;ent_fire sns2 addoutput"origin -3498.7 278.6 280.1;
+ent_fire sns* addoutput"angles 50 90 0;
+Test_Wait .05;
+b;ent_setname snfs1;Test_Wait .05;ent_fire snfs1 addoutput"origin -3670 470 450;
+b;ent_setname snfs2;Test_Wait .05;ent_fire snfs2 addoutput"origin -3670 230 450;
+b;ent_setname snfs3;Test_Wait .05;ent_fire snfs3 addoutput"origin -3670 160 450;
+ent_fire snfs* addoutput"angles 90 -90 0;
+Test_Wait .05;
+a;ent_setname snf1;Test_Wait .05;ent_fire snf1 addoutput"origin -3590 757 450;
+a;ent_setname snf2;Test_Wait .05;ent_fire snf2 addoutput"origin -3590 640 450;
+ent_fire snf* color 0+255+0;
+Test_Wait .05;
+a;ent_setname snr1;Test_Wait .05;ent_fire snr1 addoutput"origin -3590 757 760;
+a;ent_setname snr2;Test_Wait .05;ent_fire snr2 addoutput"origin -3590 419 760;
+a;ent_setname snr3;Test_Wait .05;ent_fire snr3 addoutput"origin -3590 81 760;
+ent_fire snr* color 0+255+0;
+Test_Wait .05;
+a;ent_setname pla;Test_Wait .05;ent_fire pla addoutput"origin -4550 250 600;
+ent_fire pla color 51+25+0
+Test_Wait .05;
+ent_fire prs* disablemotion;
+ent_fire prs* disabledamageforces;
+ent_fire prs1 addoutput"origin -4508.9 295.6 139;ent_fire prs1 addoutput"angles 0 30 0;
+ent_fire prs2 addoutput"origin -4570.9 180.6 139;ent_fire prs2 addoutput"angles 0 10 0;
+ent_fire prs3 addoutput"origin -4620.9 260.6 139;ent_fire prs3 addoutput"angles 0 50 0;
+ent_fire prs4 addoutput"origin -4570.9 310.6 130;ent_fire prs4 addoutput"angles 0 90 0;
+ent_fire prs5 addoutput"origin -4480.9 240.6 130;ent_fire prs5 addoutput"angles 0 -40 0;
+ent_fire prs6 addoutput"origin -4530.9 170.6 130;ent_fire prs6 addoutput"angles 0 40 0;
+ent_fire prs7 addoutput"origin -4620.9 220.6 130;ent_fire prs7 addoutput"angles 0 130 0;
+ent_fire prs8 addoutput"origin -4590.9 200.6 130;ent_fire prs8 addoutput"angles 0 130 0;
+ent_fire prs9 addoutput"origin -4490.9 275.6 130;ent_fire prs8 addoutput"angles 0 130 0;
+ent_fire prs10 addoutput"origin -4535.9 310.6 130;ent_fire prs9 addoutput"angles 0 50 0;
+ent_fire prs11 addoutput"origin -4600.9 290.6 135;ent_fire prs10 addoutput"angles 0 -20 0;
+ent_fire prs12 addoutput"origin -4500.9 190.6 135;ent_fire prs11 addoutput"angles 0 60 0;
+Test_Wait .05;
+a;ent_setname sb1;Test_Wait .05;ent_fire sb1 addoutput"origin -5342.2 -722 283.4;
+ent_fire sb1 addoutput"angles 90 -90 -90;
+a;ent_setname sb2;Test_Wait .05;ent_fire sb2 addoutput"origin -5500.3 -421 291.2;
+ent_fire sb2 addoutput"angles 0 0 -90;
+a;ent_setname sb3;Test_Wait .05;ent_fire sb3 addoutput"origin -5511.5 -421 622.6;
+ent_fire sb3 addoutput"angles 0 0 -90;
+a;ent_setname sb4;Test_Wait .05;ent_fire sb4 addoutput"origin -5347.1 -601.7 625;
+ent_fire sb4 addoutput"angles 90 -90 -90;
+a;ent_setname sb5;Test_Wait .05;ent_fire sb5 addoutput"origin -5342.1 -598.8 410;
+ent_fire sb5 addoutput"angles 90 -90 -90;
+a;ent_setname sb6;Test_Wait .05;ent_fire sb6 addoutput"origin -5506.2 -588.6 792.6;
+ent_fire sb* color 0+0+255"
+Test_Wait .05;
+a;ent_setname sr1;Test_Wait .05;ent_fire sr1 addoutput"origin -3750 1227.3 291.7;
+ent_fire sr1 addoutput"angles  90 -90 90;
+a;ent_setname sr2;Test_Wait .05;ent_fire sr2 addoutput"origin -3591.8 929 287.5;
+ent_fire sr2 addoutput"angles 0 0 90
+a;ent_setname sr3;Test_Wait .05;ent_fire sr3 addoutput"origin -3588 927.1 614.2;
+ent_fire sr3 addoutput"angles 0 0 90
+a;ent_setname sr4;Test_Wait .05;ent_fire sr4 addoutput"origin -3750.9 1103 621.1;
+ent_fire sr4 addoutput"angles 90 -90 90;
+a;ent_setname sr5;Test_Wait .05;ent_fire sr5 addoutput"origin -3751 1101.3 410.6;
+ent_fire sr5 addoutput"angles 90 -90 90;
+a;ent_setname sr6;Test_Wait .05;ent_fire sr6 addoutput"origin -3582.4 1112.9 784.3;
+ent_fire sr* color 255+0+0"
+Test_Wait .05;
+give info_player_teamspawn;
+ent_fire info_player_teamspawn addoutput"classname spawnred;
+ent_fire spawnred setteam 2;
+ent_fire spawnred addoutput"origin -3514.5 1186.1 205.2;
+ent_fire spawnred addoutput"angles 0 180
+Test_Wait .05;
+give info_player_teamspawn;
+ent_fire info_player_teamspawn addoutput"classname spawnblue;
+ent_fire spawnblue setteam 3;
+ent_fire spawnblue addoutput"origin -5585.9 -713.5 194.1;
+ent_fire spawnblue addoutput"angles 0 0
+ent_fire spawnblue addoutput"classname info_player_teamspawn;
+ent_fire spawnred addoutput"classname info_player_teamspawn;
+Test_Wait .05;
+setpos 1134.4 622 75.9;
+setang 50 180 0;
+Test_Wait .05;
+h;ent_fire !picker disablemotion;ent_setname prs1;Test_Wait .05;
+setang 50 180 0;
+Test_Wait .05;
+h;ent_fire !picker disablemotion;ent_setname prs2;Test_Wait .05;
+setang 50 160 0;ent_fire prs2 color 127+0+255"
+Test_Wait .05;
+h;ent_fire !picker disablemotion;ent_setname prs3;Test_Wait .05;
+setang 50 140 0;ENT_FIRE prs3 SKIN 1"
+Test_Wait .05;
+i;ent_fire !picker disablemotion;ent_setname prs4;Test_Wait .05;
+setang 50 120 0;ent_fire prs4 color 255+255+0
+Test_Wait .05;
+i;ent_fire !picker disablemotion;ent_setname prs5;Test_Wait .05;
+setang 50 100 0;ENT_FIRE prs5 SKIN 1"
+Test_Wait .05;
+i;ent_fire !picker disablemotion;ent_setname prs6;Test_Wait .05;
+setang 50 80 0;ent_fire prs6 color 0+255+255"
+Test_Wait .05;
+i;ent_fire !picker disablemotion;ent_setname prs7;Test_Wait .05;
+setang 50 60 0;ENT_FIRE prs7 SKIN 1"
+Test_Wait .05;
+j;ent_fire !picker disablemotion;ent_setname prs8;Test_Wait .05;
+setang 50 40 0;
+Test_Wait .05;
+j;ent_fire !picker disablemotion;ent_setname prs9;Test_Wait .05;
+setang 50 20 0;ent_fire prs9 color 255+69+0"
+Test_Wait .05;
+j;ent_fire !picker disablemotion;ent_setname prs10;Test_Wait .05;
+setang 50 0 0;ENT_FIRE prs10 SKIN 1"
+Test_Wait .05;
+k;ent_fire !picker disablemotion;ent_setname prs11;Test_Wait .05;
+setang 50 -20 0;ent_fire prs11 color 0+255+0
+Test_Wait .05;
+k;ent_fire !picker disablemotion;ent_setname prs12;Test_Wait .05;
+setang 50 -40 0;
+Test_Wait .05;
+ent_fire prs1 addoutput"origin -4508.9 295.6 139;ent_fire prs1 addoutput"angles 0 30 0;
+ent_fire prs2 addoutput"origin -4570.9 180.6 139;ent_fire prs2 addoutput"angles 0 10 0;
+ent_fire prs3 addoutput"origin -4620.9 260.6 139;ent_fire prs3 addoutput"angles 0 50 0;
+ent_fire prs4 addoutput"origin -4570.9 310.6 130;ent_fire prs4 addoutput"angles 0 90 0;
+ent_fire prs5 addoutput"origin -4480.9 240.6 130;ent_fire prs5 addoutput"angles 0 -40 0;
+ent_fire prs6 addoutput"origin -4530.9 170.6 130;ent_fire prs6 addoutput"angles 0 40 0;
+ent_fire prs7 addoutput"origin -4620.9 220.6 130;ent_fire prs7 addoutput"angles 0 130 0;
+ent_fire prs8 addoutput"origin -4590.9 200.6 130;ent_fire prs8 addoutput"angles 0 130 0;
+ent_fire prs9 addoutput"origin -4490.9 275.6 130;ent_fire prs9 addoutput"angles 0 130 0;
+ent_fire prs10 addoutput"origin -4535.9 310.6 130;ent_fire prs10 addoutput"angles 0 50 0;
+ent_fire prs11 addoutput"origin -4600.9 290.6 135;ent_fire prs11 addoutput"angles 0 -20 0;
+Test_Wait .05;
+ent_fire prs12 addoutput"origin -4500.9 190.6 135;ent_fire prs12 addoutput"angles 0 60 0;
+ent_fire prs12 addoutput"origin -4500.9 190.6 135;ent_fire prs12 addoutput"angles 0 60 0;
+Test_Wait .05;
+setpos -1893.149658 -210.613846 651.520020;
+setang 90 0 0;
+Test_Wait .05;
+ent_keyvalue 3033691 targetname"xxx"origin"-3773 1000 195";ent_keyvalue 3033691 targetname"xxx"angles"0 90 ;
+ent_keyvalue 3033681 targetname"xxx1"origin"-3770 1000 195;
+ent_keyvalue 3828597 targetname"xx"origin"-5316 -493 195;ent_keyvalue 3828597 targetname"xx"angles"0 -90;
+ent_keyvalue 3119818 targetname"xx1"origin"-5313 -493 195
+Test_Wait .05;
+g;ent_setname d01;ent_fire d01 addoutput"maxs 1 90 60";ent_fire d01 addoutput"mins -1 -90 -60";ent_fire d01 addoutput"solid 2";ent_fire d01 setparent xxx;ent_fire d01 addoutput"origin -3747 1000 190;
+test_wait .02;
+g;ent_setname d02;ent_fire d02 addoutput"maxs 1 90 60";ent_fire d02 addoutput"mins -1 -90 -60";ent_fire d02 addoutput"solid 2";ent_fire d02 setparent xx;ent_fire d02 addoutput"origin -5280 409 190;
+Test_Wait .05;
+setpos 1593 -20.4 0;
+setang 30 0;
+Test_Wait .05;
+l;ent_setname bu1;ent_fire bu1 addoutput"origin -4553.1 1263 650;ent_fire bu1 addoutput"angles 0 -90;
+Test_Wait .05;
+l;ent_setname bu2;ent_fire bu2 addoutput"origin -4553.1 -763 650;ent_fire bu2 addoutput"angles 0 90;
+Test_Wait .05;
+p;ent_setname te1;Test_Wait .05;ent_fire te1 addoutput"origin -3501.4 -699.6 130;
+Test_Wait .05;
+p;ent_setname te2;Test_Wait .05;ent_fire te2 addoutput"origin -5603.2 1205.4 130;
+Test_Wait .05;
+setpos 915.6 644 152.1;setang 90 0 0;
+Test_Wait .05;
+q;ent_setname tbl1;Test_Wait .05;ent_fire tbl1 addoutput"origin -3708.9 1204.8 130;
+Test_Wait .05;
+q;ent_setname tbl2;Test_Wait .05;ent_fire tbl2 addoutput"origin -5373.1 -697.1 130;
+Test_Wait .05;
+r;ent_setname hlt1;Test_Wait .05;ent_fire hlt1 addoutput"origin -3712.3 1237.3 168.3;
+ent_fire hlt1 addoutput"OnPlayerTouch !self,addoutput,origin -3712.3 1237.3 168.3;
+Test_Wait .05;
+r;ent_setname hlt2;Test_Wait .05;ent_fire hlt2 addoutput"origin -5370.2 -731.1 168.3;
+ent_fire hlt2 addoutput"OnPlayerTouch !self,addoutput,origin -5370.2 -731.1 168.3;
+Test_Wait .05;
+s;ent_setname amm1;Test_Wait .05;ent_fire amm1 addoutput"origin -3708.2 1186.5 168.3;
+ent_fire amm1 addoutput"OnPlayerTouch !self,addoutput,origin -3708.2 1186.5 168.3;
+Test_Wait .05;
+s;ent_setname amm2;Test_Wait .05;ent_fire amm2 addoutput"origin -5367 -669 168.3;
+ent_fire amm2 addoutput"OnPlayerTouch !self,addoutput,origin -5367 -669 168.3;
+Test_Wait .05;
+prop_dynamic_create props_vehicles/wagon001a;ent_setname wag;Test_Wait .05;ent_fire wag addoutput"origin 694.6 791.1 40;
+ent_fire wag addoutput"angles 23 -90 0;
+Test_Wait .05;
+prop_dynamic_create player/heavy;ent_setname santa;Test_Wait .05;ent_fire santa addoutput"origin 853.2 737.3 0;
+ent_fire santa addoutput"angles 0 210 0;
+ent_fire santa setanimation stand_MELEE;
+Test_Wait .05;
+PROP_DYNAMIC_CREATE vortigaunt_slave;ent_setname rend1;Test_Wait .05;ent_fire rend1 addoutput"origin 660.1 634.8 -1.7;
+ent_fire rend1 addoutput"angles 0 -90 0;
+ent_fire rend1 setanimation idle01;
+Test_Wait .05;
+PROP_DYNAMIC_CREATE vortigaunt_slave;ent_setname rend2;Test_Wait .05;ent_fire rend2 addoutput"origin 729.1 646.6 -2.2;
+ent_fire rend2 addoutput"angles 0 -90 0;
+ent_fire rend2 setanimation idle01;
+Test_Wait .05;
+prop_dynamic_create chefhat;
+ent_setname beard;
+ent_fire beard disablecollision;
+ent_fire beard setparent santa;
+ent_fire beard setparentattachment head;
+ent_fire beard addoutput"angles 190 0 0;
+ent_fire beard addoutput"origin 844.1 736 70.5;
+Test_Wait .05;
+prop_dynamic_create chefhat;
+ent_setname shat;
+ent_fire shat disablecollision;
+ent_fire shat setparent santa;
+ent_fire shat setparentattachment head;
+ent_fire shat color 455+55+55;
+Test_Wait .05;
+ent_fire te* disablecollision;
+ent_fire prs* disabledamageforces;
+Test_Wait .05;
+give game_text_tf;
+ent_fire game_text_tf addoutput"classname credits;
+ent_fire credits addoutput"icon voice_player;
+ent_fire credits addoutput"message King Of Christmas Hill Created by Krazydav;
+Test_Wait .05;
+mp_winlimit 0;
+mp_timelimit 0;
+mp_maxrounds 0;
+mp_restartround 1;
+///

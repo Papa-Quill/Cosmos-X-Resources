@@ -1,0 +1,3199 @@
+0 200 200
+ent_fire prop_dynamic addoutput "classname PDYN"
+ent_fire prop_physics addoutput "classname PPHY"
+ent_fire func_regenerate addoutput "classname RGEN"
+ent_fire trigger_hurt addoutput "classname THRT"
+ent_fire func_respawnroom addoutput "classname RROOM"
+ent_fire func_respawnroomvisualizer addoutput "classname RROOMV"
+ent_fire func_brush addoutput "classname BRSH"
+ent_fire info_player_teamspawn addoutput "classname SPN"
+ent_fire trigger_multiple addoutput "classname TRGR"
+ent_fire logic_timer addoutput "classname LTMR"ent_fire logic_relay addoutput "classname LRLY"ent_fire game_text addoutput "classname GTXT"ent_fire item_* addoutput "classname ITM"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5024 -2928 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4704 -2928 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5024 -3272 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4704 -3272 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4704 -3960 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4704 -3616 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5024 -3616 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5024 -3960 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4384 -3272 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4384 -2928 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4384 -3616 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4384 -3960 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5344 -3272 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5344 -3616 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5344 -3960 256"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3264 -2928 96"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3264 -3272 96"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3264 -3616 96"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3264 -3960 96"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4224 -3960 96"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4224 -3616 96"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4224 -3272 96"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4224 -2928 96"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5353 -3101 428.248"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5344 -2757 772.411"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3424 -3961 -58"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 240 0 6"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3424 -3617 -58"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 240 0 6"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3744 -3617 -58"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 240 0 6"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3744 -3961 -58"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 240 0 6"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4064 -3961 -58"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 240 0 6"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4064 -3617 -58"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 240 0 6"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3744 -3273 -58"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 240 0 6"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4064 -3273 -58"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 240 0 6"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3424 -3273 -58"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 240 0 6"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3424 -2929 -58"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 240 0 6"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3744 -2929 -58"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 240 0 6"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4064 -2929 -58"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 240 0 6"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5024 -2757 772"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5024 -2757 427.836"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4384 -2757 771.589"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4384 -2757 427.425"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4704 -2757 772"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4704 -2757 427.836"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3424 -2757 84.1635"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3744 -2757 84.5748"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4064 -2757 84.5748"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3424 -2757 772.55"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3424 -2757 428.009"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3744 -2757 772.961"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3744 -2757 428.421"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4064 -2757 772.961"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4064 -2757 428.421"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5343 -4132 427.245"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5343 -4132 771.409"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5023 -4132 771.82"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5023 -4132 427.657"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4703 -4132 427.657"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4703 -4132 771.82"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4383 -4132 772.231"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4383 -4132 428.068"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4063 -4132 84.1635"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3743 -4132 84.5747"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4063 -4132 428.009"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4063 -4132 772.55"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3743 -4132 428.421"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3423 -4132 84.5747"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3423 -4132 428.421"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3743 -4132 772.961"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3423 -4132 772.961"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5504 -2929 736"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5175 -2928 416"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5504 -3273 416"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5504 -3617 736"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5504 -3273 736"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5504 -3617 416"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5504 -3961 416"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5504 -3961 736"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5175.14 -2929 736"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5193 -2929 736"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5351 -2929 603"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5175 -3271 736"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5192.86 -3271 736"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5192.86 -3272 416"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5175 -3272 416"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5350 -3298 446"
+ent_fire prop_dynamic addoutput "angles 52.5 90 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5350 -3494.64 295.016"
+ent_fire prop_dynamic addoutput "angles 52.5 90 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5350 -3691.27 144.027"
+ent_fire prop_dynamic addoutput "angles 52.5 90 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_debris/plaster_wall002a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4720.15 -4036.01 315.374"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_debris/plaster_wall002a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4720.17 -4036.01 315.376"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_farm/concrete_block001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4567.22 -3866 254.106"
+ent_fire prop_dynamic addoutput "angles 0 311.5 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_farm/concrete_block001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4429.22 -3651 254.106"
+ent_fire prop_dynamic addoutput "angles 0 290 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5000.27 -2822 255.116"
+ent_fire prop_dynamic addoutput "angles 52.5 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4803.64 -2822 406.104"
+ent_fire prop_dynamic addoutput "angles 52.5 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4607 -2822 557.089"
+ent_fire prop_dynamic addoutput "angles 52.5 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4410 -2821.73 707.813"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4410 -2950.23 707.824"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4410 -3207.23 707.836"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4410 -3078.73 707.825"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4409.99 -3721.23 707.855"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4409.99 -3592.73 707.845"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4409.99 -3464.23 707.844"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4409.99 -3335.73 707.833"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4409.98 -4106.73 707.859"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4409.98 -3978.23 707.858"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4409.98 -3849.73 707.847"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_farm/concrete_block001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4581.24 -3020.98 335.981"
+ent_fire prop_dynamic addoutput "angles 0 246 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_farm/concrete_block001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4525.24 -3061.98 254.106"
+ent_fire prop_dynamic addoutput "angles 0 315.5 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_farm/concrete_block001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4617.3 -2998.75 254.106"
+ent_fire prop_dynamic addoutput "angles 0 298.5 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/wooden_truss01
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4558 -2789 392"
+ent_fire prop_dynamic addoutput "angles 0 90 37.5"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 0"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_debris/plaster_wall002a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4377.6 -3415 316.881"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4377 -3435.72 295"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4166.38 -2821 762"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4165 -2945.99 761.995"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4166.38 -3210 762"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4165 -3334.99 761.995"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4166.38 -3942.01 762.017"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4165 -4067 762.011"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4165 -3678 762.011"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 4166.38 -3553.01 762.017"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5174.99 -3614.11 416.245"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5174.99 -3614.12 736.245"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5192.85 -3614.11 416.245"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 5192.85 -3614.12 736.245"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 0 147 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+ent_create info_player_teamspawn
+test_wait 0.005
+ent_fire info_player_teamspawn addoutput "origin 5257.01 -2833.11 621.25"
+ent_fire info_player_teamspawn addoutput "angles 0 270 0"
+ent_fire info_player_teamspawn addoutput "targetname "
+ent_fire info_player_teamspawn setteam 3
+ent_fire info_player_teamspawn addoutput "TeamNum 3"
+ent_fire info_player_teamspawn addoutput "classname SPN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2463 -3961 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2783 -3961 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2463 -3617 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2783 -3617 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2783 -2929 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2783 -3273 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2463 -3273 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2463 -2929 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3103 -3617 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3103 -3961 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3103 -3273 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3103 -2929 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2143 -3617 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2143 -3273 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2143 -2929 255.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2134 -3788 428.092"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2143 -4132 772.255"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2463 -4132 771.844"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2463 -4132 427.68"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3103 -4132 771.433"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3103 -4132 427.269"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2783 -4132 771.844"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2783 -4132 427.68"
+ent_fire prop_dynamic addoutput "angles 0 180 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2144 -2757 427.089"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2144 -2757 771.253"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2464 -2757 771.664"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2464 -2757 427.501"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2784 -2757 427.501"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2784 -2757 771.664"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3104 -2757 772.075"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3104 -2757 427.912"
+ent_fire prop_dynamic addoutput "angles 0 0 90"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 1983 -3960 735.844"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2312 -3961 415.844"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 1983 -3616 415.844"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 1983 -3272 735.844"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 1983 -3616 735.844"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 1983 -3272 415.844"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 1983 -2928 415.844"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 1983 -2928 735.844"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2311.86 -3960 735.844"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2294 -3960 735.844"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2136 -3960 602.844"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2312 -3618 735.844"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2294.14 -3618 735.844"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2294.14 -3617 415.844"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2312 -3617 415.844"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2137 -3591 445.844"
+ent_fire prop_dynamic addoutput "angles 52.5 270 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2137 -3394.36 294.86"
+ent_fire prop_dynamic addoutput "angles 52.5 270 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2137 -3197.73 143.871"
+ent_fire prop_dynamic addoutput "angles 52.5 270 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_debris/plaster_wall002a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2766.85 -2852.99 315.218"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_debris/plaster_wall002a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2766.83 -2852.99 315.22"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_farm/concrete_block001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2920.22 -3023 253.95"
+ent_fire prop_dynamic addoutput "angles 0 131.5 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_farm/concrete_block001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3058.22 -3238 253.95"
+ent_fire prop_dynamic addoutput "angles 0 110 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2486.73 -4067 254.96"
+ent_fire prop_dynamic addoutput "angles 52.5 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2683.36 -4067 405.948"
+ent_fire prop_dynamic addoutput "angles 52.5 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2880 -4067 556.933"
+ent_fire prop_dynamic addoutput "angles 52.5 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3077 -4067.27 707.657"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3077 -3938.77 707.668"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3077 -3681.77 707.68"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3077 -3810.27 707.669"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3077.01 -3167.77 707.699"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3077.01 -3296.27 707.689"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3077.01 -3424.77 707.688"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3077.01 -3553.27 707.677"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3077.02 -2782.27 707.703"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3077.02 -2910.77 707.702"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3077.02 -3039.27 707.691"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_farm/concrete_block001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2906.2 -3868.02 335.825"
+ent_fire prop_dynamic addoutput "angles 0 66 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_farm/concrete_block001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2962.2 -3827.02 253.95"
+ent_fire prop_dynamic addoutput "angles 0 135.5 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_farm/concrete_block001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2870.14 -3890.25 253.95"
+ent_fire prop_dynamic addoutput "angles 0 118.5 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/wooden_truss01
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2929 -4100 391.844"
+ent_fire prop_dynamic addoutput "angles 0 270 37.5"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 0"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_debris/plaster_wall002a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3109.4 -3474 316.725"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3110 -3453.28 294.844"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2312.01 -3274.89 416.089"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2312.01 -3274.88 736.089"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2294.15 -3274.89 416.089"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 2294.15 -3274.88 736.089"
+ent_fire prop_dynamic addoutput "angles 90 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+ent_create info_player_teamspawn
+test_wait 0.005
+ent_fire info_player_teamspawn addoutput "origin 2229.99 -4055.89 621.09"
+ent_fire info_player_teamspawn addoutput "angles 0 90 0"
+ent_fire info_player_teamspawn addoutput "targetname "
+ent_fire info_player_teamspawn setteam 2
+ent_fire info_player_teamspawn addoutput "TeamNum 2"
+ent_fire info_player_teamspawn addoutput "classname SPN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3320.62 -4068 761.844"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3322 -3943.01 761.839"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3320.62 -3679 761.844"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3322 -3554.01 761.839"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3322 -3211 761.855"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3320.62 -3335.99 761.861"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3322 -2822 761.855"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/interior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3320.62 -2946.99 761.861"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 128 128"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3914 -3439.72 707.809"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3666 -3439.71 707.795"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3324.92 -3439.72 707.791"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3418.15 -3439.72 707.722"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3324.86 -3800.18 707.833"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3418.27 -3800.19 707.781"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3666.12 -3800.17 707.855"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3914.12 -3800.18 707.868"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3324.87 -3092.99 707.834"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3418.27 -3092.99 707.782"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3666.13 -3092.98 707.856"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_mining/support_wall001a
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin 3914.13 -3092.99 707.869"
+ent_fire prop_dynamic addoutput "angles 90 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+ent_create func_regenerate
+test_wait 0.005
+ent_fire func_regenerate addoutput "origin 2140.735 -3958.96 745.085"
+ent_fire func_regenerate addoutput "mins -153.265 -167.96 -142.755"
+ent_fire func_regenerate addoutput "maxs 153.265 167.96 142.755"
+ent_fire func_regenerate addoutput "solid 2"
+ent_fire func_regenerate addoutput "spawnflags 1"
+ent_fire func_regenerate addoutput "classname RGEN"
+test_wait 0.025
+
+ent_create func_respawnroom
+test_wait 0.005
+ent_fire func_respawnroom addoutput "origin 2145.235 -3444.955 574.335"
+ent_fire func_respawnroom addoutput "mins -157.765 -681.965 -313.505"
+ent_fire func_respawnroom addoutput "maxs 157.765 681.965 313.505"
+ent_fire func_respawnroom addoutput "solid 2"
+ent_fire func_respawnroom addoutput "spawnflags 1"
+ent_fire func_respawnroom addoutput "TeamNum 2"
+ent_fire func_respawnroom addoutput "Team 2"
+ent_fire func_respawnroom addoutput "classname RROOM"
+test_wait 0.025
+
+ent_create func_respawnroomvisualizer
+test_wait 0.005
+ent_fire func_respawnroomvisualizer addoutput "origin 2145.235 -3444.955 574.335"
+ent_fire func_respawnroomvisualizer addoutput "mins -157.765 -681.965 -313.505"
+ent_fire func_respawnroomvisualizer addoutput "maxs 157.765 681.965 313.505"
+ent_fire func_respawnroomvisualizer addoutput "solid 2"
+ent_fire func_respawnroomvisualizer setteam 2
+ent_fire func_respawnroomvisualizer addoutput "classname RROOMV"
+test_wait 0.025
+
+ent_create func_regenerate
+test_wait 0.005
+ent_fire func_regenerate addoutput "origin 5346.265 -2930.04 745.245"
+ent_fire func_regenerate addoutput "mins -153.2649 -167.96 -142.755"
+ent_fire func_regenerate addoutput "maxs 153.2649 167.96 142.755"
+ent_fire func_regenerate addoutput "solid 2"
+ent_fire func_regenerate addoutput "spawnflags 1"
+ent_fire func_regenerate addoutput "classname RGEN"
+test_wait 0.025
+
+ent_create func_respawnroomvisualizer
+test_wait 0.005
+ent_fire func_respawnroomvisualizer addoutput "origin 5341.765 -3444.045 574.495"
+ent_fire func_respawnroomvisualizer addoutput "mins -157.7649 -681.9648 -313.505"
+ent_fire func_respawnroomvisualizer addoutput "maxs 157.7649 681.9648 313.505"
+ent_fire func_respawnroomvisualizer addoutput "solid 2"
+ent_fire func_respawnroomvisualizer setteam 3
+ent_fire func_respawnroomvisualizer addoutput "classname RROOMV"
+test_wait 0.025
+
+ent_create func_respawnroom
+test_wait 0.005
+ent_fire func_respawnroom addoutput "origin 5341.765 -3444.045 574.495"
+ent_fire func_respawnroom addoutput "mins -157.7649 -681.9648 -313.505"
+ent_fire func_respawnroom addoutput "maxs 157.7649 681.9648 313.505"
+ent_fire func_respawnroom addoutput "solid 2"
+ent_fire func_respawnroom addoutput "spawnflags 1"
+ent_fire func_respawnroom addoutput "TeamNum 3"
+ent_fire func_respawnroom addoutput "Team 3"
+ent_fire func_respawnroom addoutput "classname RROOM"
+test_wait 0.025
+
+ent_create trigger_hurt
+test_wait 0.005
+ent_fire trigger_hurt addoutput "origin 3744.005 -3440.38 21.025"
+ent_fire trigger_hurt addoutput "mins -488.0049 -689.37 -80.745"
+ent_fire trigger_hurt addoutput "maxs 488.0049 689.37 80.745"
+ent_fire trigger_hurt addoutput "solid 2"
+ent_fire trigger_hurt addoutput "spawnflags 1"
+ent_fire trigger_hurt SetDamage 999
+ent_fire trigger_hurt addoutput "classname THRT"
+test_wait 0.025
+
+ent_fire PDYN addoutput "classname prop_dynamic"
+ent_fire PPHY addoutput "classname prop_physics"
+ent_fire BRSH addoutput "classname func_brush"
+ent_fire RROOMV addoutput "classname func_respawnroomvisualizer"
+ent_fire RROOM addoutput "classname func_respawnroom"
+ent_fire THRT addoutput "classname trigger_hurt"
+ent_fire RGEN addoutput "classname func_regenerate"
+ent_fire SPN addoutput "classname info_player_teamspawn"
+ent_fire LTMR addoutput "classname logic_timer"ent_fire LRLY addoutput "classname logic_relay"ent_fire GTXT addoutput "classname game_text"ent_fire TRGR addoutput "classname trigger_multiple"
+
+mp_restartround 1 ;

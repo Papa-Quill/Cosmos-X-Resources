@@ -1,6 +1,6 @@
 //This guy name Dr. made this script
 //
-//I told Quill I'd add him to the comments because he gave me the idea for the putting the dead players in the skybox
+//I told Quill I'd add him to the comments because he gave me the idea for the putting the dead players in the skybox. And the waiting txt
 //
 //If you plan on reading this as and trying to understand this early on in scripting, or just scripting in general for Source, I really wouldn't.
 //
@@ -200,13 +200,13 @@ ent_create game_text;ent_fire game_text addoutput"hammerid 120";test_wait .05;en
 test_wait .05;
 ent_create game_text;ent_fire game_text addoutput"hammerid 121";test_wait .05;ent_keyvalue 121 targetname"txt_rifle" classname"txt_rifle" channel"2" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"15" message"DOWN: Equip Sniper" x"0.01" y"0.6";
 
-ent_create logic_case;ent_fire logic_case addoutput"hammerid 126";test_wait .05;ent_keyvalue 126 targetname"blu_kills_case" classname"blu_kills_case" case01"2" case02"3"  case03"4";
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 126";test_wait .05;ent_keyvalue 126 targetname"blu_kills_case" classname"blu_kills_case" case01"2" case02"3"  case03"4" case04"5" case05"6";
 test_wait .05;
-ent_keyvalue 126 oncase01"blu_kills,setvalue,2" oncase02"blu_kills,setvalue,2" oncase03"blu_kills,setvalue,4";
+ent_keyvalue 126 oncase01"blu_kills,setvalue,2" oncase02"blu_kills,setvalue,2" oncase03"blu_kills,setvalue,4" oncase04"blu_kills,setvalue 4" oncase05"blu_kills,setvalue 6";
 test_wait .05;
-ent_create logic_case;ent_fire logic_case addoutput"hammerid 127";test_wait .05;ent_keyvalue 127 targetname"red_kills_case" classname"red_kills_case" case01"2" case02"3"  case03"4";
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 127";test_wait .05;ent_keyvalue 127 targetname"red_kills_case" classname"red_kills_case" case01"2" case02"3"  case03"4" case04"5" case05"6";
 test_wait .05;
-ent_keyvalue 127 oncase01"red_kills,setvalue,2" oncase02"red_kills,setvalue,2" oncase03"red_kills,setvalue,4";
+ent_keyvalue 127 ooncase01"red_kills,setvalue,2" oncase02"red_kills,setvalue,2" oncase03"red_kills,setvalue,4" oncase04"red_kills,setvalue 4" oncase05"red_kills,setvalue 6";
 test_wait .05;
 ent_create logic_case;ent_fire logic_case addoutput"hammerid 114";test_wait .05;ent_keyvalue 114 targetname"case" classname"case" case01"2" case02"4"  case03"6";
 
@@ -222,14 +222,14 @@ ent_keyvalue 114 oncase03"pcc,command,bind UP slot1,8" oncase03"pcc,command,bind
 ent_create logic_case;ent_fire logic_case addoutput"hammerid 122";test_wait .05;ent_keyvalue 122 targetname"wpn_pckr" classname"wpn_pckr" case01"0" case02"1" case03"2";
 
 ent_keyvalue 122 oncase01"pcc,command,give tf_weapon_shotgun_primary" oncase01"pcc,command,ent_fire tf_weapon_shotgun_primary use,.4" oncase01"pcc,command,use tf_weapon_shotgun_primary,.5" oncase01"pcc,command,use tf_weapon_shotgun_primary,.5" oncase01"pcc,command,bind UP slot1" oncase01"pcc,command,bind RIGHT slot2" oncase01"pcc,command,bind DOWN slot3";
-ent_keyvalue 122 oncase02"pcc,command,give tf_weapon_smg" oncase01"pcc,command,ent_fire tf_weapon_smg use,.4" oncase01"pcc,command,use tf_weapon_smg,.5" oncase02"pcc,command,bind UP slot1" oncase02"pcc,command,bind RIGHT slot2" oncase02"pcc,command,bind DOWN slot3";
-ent_keyvalue 122 oncase02"pcc,command,give tf_weapon_sniperrifle" oncase01"pcc,command,ent_fire tf_weapon_sniperrifle use,.4" oncase01"pcc,command,use tf_weapon_sniperrifle,.5" oncase03"pcc,command,bind UP slot1" oncase03"pcc,command,bind RIGHT slot2" oncase03"pcc,command,bind DOWN slot3";
+ent_keyvalue 122 oncase02"pcc,command,give tf_weapon_smg" oncase02"pcc,command,ent_fire tf_weapon_smg use,.4" oncase02"pcc,command,use tf_weapon_smg,.5" oncase02"pcc,command,bind UP slot1" oncase02"pcc,command,bind RIGHT slot2" oncase02"pcc,command,bind DOWN slot3";
+ent_keyvalue 122 oncase03"pcc,command,give tf_weapon_sniperrifle" oncase03"pcc,command,ent_fire tf_weapon_sniperrifle use,.4" oncase03"pcc,command,use tf_weapon_sniperrifle,.5" oncase03"pcc,command,bind UP slot1" oncase03"pcc,command,bind RIGHT slot2" oncase03"pcc,command,bind DOWN slot3";
 
 ent_keyvalue 79542 classname"blue_team_filter" onPass"pcc,command,ent_fire blu_kills getvalue" onfail"pcc,command,ent_fire red_kills getvalue";
 
 ent_keyvalue 85412 OnRoundWin"getters,CountPlayersInZone";
 
-ent_keyvalue 85412 OnRoundWin"red_tally,setvalue,0,27" OnRoundWin"blu_tally,setvalue,0,27" OnRoundWin"red_kills,setvalue,0,27" OnRoundWin"blu_kills,setvalue,0,27";
+ent_keyvalue 85412 OnRoundWin"red_tally,setvalue,0,24" OnRoundWin"blu_tally,setvalue,0,24" OnRoundWin"red_kills,setvalue,0,24" OnRoundWin"blu_kills,setvalue,0,24";
 
 ent_keyvalue 15 OnCapture"pres_a,addoutput,rendermode 0";
 
@@ -254,7 +254,7 @@ test_wait .05;
 setpos -4000 3244 190;setang 90 90 0.000000;
 ent_create filter_activator_tfteam;ent_fire filter_activator_tfteam addoutput"hammerid 128";test_wait .05;ent_keyvalue 128 targetname"red_death_capture" classname"red_death_capture" Negated"Allow entities that match criteria" TeamNum"2" OnPass"blu_lives,subtract,1" OnPass"blu_lives,getvalue,1.5" OnFail"red_lives,subtract,1" OnFail"red_lives,getvalue,1.5";
 test_wait .05;
-ent_create filter_activator_tfteam;ent_fire filter_activator_tfteam addoutput"hammerid 132";test_wait .05;ent_keyvalue 132 targetname"live_setter" classname"live_setter" Negated"Allow entities that match criteria" TeamNum"2" OnPass"red_lives,add,1" OnFail"blu_lives,add,1";
+ent_create filter_activator_tfteam;ent_fire filter_activator_tfteam addoutput"hammerid 132";test_wait .05;ent_keyvalue 132 targetname"live_setter" classname"live_setter" Negated"Allow entities that match criteria" TeamNum"2" OnPass"red_lives,add,1" OnFail"blu_lives,add,1" OnPass"pcc,command,ent_fire team_t_txt display" OnFail"pcc,command,ent_fire team_ct_txt display";
 test_wait .05;
 ent_create math_counter;ent_fire math_counter addoutput"hammerid 125";test_wait .05;ent_keyvalue 125 targetname"red_lives" classname"red_lives" ongetvalue"red_loss,invalue"
 test_wait .05;
@@ -272,13 +272,23 @@ ent_create logic_case;ent_fire logic_case addoutput"hammerid 257";test_wait .05;
 ent_keyvalue 257 oncase01"game_text_tf,addoutput,message TF Defuse made by Dr." oncase01"game_text_tf,display,,1" oncase02"game_text_tf,addoutput,message Uhhh is this thing on?" oncase02"game_text_tf,display,,1" oncase03"game_text_tf,addoutput,message Bomb boom boom by Dr." oncase03"game_text_tf,display,,1" oncase04"game_text_tf,addoutput,message Is it Christmas yet?" oncase04"game_text_tf,display,,1";
 //
 
+give game_text;ent_fire game_text addoutput"hammerid 259";test_wait .1;ent_keyvalue 259 targetname"waiting" classname"waiting" channel"0" color"255 255 255" color2"240 0 0" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"999999" message"Waiting for next match..." x".41" y"-.8";
+test_wait .05;
+give game_text;ent_fire game_text addoutput"hammerid 300";test_wait .1;ent_keyvalue 300 targetname"waiting" classname"waiting" channel"1" color"255 255 255" color2"240 0 0" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"999999" message"You are playing TF Defuse!" x".4" y"-.85";
+test_wait .05;
+give game_text;ent_fire game_text addoutput"hammerid 301";test_wait .1;ent_keyvalue 301 targetname"team_t_txt" classname"team_t_txt" channel"0" color"255 255 255" color2"240 0 0" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"8" message"Playing Terrorist" x"-1" y"-.85";
+test_wait .05;
+give game_text;ent_fire game_text addoutput"hammerid 302";test_wait .1;ent_keyvalue 302 targetname"team_ct_txt" classname"team_ct_txt" channel"0" color"255 255 255" color2"240 0 0" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"8" message"Playing Counter-T" x"-1" y"-.85";
+test_wait .05;
+ent_create func_brush;ent_fire func_brush addoutput"hammerid 258";test_wait .05;ent_keyvalue 258 targetname"game_playerjoin" classname"game_playerjoin" onuse"pcc,command,ent_fire waiting display,32";
+test_wait .05;
 ent_keyvalue 85412 OnRoundWin"box,sethealth,99999" OnRoundWin"pres_a,addoutput,rendermode 6,25" OnRoundWin"pres_b,addoutput,rendermode 6,25" OnRoundWin"game_win,setteam,3,2" OnRoundWin"cap_a,disable" OnRoundWin"cap_b,disable" OnRoundWin"blu_lives,setvalue,0" OnRoundWin"red_lives,setvalue,0";
 ent_keyvalue 85412 OnRoundWin"spwnRed,addoutput,origin 1208 3905 -440" OnRoundWin"spwnRed1,addoutput,origin 1253.41 3983.93 -440" OnRoundWin"spwnRed2,addoutput,origin 1286.54 3860.29 -440" OnRoundWin"spwnRed3,addoutput,origin 1311.39 3767.56 -440" OnRoundWin"spwnRed4,addoutput,origin 1228.57 4076.66 -440";
 ent_keyvalue 85412 OnRoundWin"spwnBlu,addoutput,origin -4896 1312 -480" OnRoundWin"spwnBlu1,addoutput,origin -4960 1248 -480" OnRoundWin"spwnBlu2,addoutput,origin -4960 1376 -480" OnRoundWin"spwnBlu3,addoutput,origin -4960 1152 -480" OnRoundWin"spwnBlu4,addoutput,origin -4960 1472 -480";
-ent_keyvalue 3 OnRoundStart"spwnRed,addoutput,origin -10727.7 -3113.53 -323.451,5" OnRoundStart"spwnRed1,addoutput,origin -10728 -3192 -323.451,5" OnRoundStart"spwnRed2,addoutput,origin -10728 -3264 -312,5" OnRoundStart"spwnRed3,addoutput,origin -10728 -3340 -292,5" OnRoundStart"spwnRed4,addoutput,origin -10709.8 -3408.02 -292,5"
-ent_keyvalue 3 OnRoundStart"spwnBlu,addoutput,origin -11714.9 -3501.38 -301.621,5" OnRoundStart"spwnBlu1,addoutput,origin -11714.9 -3400 -301.621,5" OnRoundStart"spwnBlu2,addoutput,origin -11714.9 -3304 -301.621,5" OnRoundStart"spwnBlu3,addoutput,origin -11714.9 -3176 -301.621,5" OnRoundStart"spwnBlu4,addoutput,origin -11714.9 -3072 -301.621,5"
+ent_keyvalue 3 OnRoundStart"spwnRed,addoutput,origin -10727.7 -3113.53 -200,5" OnRoundStart"spwnRed1,addoutput,origin -10728 -3192 -200,5" OnRoundStart"spwnRed2,addoutput,origin -10728 -3264 -200,5" OnRoundStart"spwnRed3,addoutput,origin -10728 -3340 -200,5" OnRoundStart"spwnRed4,addoutput,origin -10709.8 -3408.02 -200,5"
+ent_keyvalue 3 OnRoundStart"spwnBlu,addoutput,origin -11714.9 -3501.38 -200,5" OnRoundStart"spwnBlu1,addoutput,origin -11714.9 -3400 -200,5" OnRoundStart"spwnBlu2,addoutput,origin -11714.9 -3304 -200,5" OnRoundStart"spwnBlu3,addoutput,origin -11714.9 -3176 -200,5" OnRoundStart"spwnBlu4,addoutput,origin -11714.9 -3072 -200,5"
 ent_keyvalue 3 OnRoundStart"game_win,setteam,3";
-ent_keyvalue 85412 OnRoundWin"round_fire,CountPlayersInZone,,26";
+ent_keyvalue 85412 OnRoundWin"round_fire,CountPlayersInZone,,24";
 ent_fire live_setter setteam 2;
 ent_fire red_death_capture setteam 2;
 Mp_restartround 1;
@@ -286,5 +296,7 @@ ent_fire game_text_tf display:5;
 ent_fire round_fire CountPlayersInZone:5;
 ent_fire team_control_point hidemodel;
 test_wait 3;ent_keyvalue 2 origin"496 3776 -450";ent_fire game_timer restart;
-test_wait 10;ent_keyvalue 85412 OnRoundWin"rand_title,PickRandom,26"
+test_wait .05;
+ent_keyvalue 85412 OnRoundWin"rand_title,PickRandom,,24";
+
 ///

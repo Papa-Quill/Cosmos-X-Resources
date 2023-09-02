@@ -9,6 +9,7 @@ The majority of test scripts have their original authors in the test script's fi
 
 - [@Papa-Quill](https://www.github.com/Papa-Quill)
 - Contributor [@quickkennedy](https://github.com/quickkennedy)
+- Contributor [@DrERRORz](https://github.com/DrERRORz)
 
 #
 

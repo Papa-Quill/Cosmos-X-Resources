@@ -8,6 +8,7 @@ The majority of test scripts have their original authors in the test script's fi
 ## Contributors
 
 - [@Papa-Quill](https://www.github.com/Papa-Quill)
+- [@SpringierTrain](https://github.com/SpringierTrain)
 - [@quickkennedy](https://github.com/quickkennedy)
 - [@DrERRORz](https://github.com/DrERRORz)
 - [@Book from bfdia/@suow11132](https://github.com/suow11132)

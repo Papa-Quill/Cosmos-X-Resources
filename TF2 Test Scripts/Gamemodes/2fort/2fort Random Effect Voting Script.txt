@@ -1,0 +1,222 @@
+//Init
+sv_cheats 1;
+tf_flag_caps_per_round 3;
+mp_waitingforplayers_restart 1;
+mp_waitingforplayers_cancel 1;
+ent_fire team_round_timer disable;
+noclip;
+setpos -2175.627686 -3421.132080 955.553955;setang 88.273979 89.843056 0.000000;
+
+//Editing
+ent_keyvalue 601913 onCapture"red_cap,add,1"; //Xbox
+
+ent_keyvalue 4405215 onCapture"blu_cap,add,1"; //Xbox
+
+ent_fire trigger_multiple addoutput"classname trg_mul";
+
+//pcc and psc
+ent_create point_clientcommand;ent_fire point_clientcommand addoutput"targetname pcc";
+ent_create point_servercommand;ent_fire point_servercommand addoutput"targetname psc";
+
+//Credit so twinks can cry, piss, and "obfuscate"
+ent_create game_text_tf;ent_fire game_text_tf addoutput"hammerid 110";test_wait .05;ent_keyvalue 110 message"Crafted by Dr." icon"voice_self" display_to_team"0";
+
+///Menu text
+ent_create game_text;ent_fire game_text addoutput"hammerid 2";test_wait .05;ent_keyvalue 2 targetname"button_txt" classname"g_txt" channel"0" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"20.3" message"Round Effect:" x"0.015" y"0.5";
+ent_create game_text;ent_fire game_text addoutput"hammerid 3";test_wait .05;ent_keyvalue 3 targetname"effect_txt" classname"t_txt" channel"1" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"19.5" message"Example Effect" x"0.128" y"0.5";
+ent_create game_text;ent_fire game_text addoutput"hammerid 6";test_wait .05;ent_keyvalue 6 targetname"button_txt" classname"g_txt" channel"4" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"20" message"--------------" x"0.015" y"0.525";
+ent_create game_text;ent_fire game_text addoutput"hammerid 4";test_wait .05;ent_keyvalue 4 targetname"button_txt" classname"g_txt" channel"2" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"20.5" message"RIGHT: Yes" x"0.015" y"0.55";
+ent_create game_text;ent_fire game_text addoutput"hammerid 5";test_wait .05;ent_keyvalue 5 targetname"button_txt" classname"g_txt" channel"3" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"20.5" message"LEFT: No" x"0.015" y"0.59";
+
+ent_create game_text;ent_fire game_text addoutput"hammerid 12";test_wait .05;ent_keyvalue 12 targetname"no_text" classname"n_txt" channel"5" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"6.5" message"The vote did not pass..." x"0.415" y"0.25";
+ent_create game_text;ent_fire game_text addoutput"hammerid 13";test_wait .05;ent_keyvalue 13 targetname"yes_text" classname"y_txt" channel"5" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"6.5" message"The vote passed!" x"0.435" y"0.25";
+
+ent_create game_text;ent_fire game_text addoutput"hammerid 14";test_wait .05;ent_keyvalue 14 targetname"c_effect" classname"title" channel"6" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"6.5" message"Current Effect:" x"0.38" y"0.1";
+ent_create game_text;ent_fire game_text addoutput"hammerid 15";test_wait .05;ent_keyvalue 15 targetname"effect" classname"title" channel"7" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"6.5" message"Testing effect" x"0.505" y"0.1";
+
+///Voted text
+ent_create game_text;ent_fire game_text addoutput"hammerid 7";test_wait .05;ent_keyvalue 7 targetname"voted" classname"voted" channel"0" color2"235 130 15" color"0 163 108" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"7" message"Voted!" x"0.015" y"0.55";
+ent_create game_text;ent_fire game_text addoutput"hammerid 8";test_wait .05;ent_keyvalue 8 targetname"voted" classname"voted" channel"1" message" " effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"7";
+ent_create game_text;ent_fire game_text addoutput"hammerid 9";test_wait .05;ent_keyvalue 9 targetname"voted" classname"voted" channel"2" message" " effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"7";
+ent_create game_text;ent_fire game_text addoutput"hammerid 10";test_wait .05;ent_keyvalue 10 targetname"voted" classname"voted" channel"3" message" " effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"7";
+ent_create game_text;ent_fire game_text addoutput"hammerid 11";test_wait .05;ent_keyvalue 11 targetname"voted" classname"voted" channel"4" message" " effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"7";
+
+///Math ents from votes (goes to 16 max)
+ent_create math_counter;ent_fire math_counter addoutput"hammerid 20";test_wait .05;ent_keyvalue 20 targetname"no_vote" classname"mth" ongetvalue"no_asg,invalue" max"16";
+ent_create math_counter;ent_fire math_counter addoutput"hammerid 21";test_wait .05;ent_keyvalue 21 targetname"yes_vote" classname"mth" ongetvalue"yes_asg,invalue" max"16";
+
+ent_create math_counter;ent_fire math_counter addoutput"hammerid 22";test_wait .05;ent_keyvalue 22 targetname"red_cap" classname"mth" min"0" max"3" startvalue"0" OnHitMax"psc,command,Mp_restartround 1,.5" OnHitMax"red_cap,Setvalue,0" OnHitMax"blu_cap,Setvalue,0";
+ent_create math_counter;ent_fire math_counter addoutput"hammerid 23";test_wait .05;ent_keyvalue 23 targetname"blu_cap" classname"mth" min"0" max"3" startvalue"0" OnHitMax"psc,command,Mp_restartround 1,.5" OnHitMax"red_cap,Setvalue,0" OnHitMax"blu_cap,Setvalue,0";
+
+ent_create math_counter;ent_fire math_counter addoutput"hammerid 24";test_wait .05;ent_keyvalue 24 targetname"y_n_txt" classname"mth" min"0" max"1" startvalue"0" ongetvalue"y_n_case,invalue";
+
+//Logics yes/no up to 16 cases
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 30";test_wait .05;ent_keyvalue 30 targetname"yes_asg" classname"case" case01"1" case02"2"  case03"3" case04"4" case05"5" case06"6" case07"7" case08"8";
+ent_keyvalue 30 case09"9" case10"10" case11"11" case12"12" case13"13" case14"14" case15"15" case16"16";
+ent_keyvalue 30 oncase01"cmpr,SetValue,1" oncase02"cmpr,SetValue,2" oncase03"cmpr,SetValue,3" oncase04"cmpr,SetValue,4" oncase05"cmpr,SetValue,5" oncase06"cmpr,SetValue,6" oncase07"cmpr,SetValue,7" oncase08"cmpr,SetValue,8";
+ent_keyvalue 30 oncase09"cmpr,SetValue,9" oncase10"cmpr,SetValue,10" oncase11"cmpr,SetValue,11" oncase12"cmpr,SetValue,12" oncase13"cmpr,Setvalue,13" oncase14"cmpr,Setvalue,14" oncase15"cmpr,Setvalue,15" oncase16"cmpr,Setvalue,16";
+
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 31";test_wait .05;ent_keyvalue 31 targetname"no_asg" classname"case" case01"1" case02"2"  case03"3" case04"4" case05"5" case06"6" case07"7" case08"8";
+ent_keyvalue 31 case09"9" case10"10" case11"11" case12"12" case13"13" case14"14" case15"15" case16"16";
+ent_keyvalue 31 oncase01"cmpr,SetCompareValue,1" oncase02"cmpr,SetCompareValue,2" oncase03"cmpr,SetCompareValue,3" oncase04"cmpr,SetCompareValue,4" oncase05"cmpr,SetCompareValue,5" oncase06"cmpr,SetCompareValue,6" oncase07"cmpr,SetCompareValue,7" oncase08"cmpr,SetCompareValue,8";
+ent_keyvalue 31 oncase09"cmpr,SetCompareValue,9" oncase10"cmpr,SetCompareValue,10" oncase11"cmpr,SetCompareValue,11" oncase12"cmpr,SetCompareValue,12" oncase13"cmpr,SetCompareValue,13" oncase14"cmpr,SetCompareValue,14" oncase15"cmpr,SetCompareValue,15" oncase16"cmpr,SetCompareValue,16";
+
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 32";test_wait .05;ent_keyvalue 32 targetname"cmds" classname"case" case01"0" case02"1";
+ent_keyvalue 32 oncase01"yes_vote,add,1" oncase01"pcc,command,ent_fire voted" oncase01"fix_binds,FireUser1" oncase02"no_vote,add,1" oncase02"pcc,command,ent_fire voted" oncase02"fix_binds,FireUser1";
+
+ent_create logic_compare;ent_fire logic_compare addoutput"hammerid 33";test_wait .05;ent_keyvalue 33 targetname"cmpr" Ongreaterthan"exec_txt,CountPlayersInZone,,5.5" Ongreaterthan"y_n_txt,SetValueNoFire,1" Ongreaterthan"exec_y_n,CountPlayersInZone" Ongreaterthan"eff_timer,enable" Ongreaterthan"the_math,getvalue" Ongreaterthan"eff_timer,disable" Onlessthan"y_n_txt,SetValueNoFire,0" Onlessthan"exec_y_n,CountPlayersInZone" OnEqualTo"y_n_txt,SetValueNoFire,0" OnEqualTo"exec_y_n,CountPlayersInZone";
+
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 44";test_wait .05;ent_keyvalue 44 targetname"y_n_case" classname"case" case01"0" case02"1" oncase01"pcc,command,ent_fire n_txt display" case02"1" oncase02"pcc,command,ent_fire y_txt display";
+
+//Timer for ending vote and title
+ent_create logic_timer;ent_fire logic_timer addoutput"hammerid 34";test_wait .05;ent_keyvalue 34 targetname"timer" classname"tmr" StartDisabled"1" RefireTime"20" OnTimer"no_vote,getvalue" OnTimer"yes_vote,getvalue" OnTimer"cmpr,compare,,.2" OnTimer"timer,disable,,.5";
+test_wait .05;
+ent_create logic_timer;ent_fire logic_timer addoutput"hammerid 42";test_wait .05;ent_keyvalue 42 targetname"eff_timer" classname"tmr" StartDisabled"1" RefireTime"6" OnTimer"exec_txt,CountPlayersInZone";
+
+//Effect picker
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 35";test_wait .05;ent_keyvalue 35 targetname"eff_picker" classname"case";
+
+//Effect picker reactions are attached in the effects area
+
+//Effect num shipper / The reaction picker upper
+ent_create math_counter;ent_fire math_counter addoutput"hammerid 36";test_wait .05;ent_keyvalue 36 targetname"the_math" classname"mth" startvalue"0" ongetvalue"effect_things,invalue";
+
+//Effect num response
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 37";test_wait .05;ent_keyvalue 37 targetname"effect_things" classname"case";
+
+//Zones
+ent_create game_zone_player;ent_fire game_zone_player addoutput"hammerid 38";test_wait .05;ent_keyvalue 38 targetname"menu_toggle" classname"gz" OnPlayerOutZone"pcc,command,ent_fire g_txt" OnPlayerOutZone"pcc,command,ent_fire t_txt,.55"; //Opens votes
+ent_create game_zone_player;ent_fire game_zone_player addoutput"hammerid 39";test_wait .05;ent_keyvalue 39 targetname"binds" classname"gz" OnPlayerOutZone"pcc,command,bind RIGHT yes" OnPlayerOutZone"pcc,command,bind LEFT no" OnPlayerOutZone"pcc,command,alias yes ent_fire cmds invalue 0" OnPlayerOutZone"pcc,command,alias no ent_fire cmds invalue 1"; //binds left und right
+ent_create game_zone_player;ent_fire game_zone_player addoutput"hammerid 40";test_wait .05;ent_keyvalue 40 targetname"fix_binds" classname"gz" OnPlayerOutZone"pcc,command,bind RIGHT slot2" OnPlayerOutZone"pcc,command,bind LEFT slot4"; //resets binds
+ent_keyvalue 40 OnUser1"pcc,command,bind RIGHT slot2" OnUser1"psc,command,bind LEFT slot4";
+
+ent_create game_zone_player;ent_fire game_zone_player addoutput"hammerid 43";test_wait .05;ent_keyvalue 43 targetname"exec_txt" classname"gz" OnPlayerOutZone"pcc,command,ent_fire title display"; //executes title txt
+
+ent_create game_zone_player;ent_fire game_zone_player addoutput"hammerid 45";test_wait .05;ent_keyvalue 45 targetname"exec_y_n" classname"gz" OnPlayerOutZone"pcc,command,ent_fire y_n_txt getvalue,1.5"; //executes y/n txt
+
+//Round refresh
+ent_keyvalue 22 OnHitMax"yes_vote,SetValue,0" OnHitMax"no_vote,SetValue,0" OnHitMax"the_math,SetValueNoFireNoFire,0,20" OnHitMax"eff_picker,pickrandomshuffle,,24" OnHitMax"menu_toggle,CountPlayersInZone,,26" OnHitMax"binds,CountPlayersInZone,,26" OnHitMax"timer,enable,,26" OnHitMax"psc,command,ent_fire startup_settings StartTouch,14" OnHitMax"eff_timer,disable,,5.5" OnHitMax"sunlight_area_01,disable";
+ent_keyvalue 23 OnHitMax"yes_vote,SetValue,0" OnHitMax"no_vote,SetValue,0" OnHitMax"the_math,SetValueNoFireNoFire,0,20" OnHitMax"eff_picker,pickrandomshuffle,,24" OnHitMax"menu_toggle,CountPlayersInZone,,26" OnHitMax"binds,CountPlayersInZone,,26" OnHitMax"timer,enable,,26" OnHitMax"psc,command,ent_fire startup_settings StartTouch,14" OnHitMax"eff_timer,disable,,5.5" OnHitMax"sunlight_area_01,disable";
+
+ent_create trigger;ent_fire trigger addoutput"hammerid 41";test_wait .05;ent_keyvalue 41 targetname"startup_settings" classname"trg" solid"2" spawnflags"1" OnStartTouch"cmpr,SetValue,0" OnStartTouch"cmpr,SetCompareValue,0";
+
+ent_keyvalue 34 OnTimer"fix_binds,CountPlayersInZone";
+
+//Low Gravity
+ent_keyvalue 35 case01"1" Oncase01"effect_txt,addoutput,message Low Gravity"  Oncase01"the_math,SetValueNoFire,1" Oncase01"effect,addoutput,message Low Gravity"//Edit text and send off value effect
+ent_keyvalue 37 case01"1" oncase01"psc,command,sv_gravity 200"//Reaction to picked effect
+
+ent_keyvalue 41 OnStartTouch"psc,command,sv_gravity 800";//What it does after the round resets.
+
+//Melees Only Effect
+ent_keyvalue 35 case02"2" Oncase02"effect_txt,addoutput,message Melees Only" Oncase02"the_math,SetValueNoFire,2" Oncase02"effect,addoutput,message Melees Only";//Edit text and send off value effect
+ent_keyvalue 37 case02"2" oncase02"weps_rem_tmr,enable"//Reaction to picked effect
+
+ent_create logic_timer;ent_fire logic_timer addoutput"hammerid 46";test_wait .05;ent_keyvalue 46 targetname"weps_rem_tmr" classname"tmr" StartDisabled"1" RefireTime"3" OnTimer"psc,command,ent_remove_all tf_weapon_flamethrower" OnTimer"psc,command,ent_remove_all tf_weapon_grenadelauncher" OnTimer"psc,command,ent_remove_all tf_weapon_minigun" OnTimer"psc,command,ent_remove_all tf_weapon_pipebomblauncher" OnTimer"psc,command,ent_remove_all tf_weapon_pistol" OnTimer"psc,command,ent_remove_all tf_weapon_pistol_scout" OnTimer"psc,command,ent_remove_all tf_weapon_revolver";
+ent_keyvalue 46 OnTimer"psc,command,ent_remove_all tf_weapon_rocketlauncher" OnTimer"psc,command,ent_remove_all tf_weapon_scattergun" OnTimer"psc,command,ent_remove_all tf_weapon_shotgun_hwg" OnTimer"psc,command,ent_remove_all tf_weapon_shotgun_primary" OnTimer"psc,command,ent_remove_all tf_weapon_shotgun_pyro" OnTimer"psc,command,ent_remove_all tf_weapon_shotgun_soldier" OnTimer"psc,command,ent_remove_all tf_weapon_smg" OnTimer"psc,command,ent_remove_all tf_weapon_sniperrifle";
+ent_keyvalue 46 OnTimer"psc,command,ent_remove_all tf_weapon_syringegun_medic";
+
+ent_keyvalue 41 OnStartTouch"weps_rem_tmr,disable";//What it does after the round resets.
+
+//I Need Help Effect
+ent_keyvalue 35 case03"3" oncase03"effect_txt,addoutput,message I Need Help!" Oncase03"the_math,SetValueNoFire,3" Oncase03"effect,addoutput,message I Need Help!";//Edit text and send off value effect
+ent_keyvalue 37 case03"3" oncase03"need_help_tmr,enable";//Reaction to picked effect
+
+ent_create logic_timer;ent_fire logic_timer addoutput"hammerid 47";test_wait .05;ent_keyvalue 47 targetname"need_help_tmr" classname"tmr" StartDisabled"1" RefireTime"6" LowerRandomBound"5" UpperRandomBound"35" UseRandomTime"1" OnTimer"help_zone,CountPlayersInZone";
+
+ent_create game_zone_player;ent_fire game_zone_player addoutput"hammerid 48";test_wait .05;ent_keyvalue 48 targetname"help_zone" classname"gz" OnPlayerOutZone"pcc,command,voicemenu 2 0";
+
+ent_keyvalue 41 OnStartTouch"need_help_tmr,disable";//What it does after the round resets.
+
+//Boot camp Effect
+ent_keyvalue 35 case04"4" oncase04"the_math,SetValueNoFire,4" Oncase04"effect,addoutput,message Boot camp" oncase04"effect_txt,addoutput,message Boot camp";//Edit text and send off value effect
+ent_keyvalue 37 case04"4" oncase04"psc,command,tf_classlimit_soldier -1" oncase04"bootcamp_tmr,enable" oncase04"psc,command,mp_forcerespawnplayers 1,2.75" oncase04"psc,command,tf_damagescale_self_soldier 0.01" oncase04"psc,command,tf_damageforcescale_self_soldier 1025";//Reaction to picked effect
+ent_keyvalue 37 oncase04"psc,command,tf_classlimit_scout 0" oncase04"psc,command,tf_classlimit_spy 0" oncase04"psc,command,tf_classlimit_demoman 0" oncase04"psc,command,tf_classlimit_medic 0" oncase04"psc,command,tf_classlimit_sniper 0" oncase04"psc,command,tf_classlimit_engineer 0" oncase04"psc,command,tf_classlimit_heavy 0" oncase04"psc,command,tf_classlimit_pyro 0";
+
+ent_create logic_timer;ent_fire logic_timer addoutput"hammerid 49";test_wait .05;ent_keyvalue 49 targetname"bootcamp_tmr" classname"tmr" StartDisabled"1" RefireTime"3" OnTimer"bootcamp_handle,CountPlayersInZone";
+
+ent_create game_zone_player;ent_fire game_zone_player addoutput"hammerid 50";test_wait .05;ent_keyvalue 50 targetname"bootcamp_handle" classname"gz" OnPlayerOutZone"pcc,command,join_class soldier";
+
+ent_keyvalue 41 OnStartTouch"bootcamp_tmr,disable" OnStartTouch"psc,commad,tf_damageforcescale_self_soldier 10" OnStartTouch"psc,command,tf_damagescale_self_soldier 0.60";//What it does after the round resets.
+ent_keyvalue 41 OnStartTouch"psc,command,tf_classlimit_scout -1" OnStartTouch"psc,command,tf_classlimit_spy -1" OnStartTouch"psc,command,tf_classlimit_demoman -1" OnStartTouch"psc,command,tf_classlimit_medic -1" OnStartTouch"psc,command,tf_classlimit_sniper -1" OnStartTouch"psc,command,tf_classlimit_engineer -1" OnStartTouch"psc,command,tf_classlimit_heavy -1" OnStartTouch"psc,command,tf_classlimit_pyro -1"
+
+//100% Crits
+ent_keyvalue 35 case05"5" oncase05"effect_txt,addoutput,message 100% Crits" oncase05"the_math,SetValueNoFire,5" Oncase05"effect,addoutput,message 100% Crits";//Edit text and send off value effect
+ent_keyvalue 37 case05"5" oncase05"psc,command,tf_damage_critical_chance 100";//Reaction to picked effect
+
+ent_keyvalue 41 OnStartTouch"psc,command,tf_damage_critical_chance 0.05";
+
+//Sunlight Burns
+ent_keyvalue 35 case06"6" Oncase06"effect_txt,addoutput,message Sunlight Burns" Oncase06"effect,addoutput,message Sunlight Burns" oncase06"the_math,SetValueNoFire,6";//Edit text and send off value effect
+ent_keyvalue 37 case06"6" oncase06"sunlight_tmr,enable" oncase06"sunlight_area_*,enable";//Reaction to picked effect
+
+ent_create logic_timer;ent_fire logic_timer addoutput"hammerid 52";test_wait .05;ent_keyvalue 52 targetname"sunlight_tmr" classname"tmr" RefireTime"3.5" StartDisabled"1" OnTimer"albino,IgniteLifetime,3";
+
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 51";test_wait .05;ent_keyvalue 51 targetname"sunlight_area_01" classname"trg_mul" mins"-189 -128 -347.5" maxs"189 128 347.5" solid"2" spawnflags"1" origin"320 1023 608" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 53";test_wait .05;ent_keyvalue 53 targetname"sunlight_area_02" classname"trg_mul" mins"-95.5 -128 -347.5" maxs"95.5 128 347.5" solid"2" spawnflags"1" origin"-224 1023 608" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 54";test_wait .05;ent_keyvalue 54 targetname"sunlight_area_03" classname"trg_mul" mins"-516.5 -180.5 -476" maxs"516.5 180.5 476" solid"2" spawnflags"1" origin"-5 650 480" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 56";test_wait .05;ent_keyvalue 56 targetname"sunlight_area_04" classname"trg_mul" mins"-514 -412 -355.5" maxs"514 412 355.5" solid"2" spawnflags"1" origin"3 3 605" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 57";test_wait .05;ent_keyvalue 57 targetname"sunlight_area_05" classname"trg_mul" mins"-190 -412 -142" maxs"190 412 142" solid"2" spawnflags"1" origin"-321 3 12" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 58";test_wait .05;ent_keyvalue 58 targetname"sunlight_area_06" classname"trg_mul" mins"-190 -412 -142" maxs"190 412 142" solid"2" spawnflags"1" origin"321 3 12" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 59";test_wait .05;ent_keyvalue 59 targetname"sunlight_area_07" classname"trg_mul" mins"-517.5 -175 -415.5" maxs"517.5 175 415.5" solid"2" spawnflags"1" origin"4 -657 416" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 60";test_wait .05;ent_keyvalue 60 targetname"sunlight_area_08" classname"trg_mul" mins"-89.5 -127.5 -348" maxs"89.5 127.5 348" solid"2" spawnflags"1" origin"222 -1024 611" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 61";test_wait .05;ent_keyvalue 61 targetname"sunlight_area_09" classname"trg_mul" mins"-190 -127.5 -348" maxs"190 127.5 348" solid"2" spawnflags"1" origin"-321 -1024 611" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 62";test_wait .05;ent_keyvalue 62 targetname"sunlight_area_10" classname"trg_mul" mins"-289 -365 -142" maxs"289 365 142" solid"2" spawnflags"1" origin"-1002 -2035 447" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 63";test_wait .05;ent_keyvalue 63 targetname"sunlight_area_11" classname"trg_mul" mins"-136 -307 -57.5" maxs"136 307 57.5" solid"2" spawnflags"1" origin"-1146 -1980 182" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 64";test_wait .05;ent_keyvalue 64 targetname"sunlight_area_12" classname"trg_mul" mins"-68 -230.5 -72" maxs"68 230.5 72" solid"2" spawnflags"1" origin"-900 -1968 147" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 65";test_wait .05;ent_keyvalue 65 targetname"sunlight_area_13" classname"trg_mul" mins"-228.5 -291 -51.5" maxs"228.5 291 51.5" solid"2" spawnflags"1" origin"1060 1973 144" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+ent_create trigger_multiple;ent_fire trigger_multiple addoutput"hammerid 66";test_wait .05;ent_keyvalue 66 targetname"sunlight_area_14" classname"trg_mul" mins"-297.5 -342.5 -200" maxs"297.5 342.5 200" solid"2" spawnflags"1" origin"1004 2010 488" OnStartTouch"!activator,addoutput,targetname albino" OnStartTouch"!activator,IgniteLifetime,3" OnEndTouch"!activator,addoutput,targetname player";
+
+ent_keyvalue 41 OnStartTouch"sunlight_tmr,disable" OnStartTouch"sunlight_area_*,disable" OnStartTouch"albino,addoutput,targetname player,.05";
+
+//Engi Madness
+ent_keyvalue 35 case07"7" Oncase07"effect_txt,addoutput,message Engi Madness" Oncase07"effect,addoutput,message Engi Madness" Oncase07"the_math,SetValueNoFire,7";//Edit text and send off value effect
+ent_keyvalue 37 Oncase07"psc,command,tf_classlimit_scout 0" Oncase07"psc,command,tf_classlimit_spy 0" Oncase07"psc,command,tf_classlimit_demoman 0" Oncase07"psc,command,tf_classlimit_medic 0" Oncase07"psc,command,tf_classlimit_sniper 0" Oncase07"psc,command,tf_classlimit_soldier 0" Oncase07"psc,command,tf_classlimit_heavy 0" Oncase07"psc,command,tf_classlimit_pyro 0";
+ent_keyvalue 37 case07"7" Oncase07"psc,command,tf_sentrygun_upgrade_per_hit 200" Oncase07"psc,command,tf_cheapobjects 1" Oncase07"psc,command,tf_fastbuild 1" Oncase07"psc,command,tf_classlimit_engineer -1" Oncase07"engi_mad_handle,CountPlayersInZone" Oncase07"psc,command,mp_forcerespawnplayers 1,.5" Oncase07"engi_mad_tmr,enable";//Reaction to picked effect
+
+ent_create logic_timer;ent_fire logic_timer addoutput"hammerid 69";test_wait .05;ent_keyvalue 69 targetname"engi_mad_tmr" classname"tmr" StartDisabled"1" RefireTime"3" OnTimer"engi_mad_handle,CountPlayersInZone" OnTimer"engi_hud_info,ShowHudHint" OnTimer"dissolve,Dissolve";
+
+ent_create game_text;ent_fire game_text addoutput"hammerid 68";test_wait .05;ent_keyvalue 68 targetname"engi_info_txt" classname"i_txt" channel"2" color"235 130 15" color2"255 255 255" effect"2" fadein".05" fadeout".5" fxtime".25" holdtime"6.25" message"Fast buildings + Inf metal" x"0.395" y"0.15";
+
+ent_create game_zone_player;ent_fire game_zone_player addoutput"hammerid 67";test_wait .05;ent_keyvalue 67 targetname"engi_mad_handle" classname"gz" OnPlayerOutZone"pcc,command,join_class engineer" OnPlayerOutZone"pcc,command,ent_fire engi_info_txt display,1.25";
+
+ent_create env_entity_dissolver;ent_fire env_entity_dissolver addoutput"hammerid 73";test_wait .05;ent_keyvalue 73 targetname"dissolve" target"tf_ammo_pack"
+
+ent_keyvalue 41 OnStartTouch"psc,command,tf_fastbuild 0" OnStartTouch"psc,command,tf_cheapobjects 0" OnStartTouch"psc,command,tf_sentrygun_upgrade_per_hit 25" OnStartTouch"engi_mad_tmr,disable" OnStartTouch"psc,command,tf_classlimit_soldier -1";
+
+//Blackout Drunk
+ent_keyvalue 35 case08"8" Oncase08"effect_txt,addoutput,message Blackout Drunk" Oncase08"effect,addoutput,message Blackout Drunk" oncase08"the_math,SetValueNoFire,8";//Edit text and send off value effect
+ent_keyvalue 37 case08"8" oncase08"blackout_tmr,enable";//Reaction to picked effect
+
+ent_create logic_timer;ent_fire logic_timer addoutput"hammerid 70";test_wait .05;ent_keyvalue 70 targetname"blackout_tmr" classname"tmr" StartDisabled"1" RefireTime"55" OnTimer"blackout_zone,CountPlayersInZone";
+
+ent_create game_zone_player;ent_fire game_zone_player addoutput"hammerid 71";test_wait .05;ent_keyvalue 71 targetname"blackout_zone" classname"gz" OnPlayerOutZone"pcc,command,fadeout 4" OnPlayerOutZone"pcc,command,fadein 5,6" OnPlayerOutZone"pcc,command,ent_fire blackout_case PickRandomShuffle,4.5";
+
+ent_create logic_case;ent_fire logic_case addoutput"hammerid 72";test_wait .05;ent_keyvalue 72 targetname"blackout_case" classname"gz" case01"1" case02"2" case03"3" case04"4" case05"5" case06"6" case07"7" case08"8";
+ent_keyvalue 72 case09"9" case10"10" case11"11" case12"12" case13"13" case14"14" case15"15" case16"16";
+
+ent_keyvalue 72 oncase01"pcc,command,setpos 218.784729 1346.763794 320.969666" oncase02"pcc,command,setpos -60.404190 1493.643921 320.969666" oncase03"pcc,command,setpos -591.968750 1631.968750 128.969666" oncase04"pcc,command,setpos 707.627747 3205.447021 -127.030334" oncase05"pcc,command,setpos -206.874130 2544.737549 96.969666" oncase06"pcc,command,setpos 493.837646 1005.505493 -147.030334" oncase07"pcc,command,setpos 360.286621 40.775032 -224.621521";
+ent_keyvalue 72 oncase08"pcc,command,setpos 808.054688 -1464.431030 -147.056000" oncase09"pcc,command,setpos 34.009186 -1631.968750 128.969666" oncase10"pcc,command,setpos 34.009186 -1631.968750 128.969666" oncase11"pcc,command,setpos -1133.402100 -2142.390137 133.926758" oncase12"pcc,command,setpos -96.199326 -2584.031250 -127.030334" oncase13"pcc,command,setpos -287.359985 -974.560242 320.969666" oncase14"pcc,command,setpos -31.452383 143.125809 325.852417";
+ent_keyvalue 72 oncase15"pcc,command,setpos 702.475037 -1038.847046 320.969666" oncase16"pcc,command,setpos -259.298950 -1843.721313 320.969666";
+
+ent_keyvalue 41 OnStartTouch"blackout_tmr,disable";
+
+///Execution
+ent_fire sunlight_area_* disable;
+Mp_restartround 1
+test_wait 4.5
+ent_fire game_text_tf display;
+ent_fire tmr addoutput"classname logic_timer";
+ent_fire eff_picker pickrandomshuffle;
+ent_fire mth addoutput"classname math_counter";
+ent_fire case addoutput"classname logic_case";
+ent_fire gz addoutput"classname game_zone_player";
+ent_fire trg addoutput"classname trigger";
+ent_fire trg_mul addoutput"classname trigger_multiple";
+ent_fire env_hudhint addoutput"classname hud_hint";
+ent_fire menu_toggle CountPlayersInZone;
+ent_fire binds CountPlayersInZone;
+ent_fire timer enable;
+ent_fire startup_settings enable;
+ent_fire startup_settings StartTouch;
+///

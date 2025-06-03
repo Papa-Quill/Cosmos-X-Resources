@@ -15,4 +15,4 @@ The majority of test scripts have their original authors in the test script's fi
 
 #
 
-![Cosmos Logo](https://i.imgur.com/5jO6IBp.png)
+![Cosmos Logo](https://i.imgur.com/gJTCxtV.png)

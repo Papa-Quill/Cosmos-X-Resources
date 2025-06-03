@@ -15,4 +15,4 @@ The majority of test scripts have their original authors in the test script's fi
 
 #
 
-![Cosmos Logo](https://cdn.discordapp.com/attachments/1076725187476729887/1114198521235644416/TF2LogoPurple.png?ex=679ed7fc&is=679d867c&hm=48217e06dc0fe5360d8e465baad5d54cf98c5701d0159c09ba546f9eed4d61ab&)
+![Cosmos Logo](https://i.imgur.com/5jO6IBp.png)

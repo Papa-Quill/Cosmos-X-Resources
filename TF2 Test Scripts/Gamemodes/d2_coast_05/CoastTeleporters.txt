@@ -390,5 +390,5 @@ test_wait .1
 
 say Done executing d2coast05_tele script!
 noclip
-test_startscript d2coast05_info_lighting.vtest
+test_startscript CoastLighting.txt
 ///

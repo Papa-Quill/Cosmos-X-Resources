@@ -1,3 +1,0 @@
-ent_fire prop_res* kill;ent_fire func_rege* kill;ent_fire beam kill;ent_fire env_spr* kill;ent_fire keyframe_* kill;ent_fire move_r* kill;ent_fire spotl* kill;ent_fire item_* kill;ent_fire func_respawnroom kill;ent_fire point_spo* kill;ent_fire func_cap* kill;ent_fire env_lightglow kill;ent_fire team_round_t* kill
-test_wait .02;
-ent_fire team_control_point addoutput"spawnflags 1";ent_fire master_control_point roundspawn

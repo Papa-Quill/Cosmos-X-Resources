@@ -153,13 +153,12 @@ ent_fire fort_windowB* addoutput"angles 0 180;
 prop_dynamic_create props_spytech/computer_screen_bank;ent_setname fort_screen;ent_fire fort_screen addoutput"origin 5 432 540";ent_fire fort_screen addoutput"angles 0 -90";ent_fire fort_screen color 128+128+128
 test_wait .1;
 prop_dynamic_create props_spytech\work_table001;ent_setname fort_intell_table;ent_fire fort_intell_table addoutput"origin 11 295 482";ent_fire fort_intell_table addoutput"angles 0 90;
-d;ent_fire game_text addoutput"hammerid 10";test_wait .1;ent_keyvalue 10 classname msg message"Welcome to ctf_3fort!"x"0"y"1"color"255"holdtime"11"channel"2"spawnflags"1;
-d;ent_fire game_text addoutput"hammerid 11";test_wait .1;ent_keyvalue 11 classname msg message"Grab the flag in the middle and bring it back to your base!"x".058"y".15"color"255 255 255"holdtime"11"channel"3"spawnflags"1;
+d;ent_fire game_text addoutput"hammerid 10";test_wait .1;ent_keyvalue 10 classname msg message"Welcome to ctf_3fort!"x"0"y"1"color"255"holdtime"2.5"channel"2"spawnflags"1;
+d;ent_fire game_text addoutput"hammerid 11";test_wait .1;ent_keyvalue 11 classname msg message"Grab the flag in the middle and bring it back to your base!"x".058"y".15"color"255 255 255"holdtime"2.5"channel"3"spawnflags"1;
 ent_create item_teamflag;ent_fire item_teamflag addoutput"hammerid 12";test_wait .1;ent_keyvalue 12 classname flag origin"10 289 526"OnCapture"flag,addoutput,origin 10 289 526"OnReturn"flag,addoutput,origin 10 289 526;
-give logic_timer;ent_fire logic_timer addoutput"hammerid 13";test_wait .1;ent_keyvalue 13 classname timer OnTimer"msg,display;
-ent_fire tiumer refiretime 10;
+give logic_timer;test_wait .05;ent_fire logic_timer addoutput"hammerid 13";test_wait .05;ent_keyvalue 13 "targetname" "msg_display_timer" "refiretime" "2.5" "OnTimer" "msg,display";test_wait .05;ent_fire msg_display_timer enable;
 give team_round_timer;ent_fire team_round_timer addoutput"hammerid 14";test_wait .1;ent_keyvalue 14 onroundstart"flag,addoutput,origin 10 289 526;
-give game_text_tf;ent_fire game_text_tf addoutput"hammerid 15";test_wait .1;ent_keyvalue 15 classname credits icon voice_player message"ctf_3fort mod by FrozenWasteland;
+give game_text_tf;ent_fire game_text_tf addoutput"hammerid 15";test_wait .1;ent_keyvalue 15 classname credits icon voice_player message"3Fort mod by FrozenWasteland;
 test_wait .1;
 mp_restartround 1;
 ent_fire credits display:4;

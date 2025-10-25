@@ -1,0 +1,103 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "vxzip/1.0.0": {
+        "dependencies": {
+          "CommandLineParser": "2.9.1",
+          "Crack.xSource": "1.0.0",
+          "NLog": "5.2.0"
+        },
+        "runtime": {
+          "vxzip.dll": {}
+        }
+      },
+      "CommandLineParser/2.9.1": {
+        "runtime": {
+          "lib/netstandard2.0/CommandLine.dll": {
+            "assemblyVersion": "2.9.1.0",
+            "fileVersion": "2.9.1.0"
+          }
+        }
+      },
+      "LZMA-SDK/22.1.1": {
+        "runtime": {
+          "lib/netstandard2.0/SevenZip.dll": {
+            "assemblyVersion": "22.1.1.0",
+            "fileVersion": "22.1.1.0"
+          }
+        }
+      },
+      "NLog/5.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.2.0.1813"
+          }
+        }
+      },
+      "ObjectPrinter/2.0.35": {
+        "runtime": {
+          "lib/Net40/ObjectPrinter.dll": {
+            "assemblyVersion": "2.0.35.0",
+            "fileVersion": "2.0.35.0"
+          }
+        }
+      },
+      "Crack.xSource/1.0.0": {
+        "dependencies": {
+          "LZMA-SDK": "22.1.1",
+          "NLog": "5.2.0",
+          "ObjectPrinter": "2.0.35"
+        },
+        "runtime": {
+          "Crack.xSource.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "vxzip/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommandLineParser/2.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OE0sl1/sQ37bjVsPKKtwQlWDgqaxWgtme3xZz7JssWUzg5JpMIyHgCTY9MVMxOg48fJ1AgGT3tgdH5m/kQ5xhA==",
+      "path": "commandlineparser/2.9.1",
+      "hashPath": "commandlineparser.2.9.1.nupkg.sha512"
+    },
+    "LZMA-SDK/22.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lxG8/H53OCqebnDFlTStwzbgtmUN/DqnXN8kffa/ctHcSEHhIPDyEa3jLzpZxVX5F8bmJgvb1mna6gnhetykIw==",
+      "path": "lzma-sdk/22.1.1",
+      "hashPath": "lzma-sdk.22.1.1.nupkg.sha512"
+    },
+    "NLog/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uYBgseY0m/9lQUbZYGsQsTBFOWrfs3iaekzzYMH6vFmpoOAvV8/bp1XxG/suZkwB5h8nAiTJAp7VENWRDKtKPA==",
+      "path": "nlog/5.2.0",
+      "hashPath": "nlog.5.2.0.nupkg.sha512"
+    },
+    "ObjectPrinter/2.0.35": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Fqj8xcy+KGLBztsnA75rwdj0/h1MxcjzsOmbO4eej4CC3fk9OIxfG70S0VjrWo3hzBjqX3AiVBiU1aKnO+JLiA==",
+      "path": "objectprinter/2.0.35",
+      "hashPath": "objectprinter.2.0.35.nupkg.sha512"
+    },
+    "Crack.xSource/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

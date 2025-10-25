@@ -1,9 +1,12 @@
 
 # Cosmos Resources
 
-If you contributed content to this repo and would like to be added in these credits, or you would like to contribute to this repo, please message me on Discord (@papaquill or you can find me in https://discord.gg/Py9FpHakRH)
+If you contributed content to this repo and would like to be added in these credits, or you would like to contribute to this repo, please message me on Discord (@papaquill or you can find me in https://discord.gg/G6Wrsaf3Gz)
 I would like to add other source games to this repo, it is not limited to TF2 only. Please use the contact info above to add to the repo if you're interested.
 The majority of test scripts have their original authors in the test script's file. I did not make the majority of them or the majority of the addons.
+
+## Contribution
+If you would like to contribute to this repo, please confirm that the script is not already inside of our repo first and if you still wish to contribute, use the contact info above.
 
 ## Contributors
 
@@ -15,4 +18,4 @@ The majority of test scripts have their original authors in the test script's fi
 
 #
 
-![Cosmos Logo](https://cdn.discordapp.com/attachments/1076725187476729887/1114198521235644416/TF2LogoPurple.png?ex=679ed7fc&is=679d867c&hm=48217e06dc0fe5360d8e465baad5d54cf98c5701d0159c09ba546f9eed4d61ab&)
+![Cosmos Logo](https://i.imgur.com/gJTCxtV.png)
